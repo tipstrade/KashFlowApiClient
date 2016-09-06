@@ -12,12 +12,17 @@ namespace net.tipstrade.KashFlowApiClient {
   /// A wrapper around the KashFlowAPISoapClient, that provides caching of credentials, as well
   /// as throwing exceptions rather than returning errors in output parameters.
   /// </summary>
-  public partial class KashFlowClient {
+  public partial class KashFlowClient : Component {
     #region Constants
     /// <summary>
     /// Default message size is 20MB.
     /// </summary>
     private int maxReceivedMessageSize = 20 * 1024 * 1024;
+
+    /// <summary>
+    /// The default timeout is 1 minute.
+    /// </summary>
+    private TimeSpan timeout = new TimeSpan(0, 1, 0);
     #endregion
 
     #region Properties
@@ -39,7 +44,7 @@ namespace net.tipstrade.KashFlowApiClient {
           throw new ArgumentException(string.Format("{0} is not a valid value.", value));
 
         maxReceivedMessageSize = value;
-        OnMaxReceivedMessageSizeChanged();
+        OnClientOptionsChanged();
       }
     }
 
@@ -52,25 +57,40 @@ namespace net.tipstrade.KashFlowApiClient {
     /// Gets or sets the username used to access the KashFlow API.
     /// </summary>
     public string Username { get; set; }
+
+    /// <summary>
+    /// Gets or sets the interval of time provided for a connection to open, close, receive or send before the transport raises an exception.
+    /// </summary>
+    [DefaultValue(typeof(TimeSpan), "00:01:00")]
+    public TimeSpan Timeout {
+      get {
+        return timeout;
+      }
+      set {
+        timeout = value;
+        OnClientOptionsChanged();
+      }
+    }
     #endregion
 
     #region Constructors
+    /// <summary>
+    /// Creates an instance of the KashFlowClient class with no credentials.
+    /// </summary>
+    public KashFlowClient()
+      : this(null, null) {
+    }
+
     /// <summary>
     /// Creates an instance of the KashFlowClient class.
     /// </summary>
     /// <param name="username">The username used to access the KashFlow API.</param>
     /// <param name="password">The password used to access the KashFlow API.</param>
-    public KashFlowClient(string username, string password) {
-      if (username == null)
-        throw new ArgumentNullException("username");
-
-      if (password == null)
-        throw new ArgumentNullException("password");
-
+    /// <param name="timeout">An optional value for the underlying SOAP client's timeout.</param>
+    public KashFlowClient(string username, string password, TimeSpan? timeout = null) {
       Username = username;
       Password = password;
-
-      OnMaxReceivedMessageSizeChanged();
+      Timeout = timeout ?? Timeout;
     }
     #endregion
 
@@ -211,12 +231,16 @@ namespace net.tipstrade.KashFlowApiClient {
     }
 
     /// <summary>
-    /// Raised when the MaxReceivedMessageSize property changes.
+    /// Raised when any of the Client's properties changes.
     /// </summary>
-    protected void OnMaxReceivedMessageSizeChanged() {
+    protected void OnClientOptionsChanged() {
       Client = new KashFlowAPISoapClient(
         new BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.Transport) {
           MaxReceivedMessageSize = MaxReceivedMessageSize,
+          CloseTimeout = Timeout,
+          OpenTimeout = Timeout,
+          ReceiveTimeout = Timeout,
+          SendTimeout = Timeout
         },
         new EndpointAddress("https://securedwebapp.com/api/service.asmx")
         );
