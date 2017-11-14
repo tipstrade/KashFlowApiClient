@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="KsgxGDxfPEK5p+/AKhLTNrnFoyQ=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="W8CUBYAa6IDmNaUknmBYHbtXuRU=">
   <bindingConfigurations>
-    <bindingConfiguration bindingType="basicHttpBinding" name="KashFlowAPISoap2">
+    <bindingConfiguration bindingType="basicHttpBinding" name="KashFlowAPISoap">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap2</serializedValue>
+          <serializedValue>KashFlowAPISoap</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -110,10 +110,10 @@
         </property>
       </properties>
     </bindingConfiguration>
-    <bindingConfiguration bindingType="basicHttpBinding" name="KashFlowAPISoap3">
+    <bindingConfiguration bindingType="basicHttpBinding" name="KashFlowAPISoap1">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap3</serializedValue>
+          <serializedValue>KashFlowAPISoap1</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -219,10 +219,10 @@
         </property>
       </properties>
     </bindingConfiguration>
-    <bindingConfiguration bindingType="customBinding" name="KashFlowAPISoap121">
+    <bindingConfiguration bindingType="customBinding" name="KashFlowAPISoap12">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap121</serializedValue>
+          <serializedValue>KashFlowAPISoap12</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -375,7 +375,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="KashFlowAPISoap1" contract="KashFlowAPI.KashFlowAPISoap" bindingType="basicHttpBinding" address="https://securedwebapp.com/api/service.asmx" bindingConfiguration="KashFlowAPISoap2">
+    <endpoint name="KashFlowAPISoap" contract="KashFlowAPI.KashFlowAPISoap" bindingType="basicHttpBinding" address="https://securedwebapp.com/api/service.asmx" bindingConfiguration="KashFlowAPISoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>https://securedwebapp.com/api/service.asmx</serializedValue>
@@ -387,7 +387,7 @@
           <serializedValue>basicHttpBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap2</serializedValue>
+          <serializedValue>KashFlowAPISoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>KashFlowAPI.KashFlowAPISoap</serializedValue>
@@ -450,7 +450,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap1</serializedValue>
+          <serializedValue>KashFlowAPISoap</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -460,7 +460,7 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="KashFlowAPISoap121" contract="KashFlowAPI.KashFlowAPISoap" bindingType="customBinding" address="https://securedwebapp.com/api/service.asmx" bindingConfiguration="KashFlowAPISoap121">
+    <endpoint name="KashFlowAPISoap12" contract="KashFlowAPI.KashFlowAPISoap" bindingType="customBinding" address="https://securedwebapp.com/api/service.asmx" bindingConfiguration="KashFlowAPISoap12">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>https://securedwebapp.com/api/service.asmx</serializedValue>
@@ -472,7 +472,7 @@
           <serializedValue>customBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap121</serializedValue>
+          <serializedValue>KashFlowAPISoap12</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>KashFlowAPI.KashFlowAPISoap</serializedValue>
@@ -535,7 +535,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>KashFlowAPISoap121</serializedValue>
+          <serializedValue>KashFlowAPISoap12</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
