@@ -4,6 +4,7 @@ using System;
 namespace net.tipstrade.KashFlowApiClient {
   public partial class KashFlowClient {
     #region Automatically generated methods
+#pragma warning disable IDE0018, IDE1006
     ///<summary>See https://www.kashflow.com/developers/soap-api/addorupdatesubproduct/ </summary>
     public Int32 AddOrUpdateSubProduct(SubProduct sp) {
       string status;
@@ -2803,7 +2804,7 @@ namespace net.tipstrade.KashFlowApiClient {
       return resp;
     }
 
+#pragma warning disable IDE0018,IDE1006
     #endregion
   }
 }
-

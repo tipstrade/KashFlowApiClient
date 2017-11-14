@@ -107,6 +107,7 @@ using System;
 namespace net.tipstrade.KashFlowApiClient {
   public partial class KashFlowClient {
     #region Automatically generated methods
+#pragma warning disable IDE0018,IDE1006
 ");
 
       var t = typeof(KashFlowAPISoapClient);
@@ -221,10 +222,10 @@ namespace net.tipstrade.KashFlowApiClient {
         sb.AppendLine();
       }
 
-      sb.Append(@"    #endregion
+      sb.Append(@"#pragma warning disable IDE0018,IDE1006
+    #endregion
   }
 }
-
 ");
 
       return sb.ToString();
@@ -240,7 +241,7 @@ namespace net.tipstrade.KashFlowApiClient {
           CloseTimeout = Timeout,
           OpenTimeout = Timeout,
           ReceiveTimeout = Timeout,
-          SendTimeout = Timeout
+          SendTimeout = Timeout,
         },
         new EndpointAddress("https://securedwebapp.com/api/service.asmx")
         );
