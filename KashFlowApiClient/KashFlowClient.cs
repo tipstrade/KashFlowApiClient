@@ -127,6 +127,11 @@ namespace net.tipstrade.KashFlowApiClient {
         var responseObjectValueName = m.Name.Replace("Async", "Result"); // The name of field in the response that contains the actual result
         var responseType = responseObjectType.GetField(responseObjectValueName)?.FieldType ?? null; // The type of object that is returned
 
+        // The warns if extra fields are returned
+        var responseObjectFields = responseObjectType.GetFields().Where(f => {
+          return f.Name != responseObjectValueName && f.Name != "Status" && f.Name != "StatusDetail";
+        });
+
         var asyncResponseName = responseType == null ? "Task" : $"Task<{responseType}>";
         var syncResponseName = responseType == null ? "void" : $"{responseType}";
 
@@ -135,14 +140,11 @@ namespace net.tipstrade.KashFlowApiClient {
         sb.AppendFormat("///<summary>See https://www.kashflow.com/developers/soap-api/{0}/ </summary>\n",
           m.Name.Replace("_", "").Replace("Async", "").ToLower());
         sb.AppendLine($"public {syncResponseName} {m.Name.Replace("Async", "")}({requestParam.ParameterType.Name} request) {{");
-
         if (responseType == null) {
           sb.AppendLine($"Task.Run(async () => await {m.Name}(request)).Wait();");
         } else {
           sb.AppendLine($"return Task.Run(async () => await {m.Name}(request)).Result;");
         }
-
-
         sb.AppendLine("}");
         sb.AppendLine("#endif");
         sb.AppendLine();
@@ -151,6 +153,10 @@ namespace net.tipstrade.KashFlowApiClient {
         sb.AppendFormat("///<summary>See https://www.kashflow.com/developers/soap-api/{0}/ </summary>\n",
           m.Name.Replace("_", "").Replace("Async", "").ToLower());
         sb.AppendLine($"public async {asyncResponseName} {m.Name}({requestParam.ParameterType.Name} request) {{");
+
+        if (responseObjectFields.Count() != 0) {
+          sb.AppendLine("int i = null;");
+        }
 
         // Because there's no consistency in the case
         var requestParamFields = requestParam.ParameterType.GetFields();
