@@ -11,10 +11,10 @@
     <RootNamespace>net.tipstrade.KashFlowApiClient</RootNamespace>
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0.0-beta</Version>
+    <Version>2.0.0.1-beta</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
     <Description>A .Net wrapper for the KashFlow SOAP API.</Description>
-    <PackageReleaseNotes>v.2.0.0.0
+    <PackageReleaseNotes>v.2.0.0.1
 * Major update - All methods now only accept an object containing the parameters, as this is how the WSDL is now consumed.
 * Add .Net Standard library
 

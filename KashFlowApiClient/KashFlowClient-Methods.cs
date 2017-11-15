@@ -2026,13 +2026,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptswithpaging/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsWithPaging(GetReceiptsWithPagingRequest request) {
+    public PagingResult< Invoice[]> GetReceiptsWithPaging(GetReceiptsWithPagingRequest request) {
       return Task.Run(async () => await GetReceiptsWithPagingAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptswithpaging/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetReceiptsWithPagingAsync(GetReceiptsWithPagingRequest request) {
+    public async Task<PagingResult<Invoice[]>> GetReceiptsWithPagingAsync(GetReceiptsWithPagingRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2041,7 +2041,11 @@ namespace net.tipstrade.KashFlowApiClient {
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
-      return resp.GetReceiptsWithPagingResult;
+      return new PagingResult<Invoice[]>() {
+        TotalPages = resp.TotalPages,
+        TotalRecords = resp.TotalRecords,
+        Result = resp.GetReceiptsWithPagingResult
+      };
     }
 
 #if NET45
