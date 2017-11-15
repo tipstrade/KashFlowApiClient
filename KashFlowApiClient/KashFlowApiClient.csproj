@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
+    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}</ProjectGuid>
@@ -9,9 +10,25 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>net.tipstrade.KashFlowApiClient</RootNamespace>
     <AssemblyName>KashFlowApiClient</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.0.0.0</Version>
+    <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
+    <Description>A .Net wrapper for the KashFlow SOAP API.</Description>
+    <PackageReleaseNotes>v.2.0.0.0
+* Major update - All methods now only accept an object containing the parameters, as this is how the WSDL is now consumed.
+* Add .Net Standard library
+
+v.1.0.0.1
+* Allow the object to be used as a component
+* Add a Timeout property.
+
+v.1.0.0.0
+* Initial Release.
+</PackageReleaseNotes>
+    <Authors>John Bayly</Authors>
+    <Company>TipsTrade Ltd.</Company>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -29,650 +46,40 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.1.0" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="System.ComponentModel.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.0.1" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.1.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.0.1" />
+    <PackageReference Include="System.Xml.XmlSerializer" Version="4.0.11" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Service References\**" />
+    <EmbeddedResource Remove="Service References\**" />
+    <None Remove="Service References\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KashFlowClient-Methods.cs" />
-    <Compile Include="KashFlowClient.cs" />
-    <Compile Include="KashFlowException.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\KashFlowAPI\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AccountOverview.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AddOrUpdateSubProductResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToReceiptResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.applyCreditNoteToInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AttachFileToReceiptResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.AutoAuthIPResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.BalanceSheet.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.BankAccount.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.BankOverview.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTXType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.CompanyDetails.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.ConvertQuoteToInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.createAccountResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.CreateBankAccountResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Currencies.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.CustomerBalance.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteBankTransactionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoicePaymentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineWithQuoteIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptAttachmentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineWithReceiptIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptPaymentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteSupplierResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailPurchaseOrderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAccountOverviewResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedCreditorsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedDebtorsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBalanceSheetResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankAccountsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankBalanceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankOverviewResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTransactionsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTxTypesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCompanyDetailsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCurrenciesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerAdvancePaymentsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerBalanceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByEmailResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerCurrencyResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersByPostcodeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersModifiedSinceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerSourcesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerVATNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetDigitaCSVFileResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetIncomeByCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceNotesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsByDateRangeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsCountforDateRangeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesByDateRangeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomer_typeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_OverdueResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Overdue_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_RecentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Recent_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_UnpaidResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoice_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvPayMethodsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetKPIsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetMonthlyProfitAndLossResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesExtendedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalLedgerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetPaypalLinkResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsWithSubProductsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProfitAndLossResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByNameResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByRefResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjects_FullResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesForCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotes_RecentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptAttachmentsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptNotesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptPaymentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsForSupplierResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsWithPagingResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipts_RecentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipt_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRecPayMethodsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRemoteLoginURLResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByCodeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierCurrencyResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSuppliersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierVATNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceWithOpeningBalancesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaultsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaults_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATRatesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATReportResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertBankTransactionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceNoteResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoicePaymentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoice_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertJournalResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertNominalCodeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertOrUpdateProjectResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteLineResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineFromNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptNoteResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptPaymentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceipt_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertSupplierResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceNotes.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.IsOneSaaSEnabledResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.isStillQuoteResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.isUserVATRegisteredResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.MonthlyPL.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeBalance.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeExtended.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintPurchaseOrderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Product.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.ProductsFull.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.ProfitAndLoss.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Project.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptAttachment.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptNotes.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SearchCustomerByCustTextResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerCurrencyResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerVATNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierCurrencyResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierVATNumberResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.TransactionInformation.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateBankTransactionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateCustomerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceHeaderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoice_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalHeaderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteHeaderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptHeaderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceipt_TypeDefinedResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateSupplierResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults_TypeDefined.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.VATReport.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\net.tipstrade.KashFlowApiClient.KashFlowAPI.VCFToCustomerObjectsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\KashFlowAPI\service.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\KashFlowAPI\" />
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KashFlowAPI\configuration91.svcinfo" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KashFlowAPI\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\KashFlowAPI\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\NuGet\nuget.exe" pack $(ProjectDir)$(ProjectFileName) -Prop Configuration=$(ConfigurationName)</PostBuildEvent>
-  </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

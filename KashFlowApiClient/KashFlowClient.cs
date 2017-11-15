@@ -1,6 +1,5 @@
 ﻿using net.tipstrade.KashFlowApiClient.KashFlowAPI;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
@@ -12,7 +11,11 @@ namespace net.tipstrade.KashFlowApiClient {
   /// A wrapper around the KashFlowAPISoapClient, that provides caching of credentials, as well
   /// as throwing exceptions rather than returning errors in output parameters.
   /// </summary>
-  public partial class KashFlowClient : Component {
+  public partial class KashFlowClient
+#if NET45
+:    Component
+#endif
+    {
     #region Constants
     /// <summary>
     /// Default message size is 20MB.
@@ -29,7 +32,7 @@ namespace net.tipstrade.KashFlowApiClient {
     /// <summary>
     /// Gets or sets the underlying SOAP client.
     /// </summary>
-    protected KashFlowAPISoapClient Client { get; set; }
+    public KashFlowAPISoapClient Client { get; protected set; }
 
     /// <summary>
     /// Gets the maximum message size that can be received by the underlying SOAP client.
@@ -103,127 +106,88 @@ namespace net.tipstrade.KashFlowApiClient {
       var sb = new StringBuilder();
       sb.Append(@"using net.tipstrade.KashFlowApiClient.KashFlowAPI;
 using System;
+using System.Threading.Tasks;
 
 namespace net.tipstrade.KashFlowApiClient {
   public partial class KashFlowClient {
-    #region Automatically generated methods
-#pragma warning disable IDE0018,IDE1006
+#region Automatically generated methods
+#pragma warning disable IDE0018, IDE1006
 ");
 
       var t = typeof(KashFlowAPISoapClient);
-      var methods = t.GetMethods(BindingFlags.Instance | BindingFlags.Public);
+      var methods = t.GetMethods(BindingFlags.Instance | BindingFlags.Public)
+        .Where(m => m.Name.EndsWith("Async"))
+        .OrderBy(m => m.Name);
 
-      Array.Sort<MethodInfo>(methods, (a, b) => {
-        return string.Compare(a.Name, b.Name);
-      });
-
-      bool hasUserName, hasPassword, hasStatus, hasStatusDetail;
       foreach (MethodInfo m in methods) {
-        var parms = m.GetParameters();
+        var requestParam = m.GetParameters().FirstOrDefault();
+        if (requestParam == null) continue;
 
-        hasUserName = parms.Any(x => x.Name == "UserName");
-        hasPassword = parms.Any(x => x.Name == "Password");
-        hasStatus = parms.Any(x => x.Name == "Status");
-        hasStatusDetail = parms.Any(x => x.Name == "StatusDetail");
+        var responseObjectType = m.ReturnType.GenericTypeArguments.First(); // The type of object returned
+        var responseObjectValueName = m.Name.Replace("Async", "Result"); // The name of field in the response that contains the actual result
+        var responseType = responseObjectType.GetField(responseObjectValueName)?.FieldType ?? null; // The type of object that is returned
 
-        if (!hasUserName && !hasPassword && !hasStatus && !hasStatusDetail) {
-          Console.Error.WriteLine("{0} doesn't contain the required parameters.", m.Name);
-          continue;
-        }
+        var asyncResponseName = responseType == null ? "Task" : $"Task<{responseType}>";
+        var syncResponseName = responseType == null ? "void" : $"{responseType}";
 
+        // Provide sync methods for the Net45 build
+        sb.AppendLine("#if NET45");
         sb.AppendFormat("///<summary>See https://www.kashflow.com/developers/soap-api/{0}/ </summary>\n",
-          m.Name.Replace("_", "").ToLower());
-        sb.AppendFormat("public {0} {1}(", m.ReturnType.Name, m.Name);
+          m.Name.Replace("_", "").Replace("Async", "").ToLower());
+        sb.AppendLine($"public {syncResponseName} {m.Name.Replace("Async", "")}({requestParam.ParameterType.Name} request) {{");
 
-        bool first = true;
-        foreach (ParameterInfo p in parms) {
-          switch (p.Name.ToLower()) {
-            case "username":
-            case "password":
-            case "status":
-            case "statusdetail":
-              break;
-
-            default:
-              if (!first)
-                sb.Append(", ");
-
-              if (p.IsOut) {
-                sb.Append("out ");
-              } else if (p.ParameterType.IsByRef) {
-                sb.Append("ref ");
-              }
-
-              sb.AppendFormat("{0} {1}", p.ParameterType.Name.Replace("&", ""), p.Name);
-
-              first = false;
-              break;
-          }
+        if (responseType == null) {
+          sb.AppendLine($"Task.Run(async () => await {m.Name}(request)).Wait();");
+        } else {
+          sb.AppendLine($"return Task.Run(async () => await {m.Name}(request)).Result;");
         }
 
-        sb.AppendLine(") {");
 
-        if (hasStatus)
-          sb.AppendLine("\tstring status;");
-
-        sb.AppendLine("\tstring statusDetail;");
-
-        sb.AppendFormat("\t{0} resp = Client.{1}(\n", m.ReturnType.Name, m.Name);
-        for (int i = 0; i < parms.Length; i++) {
-          ParameterInfo p = parms[i];
-
-          switch (p.Name.ToLower()) {
-            case "username":
-              sb.Append("\t\tUsername");
-              break;
-
-            case "password":
-              sb.Append("\t\tPassword");
-              break;
-
-            case "status":
-              sb.Append("\t\tout status");
-              break;
-
-            case "statusdetail":
-              sb.Append("\t\tout statusDetail");
-              break;
-
-            default:
-              sb.Append("\t\t");
-
-              if (p.IsOut) {
-                sb.Append("out ");
-              } else if (p.ParameterType.IsByRef) {
-                sb.Append("ref ");
-              }
-
-              sb.Append(p.Name);
-
-              break;
-          }
-
-          if (i < (parms.Length - 1))
-            sb.Append(",");
-
-          sb.AppendLine();
-        }
-        sb.AppendLine("\t\t);");
+        sb.AppendLine("}");
+        sb.AppendLine("#endif");
         sb.AppendLine();
 
-        sb.AppendLine("\tif (statusDetail != \"\")");
-        sb.Append("\t\tthrow new KashFlowException(statusDetail)");
-        if (hasStatus)
-          sb.Append(" { Status = status }");
-        sb.AppendLine(";");
+        // The Async Method
+        sb.AppendFormat("///<summary>See https://www.kashflow.com/developers/soap-api/{0}/ </summary>\n",
+          m.Name.Replace("_", "").Replace("Async", "").ToLower());
+        sb.AppendLine($"public async {asyncResponseName} {m.Name}({requestParam.ParameterType.Name} request) {{");
 
-        sb.AppendLine("\treturn resp;");
+        // Because there's no consistency in the case
+        var requestParamFields = requestParam.ParameterType.GetFields();
+        var usernameField = requestParamFields.Where(p => p.Name.ToLower() == "username").FirstOrDefault();
+        var passwordField = requestParamFields.Where(p => p.Name.ToLower() == "password").FirstOrDefault();
+        if (usernameField != null) {
+          sb.AppendLine($"if (string.IsNullOrEmpty(request.{usernameField.Name})) request.{usernameField.Name} = Username;");
+        }
+        if (passwordField != null) {
+          sb.AppendLine($"if (string.IsNullOrEmpty(request.{passwordField.Name})) request.{passwordField.Name} = Password;");
+        }
+        if ((usernameField != null) || (passwordField != null)) {
+          sb.AppendLine();
+        }
+
+        // Make the actual request
+        sb.AppendLine($"var resp = await Client.{m.Name}(request);");
+        sb.AppendLine();
+
+        // Check for any errors
+        if (responseObjectType.GetField("StatusDetail") != null) {
+          sb.AppendLine("if (!string.IsNullOrEmpty(resp.StatusDetail))");
+          sb.AppendLine("throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };");
+          sb.AppendLine();
+        }
+
+        // If there's a value to return
+        if (responseType != null) {
+          sb.AppendLine($"return resp.{responseObjectValueName};");
+        }
+
         sb.AppendLine("}");
         sb.AppendLine();
       }
 
       sb.Append(@"#pragma warning disable IDE0018,IDE1006
-    #endregion
+#endregion
   }
 }
 ");
@@ -236,7 +200,7 @@ namespace net.tipstrade.KashFlowApiClient {
     /// </summary>
     protected void OnClientOptionsChanged() {
       Client = new KashFlowAPISoapClient(
-        new BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.Transport) {
+        new BasicHttpBinding(BasicHttpSecurityMode.Transport) {
           MaxReceivedMessageSize = MaxReceivedMessageSize,
           CloseTimeout = Timeout,
           OpenTimeout = Timeout,
