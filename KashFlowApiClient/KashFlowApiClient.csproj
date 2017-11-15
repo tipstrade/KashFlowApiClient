@@ -11,7 +11,7 @@
     <RootNamespace>net.tipstrade.KashFlowApiClient</RootNamespace>
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0.0</Version>
+    <Version>2.0.0.0-beta</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
     <Description>A .Net wrapper for the KashFlow SOAP API.</Description>
     <PackageReleaseNotes>v.2.0.0.0
