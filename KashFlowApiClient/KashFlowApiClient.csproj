@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.3;net45;netcoreapp2.0</TargetFrameworks>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}</ProjectGuid>
@@ -11,10 +11,13 @@
     <RootNamespace>net.tipstrade.KashFlowApiClient</RootNamespace>
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0.1-beta</Version>
+    <Version>2.0.0.2-beta</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
     <Description>A .Net wrapper for the KashFlow SOAP API.</Description>
-    <PackageReleaseNotes>v.2.0.0.1
+    <PackageReleaseNotes>v.2.0.0.2
+* Add .Net Core library
+
+v.2.0.0.1
 * Major update - All methods now only accept an object containing the parameters, as this is how the WSDL is now consumed.
 * Add .Net Standard library
 
