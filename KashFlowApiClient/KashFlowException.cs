@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace net.tipstrade.KashFlowApiClient {
+namespace TipsTrade.KashFlow {
   /// <summary>
   /// Represents errors that occur during a KashFlowAPISoapClient method excecution.
   /// </summary>

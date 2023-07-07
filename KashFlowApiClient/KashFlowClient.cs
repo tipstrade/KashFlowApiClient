@@ -1,4 +1,4 @@
-﻿using net.tipstrade.KashFlowApiClient.KashFlowAPI;
+﻿using TipsTrade.KashFlow.KashFlowAPI;
 using System;
 using System.ComponentModel;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Reflection;
 using System.ServiceModel;
 using System.Text;
 
-namespace net.tipstrade.KashFlowApiClient {
+namespace TipsTrade.KashFlow {
   /// <summary>
   /// A wrapper around the KashFlowAPISoapClient, that provides caching of credentials, as well
   /// as throwing exceptions rather than returning errors in output parameters.
@@ -104,11 +104,11 @@ namespace net.tipstrade.KashFlowApiClient {
     /// </summary>
     public static string GenerateMethodCode() {
       var sb = new StringBuilder();
-      sb.Append(@"using net.tipstrade.KashFlowApiClient.KashFlowAPI;
+      sb.Append(@"using TipsTrade.KashFlow.KashFlowAPI;
 using System;
 using System.Threading.Tasks;
 
-namespace net.tipstrade.KashFlowApiClient {
+namespace TipsTrade.KashFlow {
   public partial class KashFlowClient {
 #region Automatically generated methods
 #pragma warning disable IDE0018, IDE1006

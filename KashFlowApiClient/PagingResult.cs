@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace net.tipstrade.KashFlowApiClient {
+namespace TipsTrade.KashFlow {
   public class PagingResult<T> {
     public int TotalPages { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace net.tipstrade.KashFlowApiClient.Test {
+namespace TipsTrade.KashFlow.Test {
   class Program {
     static void Main(string[] args) {
       var code = KashFlowClient.GenerateMethodCode();

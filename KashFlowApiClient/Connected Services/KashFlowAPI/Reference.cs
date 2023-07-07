@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
+namespace TipsTrade.KashFlow.KashFlowAPI
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "0.5.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="KashFlow", ConfigurationName="net.tipstrade.KashFlowApiClient.KashFlowAPI.KashFlowAPISoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="KashFlow", ConfigurationName="TipsTrade.KashFlow.KashFlowAPI.KashFlowAPISoap")]
     public interface KashFlowAPISoap
     {
         
@@ -20,474 +20,474 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateCustomerResponse> UpdateCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateCustomerResponse> UpdateCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateCustomerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SearchCustomerByCustText", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SearchCustomerByCustTextResponse> SearchCustomerByCustTextAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SearchCustomerByCustTextRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SearchCustomerByCustTextResponse> SearchCustomerByCustTextAsync(TipsTrade.KashFlow.KashFlowAPI.SearchCustomerByCustTextRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SetCustomerVATNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerVATNumberResponse> SetCustomerVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerVATNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetCustomerVATNumberResponse> SetCustomerVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.SetCustomerVATNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerCurrency", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerCurrencyResponse> GetCustomerCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerCurrencyRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerCurrencyResponse> GetCustomerCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerCurrencyRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SetCustomerCurrency", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerCurrencyResponse> SetCustomerCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerCurrencyRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetCustomerCurrencyResponse> SetCustomerCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.SetCustomerCurrencyRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteCustomerResponse> DeleteCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteCustomerResponse> DeleteCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteCustomerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerSources", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerSourcesResponse> GetCustomerSourcesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerSourcesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerSourcesResponse> GetCustomerSourcesAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerSourcesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomersByPostcode", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersByPostcodeResponse> GetCustomersByPostcodeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersByPostcodeRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomersByPostcodeResponse> GetCustomersByPostcodeAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomersByPostcodeRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerBalance", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerBalanceResponse> GetCustomerBalanceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerBalanceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerBalanceResponse> GetCustomerBalanceAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerBalanceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerAdvancePayments", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerAdvancePaymentsResponse> GetCustomerAdvancePaymentsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerAdvancePaymentsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerAdvancePaymentsResponse> GetCustomerAdvancePaymentsAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerAdvancePaymentsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertOrUpdateProject", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertOrUpdateProjectResponse> InsertOrUpdateProjectAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertOrUpdateProjectRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertOrUpdateProjectResponse> InsertOrUpdateProjectAsync(TipsTrade.KashFlow.KashFlowAPI.InsertOrUpdateProjectRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProjects_Full", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjects_FullResponse> GetProjects_FullAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjects_FullRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjects_FullResponse> GetProjects_FullAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjects_FullRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProjects", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectsResponse> GetProjectsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectsResponse> GetProjectsAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProjectById", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByIdResponse> GetProjectByIdAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByIdRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectByIdResponse> GetProjectByIdAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectByIdRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProjectByRef", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByRefResponse> GetProjectByRefAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByRefRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectByRefResponse> GetProjectByRefAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectByRefRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProjectByName", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByNameResponse> GetProjectByNameAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByNameRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectByNameResponse> GetProjectByNameAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectByNameRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertSupplier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertSupplierResponse> InsertSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertSupplierRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertSupplierResponse> InsertSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.InsertSupplierRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSupplierVATNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierVATNumberResponse> GetSupplierVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierVATNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierVATNumberResponse> GetSupplierVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierVATNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSupplier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierResponse> GetSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierResponse> GetSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSuppliers", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSuppliersResponse> GetSuppliersAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSuppliersRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSuppliersResponse> GetSuppliersAsync(TipsTrade.KashFlow.KashFlowAPI.GetSuppliersRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateSupplier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateSupplierResponse> UpdateSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateSupplierRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateSupplierResponse> UpdateSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateSupplierRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SetSupplierVATNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierVATNumberResponse> SetSupplierVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierVATNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetSupplierVATNumberResponse> SetSupplierVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.SetSupplierVATNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSupplierCurrency", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierCurrencyResponse> GetSupplierCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierCurrencyRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierCurrencyResponse> GetSupplierCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierCurrencyRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SetSupplierCurrency", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierCurrencyResponse> SetSupplierCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierCurrencyRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetSupplierCurrencyResponse> SetSupplierCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.SetSupplierCurrencyRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSupplierByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierByIDResponse> GetSupplierByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierByIDResponse> GetSupplierByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteSupplier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteSupplierResponse> DeleteSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteSupplierRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteSupplierResponse> DeleteSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteSupplierRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/CreateBankAccount", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.CreateBankAccountResponse> CreateBankAccountAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.CreateBankAccountRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.CreateBankAccountResponse> CreateBankAccountAsync(TipsTrade.KashFlow.KashFlowAPI.CreateBankAccountRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetBankBalance", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankBalanceResponse> GetBankBalanceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankBalanceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankBalanceResponse> GetBankBalanceAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankBalanceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetBankAccounts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankAccountsResponse> GetBankAccountsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankAccountsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankAccountsResponse> GetBankAccountsAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankAccountsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetBankTxTypes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTxTypesResponse> GetBankTxTypesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTxTypesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankTxTypesResponse> GetBankTxTypesAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankTxTypesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetBankTransactions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTransactionsResponse> GetBankTransactionsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTransactionsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankTransactionsResponse> GetBankTransactionsAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankTransactionsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertBankTransaction", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertBankTransactionResponse> InsertBankTransactionAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertBankTransactionRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertBankTransactionResponse> InsertBankTransactionAsync(TipsTrade.KashFlow.KashFlowAPI.InsertBankTransactionRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateBankTransaction", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateBankTransactionResponse> UpdateBankTransactionAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateBankTransactionRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateBankTransactionResponse> UpdateBankTransactionAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateBankTransactionRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteBankTransaction", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteBankTransactionResponse> DeleteBankTransactionAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteBankTransactionRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteBankTransactionResponse> DeleteBankTransactionAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteBankTransactionRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetBalanceSheet", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBalanceSheetResponse> GetBalanceSheetAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBalanceSheetRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBalanceSheetResponse> GetBalanceSheetAsync(TipsTrade.KashFlow.KashFlowAPI.GetBalanceSheetRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProfitAndLoss", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProfitAndLossResponse> GetProfitAndLossAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProfitAndLossRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProfitAndLossResponse> GetProfitAndLossAsync(TipsTrade.KashFlow.KashFlowAPI.GetProfitAndLossRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetMonthlyProfitAndLoss", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetMonthlyProfitAndLossResponse> GetMonthlyProfitAndLossAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetMonthlyProfitAndLossRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetMonthlyProfitAndLossResponse> GetMonthlyProfitAndLossAsync(TipsTrade.KashFlow.KashFlowAPI.GetMonthlyProfitAndLossRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetTrialBalance", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceResponse> GetTrialBalanceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceResponse> GetTrialBalanceAsync(TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetTrialBalanceWithOpeningBalances", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceWithOpeningBalancesResponse> GetTrialBalanceWithOpeningBalancesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceWithOpeningBalancesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceWithOpeningBalancesResponse> GetTrialBalanceWithOpeningBalancesAsync(TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceWithOpeningBalancesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetVATReport", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATReportResponse> GetVATReportAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATReportRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetVATReportResponse> GetVATReportAsync(TipsTrade.KashFlow.KashFlowAPI.GetVATReportRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetDigitaCSVFile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetDigitaCSVFileResponse> GetDigitaCSVFileAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetDigitaCSVFileRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetDigitaCSVFileResponse> GetDigitaCSVFileAsync(TipsTrade.KashFlow.KashFlowAPI.GetDigitaCSVFileRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetNominalLedger", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalLedgerResponse> GetNominalLedgerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalLedgerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetNominalLedgerResponse> GetNominalLedgerAsync(TipsTrade.KashFlow.KashFlowAPI.GetNominalLedgerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetAgedDebtors", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedDebtorsResponse> GetAgedDebtorsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedDebtorsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetAgedDebtorsResponse> GetAgedDebtorsAsync(TipsTrade.KashFlow.KashFlowAPI.GetAgedDebtorsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetAgedCreditors", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedCreditorsResponse> GetAgedCreditorsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedCreditorsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetAgedCreditorsResponse> GetAgedCreditorsAsync(TipsTrade.KashFlow.KashFlowAPI.GetAgedCreditorsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetIncomeByCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetIncomeByCustomerResponse> GetIncomeByCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetIncomeByCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetIncomeByCustomerResponse> GetIncomeByCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetIncomeByCustomerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertJournal", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertJournalResponse> InsertJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertJournalRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertJournalResponse> InsertJournalAsync(TipsTrade.KashFlow.KashFlowAPI.InsertJournalRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateJournal", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalResponse> UpdateJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateJournalResponse> UpdateJournalAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateJournalRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateJournalHeader", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalHeaderResponse> UpdateJournalHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalHeaderRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateJournalHeaderResponse> UpdateJournalHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateJournalHeaderRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetJournals", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalsResponse> GetJournalsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetJournalsResponse> GetJournalsAsync(TipsTrade.KashFlow.KashFlowAPI.GetJournalsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetJournal", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalResponse> GetJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetJournalResponse> GetJournalAsync(TipsTrade.KashFlow.KashFlowAPI.GetJournalRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteJournal", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalResponse> DeleteJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteJournalResponse> DeleteJournalAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteJournalRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteJournalByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalByIDResponse> DeleteJournalByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteJournalByIDResponse> DeleteJournalByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteJournalByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/VCFToCustomerObjects", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.VCFToCustomerObjectsResponse> VCFToCustomerObjectsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.VCFToCustomerObjectsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.VCFToCustomerObjectsResponse> VCFToCustomerObjectsAsync(TipsTrade.KashFlow.KashFlowAPI.VCFToCustomerObjectsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetBankOverview", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankOverviewResponse> GetBankOverviewAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankOverviewRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankOverviewResponse> GetBankOverviewAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankOverviewRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetAccountOverview", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAccountOverviewResponse> GetAccountOverviewAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAccountOverviewRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetAccountOverviewResponse> GetAccountOverviewAsync(TipsTrade.KashFlow.KashFlowAPI.GetAccountOverviewRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCurrencies", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCurrenciesResponse> GetCurrenciesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCurrenciesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCurrenciesResponse> GetCurrenciesAsync(TipsTrade.KashFlow.KashFlowAPI.GetCurrenciesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetUserAccountDefaults", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaultsResponse> GetUserAccountDefaultsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaultsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaultsResponse> GetUserAccountDefaultsAsync(TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaultsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetUserAccountDefaults_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaults_TypeDefinedResponse> GetUserAccountDefaults_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaults_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaults_TypeDefinedResponse> GetUserAccountDefaults_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaults_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/AttachFileToReceipt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AttachFileToReceiptResponse> AttachFileToReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AttachFileToReceiptRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AttachFileToReceiptResponse> AttachFileToReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.AttachFileToReceiptRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceiptAttachments", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptAttachmentsResponse> GetReceiptAttachmentsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptAttachmentsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptAttachmentsResponse> GetReceiptAttachmentsAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptAttachmentsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteReceiptAttachment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptAttachmentResponse> DeleteReceiptAttachmentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptAttachmentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptAttachmentResponse> DeleteReceiptAttachmentAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptAttachmentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/AutoAuthIP", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AutoAuthIPResponse> AutoAuthIPAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AutoAuthIPRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AutoAuthIPResponse> AutoAuthIPAsync(TipsTrade.KashFlow.KashFlowAPI.AutoAuthIPRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetRemoteLoginURL", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRemoteLoginURLResponse> GetRemoteLoginURLAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRemoteLoginURLRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetRemoteLoginURLResponse> GetRemoteLoginURLAsync(TipsTrade.KashFlow.KashFlowAPI.GetRemoteLoginURLRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/createAccount", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.createAccountResponse> createAccountAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.createAccountRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.createAccountResponse> createAccountAsync(TipsTrade.KashFlow.KashFlowAPI.createAccountRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/isUserVATRegistered", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.isUserVATRegisteredResponse> isUserVATRegisteredAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.isUserVATRegisteredRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.isUserVATRegisteredResponse> isUserVATRegisteredAsync(TipsTrade.KashFlow.KashFlowAPI.isUserVATRegisteredRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProducts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsResponse> GetProductsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProductsResponse> GetProductsAsync(TipsTrade.KashFlow.KashFlowAPI.GetProductsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/AddOrUpdateSubProduct", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AddOrUpdateSubProductResponse> AddOrUpdateSubProductAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AddOrUpdateSubProductRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AddOrUpdateSubProductResponse> AddOrUpdateSubProductAsync(TipsTrade.KashFlow.KashFlowAPI.AddOrUpdateSubProductRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSubProducts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductsResponse> GetSubProductsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSubProductsResponse> GetSubProductsAsync(TipsTrade.KashFlow.KashFlowAPI.GetSubProductsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSubProductByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByIDResponse> GetSubProductByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSubProductByIDResponse> GetSubProductByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetSubProductByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetSubProductByCode", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByCodeResponse> GetSubProductByCodeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByCodeRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSubProductByCodeResponse> GetSubProductByCodeAsync(TipsTrade.KashFlow.KashFlowAPI.GetSubProductByCodeRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetProductsWithSubProducts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsWithSubProductsResponse> GetProductsWithSubProductsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsWithSubProductsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProductsWithSubProductsResponse> GetProductsWithSubProductsAsync(TipsTrade.KashFlow.KashFlowAPI.GetProductsWithSubProductsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetNominalCodes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesResponse> GetNominalCodesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesResponse> GetNominalCodesAsync(TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertNominalCode", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertNominalCodeResponse> InsertNominalCodeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertNominalCodeRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertNominalCodeResponse> InsertNominalCodeAsync(TipsTrade.KashFlow.KashFlowAPI.InsertNominalCodeRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetNominalCodesExtended", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesExtendedResponse> GetNominalCodesExtendedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesExtendedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesExtendedResponse> GetNominalCodesExtendedAsync(TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesExtendedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetKPIs", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetKPIsResponse> GetKPIsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetKPIsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetKPIsResponse> GetKPIsAsync(TipsTrade.KashFlow.KashFlowAPI.GetKPIsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetVATRates", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATRatesResponse> GetVATRatesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATRatesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetVATRatesResponse> GetVATRatesAsync(TipsTrade.KashFlow.KashFlowAPI.GetVATRatesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCompanyDetails", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCompanyDetailsResponse> GetCompanyDetailsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCompanyDetailsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCompanyDetailsResponse> GetCompanyDetailsAsync(TipsTrade.KashFlow.KashFlowAPI.GetCompanyDetailsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/IsOneSaaSEnabled", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.IsOneSaaSEnabledResponse> IsOneSaaSEnabledAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.IsOneSaaSEnabledRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.IsOneSaaSEnabledResponse> IsOneSaaSEnabledAsync(TipsTrade.KashFlow.KashFlowAPI.IsOneSaaSEnabledRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SageFile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileResponse> SageFileAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SageFileResponse> SageFileAsync(TipsTrade.KashFlow.KashFlowAPI.SageFileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/SageFileImport", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -498,505 +498,505 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertQuote", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteResponse> InsertQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertQuoteResponse> InsertQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.InsertQuoteRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertQuoteLine", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteLineResponse> InsertQuoteLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteLineRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertQuoteLineResponse> InsertQuoteLineAsync(TipsTrade.KashFlow.KashFlowAPI.InsertQuoteLineRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetQuoteByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByIDResponse> GetQuoteByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuoteByIDResponse> GetQuoteByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuoteByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetQuoteByNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByNumberResponse> GetQuoteByNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuoteByNumberResponse> GetQuoteByNumberAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuoteByNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetQuotes_Recent", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotes_RecentResponse> GetQuotes_RecentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotes_RecentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuotes_RecentResponse> GetQuotes_RecentAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuotes_RecentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetQuotes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesResponse> GetQuotesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuotesResponse> GetQuotesAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuotesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetQuotesForCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesForCustomerResponse> GetQuotesForCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesForCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuotesForCustomerResponse> GetQuotesForCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuotesForCustomerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/ConvertQuoteToInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.ConvertQuoteToInvoiceResponse> ConvertQuoteToInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.ConvertQuoteToInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.ConvertQuoteToInvoiceResponse> ConvertQuoteToInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.ConvertQuoteToInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/applyCreditNoteToInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.applyCreditNoteToInvoiceResponse> applyCreditNoteToInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.applyCreditNoteToInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.applyCreditNoteToInvoiceResponse> applyCreditNoteToInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.applyCreditNoteToInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/isStillQuote", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.isStillQuoteResponse> isStillQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.isStillQuoteRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.isStillQuoteResponse> isStillQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.isStillQuoteRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateQuote", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteResponse> UpdateQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteResponse> UpdateQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateQuoteHeader", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteHeaderResponse> UpdateQuoteHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteHeaderRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteHeaderResponse> UpdateQuoteHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteHeaderRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteQuote", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteResponse> DeleteQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteResponse> DeleteQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteQuoteByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteByIDResponse> DeleteQuoteByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteByIDResponse> DeleteQuoteByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteQuoteLineWithQuoteID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineWithQuoteIDResponse> DeleteQuoteLineWithQuoteIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineWithQuoteIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineWithQuoteIDResponse> DeleteQuoteLineWithQuoteIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineWithQuoteIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteQuoteLine", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineResponse> DeleteQuoteLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineResponse> DeleteQuoteLineAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoiceByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceByIDResponse> GetInvoiceByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoiceByIDResponse> GetInvoiceByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoiceByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceResponse> GetInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoiceResponse> GetInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoice_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoice_TypeDefinedResponse> GetInvoice_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoice_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoice_TypeDefinedResponse> GetInvoice_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoice_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/PrintInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintInvoiceResponse> PrintInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.PrintInvoiceResponse> PrintInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.PrintInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/EmailInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailInvoiceResponse> EmailInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.EmailInvoiceResponse> EmailInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.EmailInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoicesByDateRange", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesByDateRangeResponse> GetInvoicesByDateRangeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesByDateRangeRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicesByDateRangeResponse> GetInvoicesByDateRangeAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicesByDateRangeRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoicesForCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomerResponse> GetInvoicesForCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomerResponse> GetInvoicesForCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoices_Unpaid", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_UnpaidResponse> GetInvoices_UnpaidAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_UnpaidRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_UnpaidResponse> GetInvoices_UnpaidAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_UnpaidRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoices_Unpaid_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedResponse> GetInvoices_Unpaid_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedResponse> GetInvoices_Unpaid_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoices_Overdue", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_OverdueResponse> GetInvoices_OverdueAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_OverdueRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_OverdueResponse> GetInvoices_OverdueAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_OverdueRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoices_Overdue_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Overdue_TypeDefinedResponse> GetInvoices_Overdue_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Overdue_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Overdue_TypeDefinedResponse> GetInvoices_Overdue_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Overdue_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoices_Recent", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_RecentResponse> GetInvoices_RecentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_RecentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_RecentResponse> GetInvoices_RecentAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_RecentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoices_Recent_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Recent_TypeDefinedResponse> GetInvoices_Recent_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Recent_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Recent_TypeDefinedResponse> GetInvoices_Recent_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Recent_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoicesForCustomer_typeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomer_typeDefinedResponse> GetInvoicesForCustomer_typeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomer_typeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomer_typeDefinedResponse> GetInvoicesForCustomer_typeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomer_typeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceResponse> InsertInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceResponse> InsertInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertInvoice_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoice_TypeDefinedResponse> InsertInvoice_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoice_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoice_TypeDefinedResponse> InsertInvoice_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoice_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertInvoiceLine", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineResponse> InsertInvoiceLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineResponse> InsertInvoiceLineAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertInvoiceLineWithInvoiceNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberResponse> InsertInvoiceLineWithInvoiceNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberResponse> InsertInvoiceLineWithInvoiceNumberAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceResponse> UpdateInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceResponse> UpdateInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateInvoice_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoice_TypeDefinedResponse> UpdateInvoice_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoice_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateInvoice_TypeDefinedResponse> UpdateInvoice_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateInvoice_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateInvoiceHeader", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceHeaderResponse> UpdateInvoiceHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceHeaderRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceHeaderResponse> UpdateInvoiceHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceHeaderRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoicePayment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentResponse> GetInvoicePaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentResponse> GetInvoicePaymentAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertInvoicePayment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoicePaymentResponse> InsertInvoicePaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoicePaymentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoicePaymentResponse> InsertInvoicePaymentAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoicePaymentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteInvoicePayment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoicePaymentResponse> DeleteInvoicePaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoicePaymentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoicePaymentResponse> DeleteInvoicePaymentAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoicePaymentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/AllocateAdvancePaymentToInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToInvoiceResponse> AllocateAdvancePaymentToInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToInvoiceResponse> AllocateAdvancePaymentToInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteInvoice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceResponse> DeleteInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceResponse> DeleteInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteInvoiceByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceByIDResponse> DeleteInvoiceByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceByIDResponse> DeleteInvoiceByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteInvoiceLineWithInvoiceID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDResponse> DeleteInvoiceLineWithInvoiceIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDResponse> DeleteInvoiceLineWithInvoiceIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteInvoiceLine", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineResponse> DeleteInvoiceLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineResponse> DeleteInvoiceLineAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvPayMethods", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvPayMethodsResponse> GetInvPayMethodsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvPayMethodsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvPayMethodsResponse> GetInvPayMethodsAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvPayMethodsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetPaypalLink", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetPaypalLinkResponse> GetPaypalLinkAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetPaypalLinkRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetPaypalLinkResponse> GetPaypalLinkAsync(TipsTrade.KashFlow.KashFlowAPI.GetPaypalLinkRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertInvoiceNote", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceNoteResponse> InsertInvoiceNoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceNoteRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceNoteResponse> InsertInvoiceNoteAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceNoteRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoiceNotes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceNotesResponse> GetInvoiceNotesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceNotesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoiceNotesResponse> GetInvoiceNotesAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoiceNotesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoicePaymentsCountforDateRange", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsCountforDateRangeResponse> GetInvoicePaymentsCountforDateRangeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsCountforDateRangeRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsCountforDateRangeResponse> GetInvoicePaymentsCountforDateRangeAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsCountforDateRangeRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetInvoicePaymentsByDateRange", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsByDateRangeResponse> GetInvoicePaymentsByDateRangeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsByDateRangeRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsByDateRangeResponse> GetInvoicePaymentsByDateRangeAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsByDateRangeRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteReceipt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptResponse> DeleteReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptResponse> DeleteReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteReceiptByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptByIDResponse> DeleteReceiptByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptByIDResponse> DeleteReceiptByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteReceiptLine", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineResponse> DeleteReceiptLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineResponse> DeleteReceiptLineAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteReceiptLineWithReceiptID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineWithReceiptIDResponse> DeleteReceiptLineWithReceiptIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineWithReceiptIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineWithReceiptIDResponse> DeleteReceiptLineWithReceiptIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineWithReceiptIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceipt_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipt_TypeDefinedResponse> GetReceipt_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipt_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceipt_TypeDefinedResponse> GetReceipt_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceipt_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceipt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptResponse> GetReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptResponse> GetReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceipts_Recent", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipts_RecentResponse> GetReceipts_RecentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipts_RecentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceipts_RecentResponse> GetReceipts_RecentAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceipts_RecentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceipts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsResponse> GetReceiptsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptsResponse> GetReceiptsAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceiptsWithPaging", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsWithPagingResponse> GetReceiptsWithPagingAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsWithPagingRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptsWithPagingResponse> GetReceiptsWithPagingAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptsWithPagingRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceiptsForSupplier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsForSupplierResponse> GetReceiptsForSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsForSupplierRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptsForSupplierResponse> GetReceiptsForSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptsForSupplierRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertReceipt_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceipt_TypeDefinedResponse> InsertReceipt_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceipt_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceipt_TypeDefinedResponse> InsertReceipt_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceipt_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertReceipt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptResponse> InsertReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptResponse> InsertReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertReceiptLine", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineResponse> InsertReceiptLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineResponse> InsertReceiptLineAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertReceiptLineFromNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineFromNumberResponse> InsertReceiptLineFromNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineFromNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineFromNumberResponse> InsertReceiptLineFromNumberAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineFromNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/AllocateAdvancePaymentToReceipt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToReceiptResponse> AllocateAdvancePaymentToReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToReceiptRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToReceiptResponse> AllocateAdvancePaymentToReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToReceiptRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertReceiptPayment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptPaymentResponse> InsertReceiptPaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptPaymentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptPaymentResponse> InsertReceiptPaymentAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptPaymentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceiptPayment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptPaymentResponse> GetReceiptPaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptPaymentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptPaymentResponse> GetReceiptPaymentAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptPaymentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/DeleteReceiptPayment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptPaymentResponse> DeleteReceiptPaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptPaymentRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptPaymentResponse> DeleteReceiptPaymentAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptPaymentRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetRecPayMethods", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRecPayMethodsResponse> GetRecPayMethodsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRecPayMethodsRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetRecPayMethodsResponse> GetRecPayMethodsAsync(TipsTrade.KashFlow.KashFlowAPI.GetRecPayMethodsRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateReceipt_TypeDefined", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceipt_TypeDefinedResponse> UpdateReceipt_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceipt_TypeDefinedRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateReceipt_TypeDefinedResponse> UpdateReceipt_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateReceipt_TypeDefinedRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateReceipt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptResponse> UpdateReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptResponse> UpdateReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/UpdateReceiptHeader", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptHeaderResponse> UpdateReceiptHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptHeaderRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptHeaderResponse> UpdateReceiptHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptHeaderRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/PrintPurchaseOrder", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintPurchaseOrderResponse> PrintPurchaseOrderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintPurchaseOrderRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.PrintPurchaseOrderResponse> PrintPurchaseOrderAsync(TipsTrade.KashFlow.KashFlowAPI.PrintPurchaseOrderRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/EmailPurchaseOrder", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailPurchaseOrderResponse> EmailPurchaseOrderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailPurchaseOrderRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.EmailPurchaseOrderResponse> EmailPurchaseOrderAsync(TipsTrade.KashFlow.KashFlowAPI.EmailPurchaseOrderRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertReceiptNote", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptNoteResponse> InsertReceiptNoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptNoteRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptNoteResponse> InsertReceiptNoteAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptNoteRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetReceiptNotes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptNotesResponse> GetReceiptNotesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptNotesRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptNotesResponse> GetReceiptNotesAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptNotesRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerVATNumber", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerVATNumberResponse> GetCustomerVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerVATNumberRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerVATNumberResponse> GetCustomerVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerVATNumberRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerResponse> GetCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerResponse> GetCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerByID", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByIDResponse> GetCustomerByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByIDRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerByIDResponse> GetCustomerByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerByIDRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomerByEmail", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByEmailResponse> GetCustomerByEmailAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByEmailRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerByEmailResponse> GetCustomerByEmailAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerByEmailRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomersModifiedSince", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersModifiedSinceResponse> GetCustomersModifiedSinceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersModifiedSinceRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomersModifiedSinceResponse> GetCustomersModifiedSinceAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomersModifiedSinceRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/GetCustomers", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersResponse> GetCustomersAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomersResponse> GetCustomersAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomersRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="KashFlow/InsertCustomer", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(JournalLine))]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertCustomerResponse> InsertCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertCustomerRequest request);
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertCustomerResponse> InsertCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.InsertCustomerRequest request);
     }
     
     /// <remarks/>
@@ -7502,13 +7502,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer custr;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer custr;
         
         public UpdateCustomerRequest()
         {
         }
         
-        public UpdateCustomerRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer custr)
+        public UpdateCustomerRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Customer custr)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -7577,7 +7577,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer SearchCustomerByCustTextResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer SearchCustomerByCustTextResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -7589,7 +7589,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public SearchCustomerByCustTextResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer SearchCustomerByCustTextResult, string Status, string StatusDetail)
+        public SearchCustomerByCustTextResponse(TipsTrade.KashFlow.KashFlowAPI.Customer SearchCustomerByCustTextResult, string Status, string StatusDetail)
         {
             this.SearchCustomerByCustTextResult = SearchCustomerByCustTextResult;
             this.Status = Status;
@@ -7851,7 +7851,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetCustomerSourcesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetCustomerSourcesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -7863,7 +7863,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomerSourcesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetCustomerSourcesResult, string Status, string StatusDetail)
+        public GetCustomerSourcesResponse(TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetCustomerSourcesResult, string Status, string StatusDetail)
         {
             this.GetCustomerSourcesResult = GetCustomerSourcesResult;
             this.Status = Status;
@@ -7905,7 +7905,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersByPostcodeResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersByPostcodeResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -7917,7 +7917,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomersByPostcodeResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersByPostcodeResult, string Status, string StatusDetail)
+        public GetCustomersByPostcodeResponse(TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersByPostcodeResult, string Status, string StatusDetail)
         {
             this.GetCustomersByPostcodeResult = GetCustomersByPostcodeResult;
             this.Status = Status;
@@ -7959,7 +7959,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.CustomerBalance GetCustomerBalanceResult;
+        public TipsTrade.KashFlow.KashFlowAPI.CustomerBalance GetCustomerBalanceResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -7971,7 +7971,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomerBalanceResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.CustomerBalance GetCustomerBalanceResult, string Status, string StatusDetail)
+        public GetCustomerBalanceResponse(TipsTrade.KashFlow.KashFlowAPI.CustomerBalance GetCustomerBalanceResult, string Status, string StatusDetail)
         {
             this.GetCustomerBalanceResult = GetCustomerBalanceResult;
             this.Status = Status;
@@ -8013,7 +8013,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[] GetCustomerAdvancePaymentsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetCustomerAdvancePaymentsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8025,7 +8025,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomerAdvancePaymentsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[] GetCustomerAdvancePaymentsResult, string Status, string StatusDetail)
+        public GetCustomerAdvancePaymentsResponse(TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetCustomerAdvancePaymentsResult, string Status, string StatusDetail)
         {
             this.GetCustomerAdvancePaymentsResult = GetCustomerAdvancePaymentsResult;
             this.Status = Status;
@@ -8046,13 +8046,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project Project;
+        public TipsTrade.KashFlow.KashFlowAPI.Project Project;
         
         public InsertOrUpdateProjectRequest()
         {
         }
         
-        public InsertOrUpdateProjectRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Project Project)
+        public InsertOrUpdateProjectRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Project Project)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -8121,7 +8121,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project[] GetProjects_FullResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Project[] GetProjects_FullResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8133,7 +8133,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProjects_FullResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Project[] GetProjects_FullResult, string Status, string StatusDetail)
+        public GetProjects_FullResponse(TipsTrade.KashFlow.KashFlowAPI.Project[] GetProjects_FullResult, string Status, string StatusDetail)
         {
             this.GetProjects_FullResult = GetProjects_FullResult;
             this.Status = Status;
@@ -8171,7 +8171,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetProjectsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetProjectsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8183,7 +8183,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProjectsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetProjectsResult, string Status, string StatusDetail)
+        public GetProjectsResponse(TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetProjectsResult, string Status, string StatusDetail)
         {
             this.GetProjectsResult = GetProjectsResult;
             this.Status = Status;
@@ -8225,7 +8225,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByIdResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByIdResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8237,7 +8237,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProjectByIdResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByIdResult, string Status, string StatusDetail)
+        public GetProjectByIdResponse(TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByIdResult, string Status, string StatusDetail)
         {
             this.GetProjectByIdResult = GetProjectByIdResult;
             this.Status = Status;
@@ -8279,7 +8279,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByRefResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByRefResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8291,7 +8291,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProjectByRefResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByRefResult, string Status, string StatusDetail)
+        public GetProjectByRefResponse(TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByRefResult, string Status, string StatusDetail)
         {
             this.GetProjectByRefResult = GetProjectByRefResult;
             this.Status = Status;
@@ -8333,7 +8333,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByNameResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByNameResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8345,7 +8345,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProjectByNameResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByNameResult, string Status, string StatusDetail)
+        public GetProjectByNameResponse(TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByNameResult, string Status, string StatusDetail)
         {
             this.GetProjectByNameResult = GetProjectByNameResult;
             this.Status = Status;
@@ -8366,13 +8366,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier supl;
+        public TipsTrade.KashFlow.KashFlowAPI.Supplier supl;
         
         public InsertSupplierRequest()
         {
         }
         
-        public InsertSupplierRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier supl)
+        public InsertSupplierRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Supplier supl)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -8495,7 +8495,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier GetSupplierResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplierResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8507,7 +8507,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetSupplierResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier GetSupplierResult, string Status, string StatusDetail)
+        public GetSupplierResponse(TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplierResult, string Status, string StatusDetail)
         {
             this.GetSupplierResult = GetSupplierResult;
             this.Status = Status;
@@ -8545,7 +8545,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier[] GetSuppliersResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Supplier[] GetSuppliersResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8557,7 +8557,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetSuppliersResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier[] GetSuppliersResult, string Status, string StatusDetail)
+        public GetSuppliersResponse(TipsTrade.KashFlow.KashFlowAPI.Supplier[] GetSuppliersResult, string Status, string StatusDetail)
         {
             this.GetSuppliersResult = GetSuppliersResult;
             this.Status = Status;
@@ -8578,13 +8578,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier sup;
+        public TipsTrade.KashFlow.KashFlowAPI.Supplier sup;
         
         public UpdateSupplierRequest()
         {
         }
         
-        public UpdateSupplierRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier sup)
+        public UpdateSupplierRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Supplier sup)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -8819,7 +8819,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier GetSupplierByIDResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplierByIDResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -8831,7 +8831,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetSupplierByIDResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier GetSupplierByIDResult, string Status, string StatusDetail)
+        public GetSupplierByIDResponse(TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplierByIDResult, string Status, string StatusDetail)
         {
             this.GetSupplierByIDResult = GetSupplierByIDResult;
             this.Status = Status;
@@ -9039,7 +9039,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankAccount[] GetBankAccountsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BankAccount[] GetBankAccountsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9051,7 +9051,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetBankAccountsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BankAccount[] GetBankAccountsResult, string Status, string StatusDetail)
+        public GetBankAccountsResponse(TipsTrade.KashFlow.KashFlowAPI.BankAccount[] GetBankAccountsResult, string Status, string StatusDetail)
         {
             this.GetBankAccountsResult = GetBankAccountsResult;
             this.Status = Status;
@@ -9089,7 +9089,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTXType[] GetBankTxTypesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BankTXType[] GetBankTxTypesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9101,7 +9101,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetBankTxTypesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTXType[] GetBankTxTypesResult, string Status, string StatusDetail)
+        public GetBankTxTypesResponse(TipsTrade.KashFlow.KashFlowAPI.BankTXType[] GetBankTxTypesResult, string Status, string StatusDetail)
         {
             this.GetBankTxTypesResult = GetBankTxTypesResult;
             this.Status = Status;
@@ -9143,7 +9143,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[] GetBankTransactionsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetBankTransactionsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9155,7 +9155,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetBankTransactionsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[] GetBankTransactionsResult, string Status, string StatusDetail)
+        public GetBankTransactionsResponse(TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetBankTransactionsResult, string Status, string StatusDetail)
         {
             this.GetBankTransactionsResult = GetBankTransactionsResult;
             this.Status = Status;
@@ -9176,13 +9176,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction bp;
+        public TipsTrade.KashFlow.KashFlowAPI.BankTransaction bp;
         
         public InsertBankTransactionRequest()
         {
         }
         
-        public InsertBankTransactionRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction bp)
+        public InsertBankTransactionRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.BankTransaction bp)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -9230,7 +9230,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction bp;
+        public TipsTrade.KashFlow.KashFlowAPI.BankTransaction bp;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=3)]
         public int TransactionID;
@@ -9239,7 +9239,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public UpdateBankTransactionRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction bp, int TransactionID)
+        public UpdateBankTransactionRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.BankTransaction bp, int TransactionID)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -9363,7 +9363,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BalanceSheet GetBalanceSheetResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BalanceSheet GetBalanceSheetResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9375,7 +9375,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetBalanceSheetResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BalanceSheet GetBalanceSheetResult, string Status, string StatusDetail)
+        public GetBalanceSheetResponse(TipsTrade.KashFlow.KashFlowAPI.BalanceSheet GetBalanceSheetResult, string Status, string StatusDetail)
         {
             this.GetBalanceSheetResult = GetBalanceSheetResult;
             this.Status = Status;
@@ -9421,7 +9421,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.ProfitAndLoss GetProfitAndLossResult;
+        public TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss GetProfitAndLossResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9433,7 +9433,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProfitAndLossResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.ProfitAndLoss GetProfitAndLossResult, string Status, string StatusDetail)
+        public GetProfitAndLossResponse(TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss GetProfitAndLossResult, string Status, string StatusDetail)
         {
             this.GetProfitAndLossResult = GetProfitAndLossResult;
             this.Status = Status;
@@ -9479,7 +9479,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLossResult;
+        public TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLossResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9491,7 +9491,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetMonthlyProfitAndLossResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLossResult, string Status, string StatusDetail)
+        public GetMonthlyProfitAndLossResponse(TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLossResult, string Status, string StatusDetail)
         {
             this.GetMonthlyProfitAndLossResult = GetMonthlyProfitAndLossResult;
             this.Status = Status;
@@ -9537,7 +9537,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[] GetTrialBalanceResult;
+        public TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetTrialBalanceResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9549,7 +9549,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetTrialBalanceResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[] GetTrialBalanceResult, string Status, string StatusDetail)
+        public GetTrialBalanceResponse(TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetTrialBalanceResult, string Status, string StatusDetail)
         {
             this.GetTrialBalanceResult = GetTrialBalanceResult;
             this.Status = Status;
@@ -9595,7 +9595,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalancesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalancesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9607,7 +9607,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetTrialBalanceWithOpeningBalancesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalancesResult, string Status, string StatusDetail)
+        public GetTrialBalanceWithOpeningBalancesResponse(TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalancesResult, string Status, string StatusDetail)
         {
             this.GetTrialBalanceWithOpeningBalancesResult = GetTrialBalanceWithOpeningBalancesResult;
             this.Status = Status;
@@ -9653,7 +9653,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.VATReport GetVATReportResult;
+        public TipsTrade.KashFlow.KashFlowAPI.VATReport GetVATReportResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9665,7 +9665,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetVATReportResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.VATReport GetVATReportResult, string Status, string StatusDetail)
+        public GetVATReportResponse(TipsTrade.KashFlow.KashFlowAPI.VATReport GetVATReportResult, string Status, string StatusDetail)
         {
             this.GetVATReportResult = GetVATReportResult;
             this.Status = Status;
@@ -9773,7 +9773,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.TransactionInformation[] GetNominalLedgerResult;
+        public TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[] GetNominalLedgerResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9785,7 +9785,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetNominalLedgerResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.TransactionInformation[] GetNominalLedgerResult, string Status, string StatusDetail)
+        public GetNominalLedgerResponse(TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[] GetNominalLedgerResult, string Status, string StatusDetail)
         {
             this.GetNominalLedgerResult = GetNominalLedgerResult;
             this.Status = Status;
@@ -9827,7 +9827,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtorsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtorsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9839,7 +9839,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetAgedDebtorsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtorsResult, string Status, string StatusDetail)
+        public GetAgedDebtorsResponse(TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtorsResult, string Status, string StatusDetail)
         {
             this.GetAgedDebtorsResult = GetAgedDebtorsResult;
             this.Status = Status;
@@ -9881,7 +9881,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditorsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditorsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9893,7 +9893,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetAgedCreditorsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditorsResult, string Status, string StatusDetail)
+        public GetAgedCreditorsResponse(TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditorsResult, string Status, string StatusDetail)
         {
             this.GetAgedCreditorsResult = GetAgedCreditorsResult;
             this.Status = Status;
@@ -9943,7 +9943,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetIncomeByCustomerResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetIncomeByCustomerResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -9955,7 +9955,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetIncomeByCustomerResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetIncomeByCustomerResult, string Status, string StatusDetail)
+        public GetIncomeByCustomerResponse(TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetIncomeByCustomerResult, string Status, string StatusDetail)
         {
             this.GetIncomeByCustomerResult = GetIncomeByCustomerResult;
             this.Status = Status;
@@ -9976,13 +9976,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry Jnl;
+        public TipsTrade.KashFlow.KashFlowAPI.JournalEntry Jnl;
         
         public InsertJournalRequest()
         {
         }
         
-        public InsertJournalRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry Jnl)
+        public InsertJournalRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.JournalEntry Jnl)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -10030,13 +10030,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry Jnl;
+        public TipsTrade.KashFlow.KashFlowAPI.JournalEntry Jnl;
         
         public UpdateJournalRequest()
         {
         }
         
-        public UpdateJournalRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry Jnl)
+        public UpdateJournalRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.JournalEntry Jnl)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -10084,13 +10084,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry Jnl;
+        public TipsTrade.KashFlow.KashFlowAPI.JournalEntry Jnl;
         
         public UpdateJournalHeaderRequest()
         {
         }
         
-        public UpdateJournalHeaderRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry Jnl)
+        public UpdateJournalHeaderRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.JournalEntry Jnl)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -10155,7 +10155,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry[] GetJournalsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.JournalEntry[] GetJournalsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10167,7 +10167,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetJournalsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry[] GetJournalsResult, string Status, string StatusDetail)
+        public GetJournalsResponse(TipsTrade.KashFlow.KashFlowAPI.JournalEntry[] GetJournalsResult, string Status, string StatusDetail)
         {
             this.GetJournalsResult = GetJournalsResult;
             this.Status = Status;
@@ -10209,7 +10209,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry GetJournalResult;
+        public TipsTrade.KashFlow.KashFlowAPI.JournalEntry GetJournalResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10221,7 +10221,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetJournalResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry GetJournalResult, string Status, string StatusDetail)
+        public GetJournalResponse(TipsTrade.KashFlow.KashFlowAPI.JournalEntry GetJournalResult, string Status, string StatusDetail)
         {
             this.GetJournalResult = GetJournalResult;
             this.Status = Status;
@@ -10372,7 +10372,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] VCFToCustomerObjectsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer[] VCFToCustomerObjectsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10384,7 +10384,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public VCFToCustomerObjectsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] VCFToCustomerObjectsResult, string Status, string StatusDetail)
+        public VCFToCustomerObjectsResponse(TipsTrade.KashFlow.KashFlowAPI.Customer[] VCFToCustomerObjectsResult, string Status, string StatusDetail)
         {
             this.VCFToCustomerObjectsResult = VCFToCustomerObjectsResult;
             this.Status = Status;
@@ -10422,7 +10422,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankOverview[] GetBankOverviewResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BankOverview[] GetBankOverviewResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10434,7 +10434,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetBankOverviewResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BankOverview[] GetBankOverviewResult, string Status, string StatusDetail)
+        public GetBankOverviewResponse(TipsTrade.KashFlow.KashFlowAPI.BankOverview[] GetBankOverviewResult, string Status, string StatusDetail)
         {
             this.GetBankOverviewResult = GetBankOverviewResult;
             this.Status = Status;
@@ -10472,7 +10472,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.AccountOverview GetAccountOverviewResult;
+        public TipsTrade.KashFlow.KashFlowAPI.AccountOverview GetAccountOverviewResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10484,7 +10484,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetAccountOverviewResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.AccountOverview GetAccountOverviewResult, string Status, string StatusDetail)
+        public GetAccountOverviewResponse(TipsTrade.KashFlow.KashFlowAPI.AccountOverview GetAccountOverviewResult, string Status, string StatusDetail)
         {
             this.GetAccountOverviewResult = GetAccountOverviewResult;
             this.Status = Status;
@@ -10522,7 +10522,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Currencies[] GetCurrenciesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Currencies[] GetCurrenciesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10534,7 +10534,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCurrenciesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Currencies[] GetCurrenciesResult, string Status, string StatusDetail)
+        public GetCurrenciesResponse(TipsTrade.KashFlow.KashFlowAPI.Currencies[] GetCurrenciesResult, string Status, string StatusDetail)
         {
             this.GetCurrenciesResult = GetCurrenciesResult;
             this.Status = Status;
@@ -10572,7 +10572,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults GetUserAccountDefaultsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults GetUserAccountDefaultsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10584,7 +10584,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetUserAccountDefaultsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults GetUserAccountDefaultsResult, string Status, string StatusDetail)
+        public GetUserAccountDefaultsResponse(TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults GetUserAccountDefaultsResult, string Status, string StatusDetail)
         {
             this.GetUserAccountDefaultsResult = GetUserAccountDefaultsResult;
             this.Status = Status;
@@ -10622,7 +10622,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10634,7 +10634,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetUserAccountDefaults_TypeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefinedResult, string Status, string StatusDetail)
+        public GetUserAccountDefaults_TypeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefinedResult, string Status, string StatusDetail)
         {
             this.GetUserAccountDefaults_TypeDefinedResult = GetUserAccountDefaults_TypeDefinedResult;
             this.Status = Status;
@@ -10750,7 +10750,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachmentsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachmentsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -10762,7 +10762,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptAttachmentsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachmentsResult, string Status, string StatusDetail)
+        public GetReceiptAttachmentsResponse(TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachmentsResult, string Status, string StatusDetail)
         {
             this.GetReceiptAttachmentsResult = GetReceiptAttachmentsResult;
             this.Status = Status;
@@ -11143,7 +11143,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Product[] GetProductsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Product[] GetProductsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11155,7 +11155,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProductsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Product[] GetProductsResult, string Status, string StatusDetail)
+        public GetProductsResponse(TipsTrade.KashFlow.KashFlowAPI.Product[] GetProductsResult, string Status, string StatusDetail)
         {
             this.GetProductsResult = GetProductsResult;
             this.Status = Status;
@@ -11176,13 +11176,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct sp;
+        public TipsTrade.KashFlow.KashFlowAPI.SubProduct sp;
         
         public AddOrUpdateSubProductRequest()
         {
         }
         
-        public AddOrUpdateSubProductRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct sp)
+        public AddOrUpdateSubProductRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.SubProduct sp)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -11251,7 +11251,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct[] GetSubProductsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.SubProduct[] GetSubProductsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11263,7 +11263,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetSubProductsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct[] GetSubProductsResult, string Status, string StatusDetail)
+        public GetSubProductsResponse(TipsTrade.KashFlow.KashFlowAPI.SubProduct[] GetSubProductsResult, string Status, string StatusDetail)
         {
             this.GetSubProductsResult = GetSubProductsResult;
             this.Status = Status;
@@ -11305,7 +11305,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct GetSubProductByIDResult;
+        public TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByIDResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11317,7 +11317,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetSubProductByIDResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct GetSubProductByIDResult, string Status, string StatusDetail)
+        public GetSubProductByIDResponse(TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByIDResult, string Status, string StatusDetail)
         {
             this.GetSubProductByIDResult = GetSubProductByIDResult;
             this.Status = Status;
@@ -11359,7 +11359,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct GetSubProductByCodeResult;
+        public TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByCodeResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11371,7 +11371,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetSubProductByCodeResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct GetSubProductByCodeResult, string Status, string StatusDetail)
+        public GetSubProductByCodeResponse(TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByCodeResult, string Status, string StatusDetail)
         {
             this.GetSubProductByCodeResult = GetSubProductByCodeResult;
             this.Status = Status;
@@ -11409,7 +11409,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.ProductsFull[] GetProductsWithSubProductsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.ProductsFull[] GetProductsWithSubProductsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11421,7 +11421,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetProductsWithSubProductsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.ProductsFull[] GetProductsWithSubProductsResult, string Status, string StatusDetail)
+        public GetProductsWithSubProductsResponse(TipsTrade.KashFlow.KashFlowAPI.ProductsFull[] GetProductsWithSubProductsResult, string Status, string StatusDetail)
         {
             this.GetProductsWithSubProductsResult = GetProductsWithSubProductsResult;
             this.Status = Status;
@@ -11459,7 +11459,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[] GetNominalCodesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetNominalCodesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11471,7 +11471,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetNominalCodesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[] GetNominalCodesResult, string Status, string StatusDetail)
+        public GetNominalCodesResponse(TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetNominalCodesResult, string Status, string StatusDetail)
         {
             this.GetNominalCodesResult = GetNominalCodesResult;
             this.Status = Status;
@@ -11575,7 +11575,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtendedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtendedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11587,7 +11587,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetNominalCodesExtendedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtendedResult, string Status, string StatusDetail)
+        public GetNominalCodesExtendedResponse(TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtendedResult, string Status, string StatusDetail)
         {
             this.GetNominalCodesExtendedResult = GetNominalCodesExtendedResult;
             this.Status = Status;
@@ -11641,7 +11641,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetKPIsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetKPIsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11653,7 +11653,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetKPIsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetKPIsResult, string Status, string StatusDetail)
+        public GetKPIsResponse(TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetKPIsResult, string Status, string StatusDetail)
         {
             this.GetKPIsResult = GetKPIsResult;
             this.Status = Status;
@@ -11691,7 +11691,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetVATRatesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetVATRatesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11703,7 +11703,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetVATRatesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetVATRatesResult, string Status, string StatusDetail)
+        public GetVATRatesResponse(TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetVATRatesResult, string Status, string StatusDetail)
         {
             this.GetVATRatesResult = GetVATRatesResult;
             this.Status = Status;
@@ -11741,7 +11741,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.CompanyDetails GetCompanyDetailsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.CompanyDetails GetCompanyDetailsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -11753,7 +11753,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCompanyDetailsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.CompanyDetails GetCompanyDetailsResult, string Status, string StatusDetail)
+        public GetCompanyDetailsResponse(TipsTrade.KashFlow.KashFlowAPI.CompanyDetails GetCompanyDetailsResult, string Status, string StatusDetail)
         {
             this.GetCompanyDetailsResult = GetCompanyDetailsResult;
             this.Status = Status;
@@ -11869,13 +11869,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Quote;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Quote;
         
         public InsertQuoteRequest()
         {
         }
         
-        public InsertQuoteRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Quote)
+        public InsertQuoteRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Quote)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -11926,13 +11926,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public int QuoteID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=3)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine QuoteLine;
+        public TipsTrade.KashFlow.KashFlowAPI.InvoiceLine QuoteLine;
         
         public InsertQuoteLineRequest()
         {
         }
         
-        public InsertQuoteLineRequest(string UserName, string Password, int QuoteID, net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine QuoteLine)
+        public InsertQuoteLineRequest(string UserName, string Password, int QuoteID, TipsTrade.KashFlow.KashFlowAPI.InvoiceLine QuoteLine)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -12002,7 +12002,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetQuoteByIDResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByIDResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12014,7 +12014,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetQuoteByIDResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetQuoteByIDResult, string Status, string StatusDetail)
+        public GetQuoteByIDResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByIDResult, string Status, string StatusDetail)
         {
             this.GetQuoteByIDResult = GetQuoteByIDResult;
             this.Status = Status;
@@ -12056,7 +12056,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetQuoteByNumberResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByNumberResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12068,7 +12068,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetQuoteByNumberResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetQuoteByNumberResult, string Status, string StatusDetail)
+        public GetQuoteByNumberResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByNumberResult, string Status, string StatusDetail)
         {
             this.GetQuoteByNumberResult = GetQuoteByNumberResult;
             this.Status = Status;
@@ -12110,7 +12110,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotes_RecentResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotes_RecentResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12122,7 +12122,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetQuotes_RecentResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotes_RecentResult, string Status, string StatusDetail)
+        public GetQuotes_RecentResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotes_RecentResult, string Status, string StatusDetail)
         {
             this.GetQuotes_RecentResult = GetQuotes_RecentResult;
             this.Status = Status;
@@ -12160,7 +12160,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12172,7 +12172,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetQuotesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotesResult, string Status, string StatusDetail)
+        public GetQuotesResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotesResult, string Status, string StatusDetail)
         {
             this.GetQuotesResult = GetQuotesResult;
             this.Status = Status;
@@ -12214,7 +12214,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotesForCustomerResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotesForCustomerResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12226,7 +12226,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetQuotesForCustomerResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotesForCustomerResult, string Status, string StatusDetail)
+        public GetQuotesForCustomerResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotesForCustomerResult, string Status, string StatusDetail)
         {
             this.GetQuotesForCustomerResult = GetQuotesForCustomerResult;
             this.Status = Status;
@@ -12280,7 +12280,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice ConvertQuoteToInvoiceResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice ConvertQuoteToInvoiceResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12292,7 +12292,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public ConvertQuoteToInvoiceResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice ConvertQuoteToInvoiceResult, string Status, string StatusDetail)
+        public ConvertQuoteToInvoiceResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice ConvertQuoteToInvoiceResult, string Status, string StatusDetail)
         {
             this.ConvertQuoteToInvoiceResult = ConvertQuoteToInvoiceResult;
             this.Status = Status;
@@ -12425,13 +12425,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Quote;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Quote;
         
         public UpdateQuoteRequest()
         {
         }
         
-        public UpdateQuoteRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Quote)
+        public UpdateQuoteRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Quote)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -12479,13 +12479,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Quote;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Quote;
         
         public UpdateQuoteHeaderRequest()
         {
         }
         
-        public UpdateQuoteHeaderRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Quote)
+        public UpdateQuoteHeaderRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Quote)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -12778,7 +12778,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetInvoiceByIDResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoiceByIDResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12790,7 +12790,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoiceByIDResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetInvoiceByIDResult, string Status, string StatusDetail)
+        public GetInvoiceByIDResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoiceByIDResult, string Status, string StatusDetail)
         {
             this.GetInvoiceByIDResult = GetInvoiceByIDResult;
             this.Status = Status;
@@ -12832,7 +12832,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetInvoiceResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoiceResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12844,7 +12844,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoiceResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetInvoiceResult, string Status, string StatusDetail)
+        public GetInvoiceResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoiceResult, string Status, string StatusDetail)
         {
             this.GetInvoiceResult = GetInvoiceResult;
             this.Status = Status;
@@ -12886,7 +12886,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -12898,7 +12898,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoice_TypeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefinedResult, string Status, string StatusDetail)
+        public GetInvoice_TypeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefinedResult, string Status, string StatusDetail)
         {
             this.GetInvoice_TypeDefinedResult = GetInvoice_TypeDefinedResult;
             this.Status = Status;
@@ -13072,7 +13072,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoicesByDateRangeResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesByDateRangeResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13084,7 +13084,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoicesByDateRangeResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoicesByDateRangeResult, string Status, string StatusDetail)
+        public GetInvoicesByDateRangeResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesByDateRangeResult, string Status, string StatusDetail)
         {
             this.GetInvoicesByDateRangeResult = GetInvoicesByDateRangeResult;
             this.Status = Status;
@@ -13126,7 +13126,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoicesForCustomerResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesForCustomerResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13138,7 +13138,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoicesForCustomerResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoicesForCustomerResult, string Status, string StatusDetail)
+        public GetInvoicesForCustomerResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesForCustomerResult, string Status, string StatusDetail)
         {
             this.GetInvoicesForCustomerResult = GetInvoicesForCustomerResult;
             this.Status = Status;
@@ -13176,7 +13176,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_UnpaidResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_UnpaidResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13188,7 +13188,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoices_UnpaidResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_UnpaidResult, string Status, string StatusDetail)
+        public GetInvoices_UnpaidResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_UnpaidResult, string Status, string StatusDetail)
         {
             this.GetInvoices_UnpaidResult = GetInvoices_UnpaidResult;
             this.Status = Status;
@@ -13226,7 +13226,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13238,7 +13238,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoices_Unpaid_TypeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefinedResult, string Status, string StatusDetail)
+        public GetInvoices_Unpaid_TypeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefinedResult, string Status, string StatusDetail)
         {
             this.GetInvoices_Unpaid_TypeDefinedResult = GetInvoices_Unpaid_TypeDefinedResult;
             this.Status = Status;
@@ -13276,7 +13276,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_OverdueResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_OverdueResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13288,7 +13288,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoices_OverdueResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_OverdueResult, string Status, string StatusDetail)
+        public GetInvoices_OverdueResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_OverdueResult, string Status, string StatusDetail)
         {
             this.GetInvoices_OverdueResult = GetInvoices_OverdueResult;
             this.Status = Status;
@@ -13326,7 +13326,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13338,7 +13338,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoices_Overdue_TypeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefinedResult, string Status, string StatusDetail)
+        public GetInvoices_Overdue_TypeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefinedResult, string Status, string StatusDetail)
         {
             this.GetInvoices_Overdue_TypeDefinedResult = GetInvoices_Overdue_TypeDefinedResult;
             this.Status = Status;
@@ -13380,7 +13380,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_RecentResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_RecentResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13392,7 +13392,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoices_RecentResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_RecentResult, string Status, string StatusDetail)
+        public GetInvoices_RecentResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_RecentResult, string Status, string StatusDetail)
         {
             this.GetInvoices_RecentResult = GetInvoices_RecentResult;
             this.Status = Status;
@@ -13434,7 +13434,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13446,7 +13446,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoices_Recent_TypeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefinedResult, string Status, string StatusDetail)
+        public GetInvoices_Recent_TypeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefinedResult, string Status, string StatusDetail)
         {
             this.GetInvoices_Recent_TypeDefinedResult = GetInvoices_Recent_TypeDefinedResult;
             this.Status = Status;
@@ -13488,7 +13488,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13500,7 +13500,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoicesForCustomer_typeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefinedResult, string Status, string StatusDetail)
+        public GetInvoicesForCustomer_typeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefinedResult, string Status, string StatusDetail)
         {
             this.GetInvoicesForCustomer_typeDefinedResult = GetInvoicesForCustomer_typeDefinedResult;
             this.Status = Status;
@@ -13521,13 +13521,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Inv;
         
         public InsertInvoiceRequest()
         {
         }
         
-        public InsertInvoiceRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv)
+        public InsertInvoiceRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Inv)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13575,13 +13575,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined Inv_TD;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined Inv_TD;
         
         public InsertInvoice_TypeDefinedRequest()
         {
         }
         
-        public InsertInvoice_TypeDefinedRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined Inv_TD)
+        public InsertInvoice_TypeDefinedRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined Inv_TD)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13632,13 +13632,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public int InvoiceID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=3)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine;
+        public TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine;
         
         public InsertInvoiceLineRequest()
         {
         }
         
-        public InsertInvoiceLineRequest(string UserName, string Password, int InvoiceID, net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine)
+        public InsertInvoiceLineRequest(string UserName, string Password, int InvoiceID, TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13690,13 +13690,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public int InvoiceNumber;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=3)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine;
+        public TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine;
         
         public InsertInvoiceLineWithInvoiceNumberRequest()
         {
         }
         
-        public InsertInvoiceLineWithInvoiceNumberRequest(string UserName, string Password, int InvoiceNumber, net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine)
+        public InsertInvoiceLineWithInvoiceNumberRequest(string UserName, string Password, int InvoiceNumber, TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13745,13 +13745,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Inv;
         
         public UpdateInvoiceRequest()
         {
         }
         
-        public UpdateInvoiceRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv)
+        public UpdateInvoiceRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Inv)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13795,13 +13795,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined InvTD;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined InvTD;
         
         public UpdateInvoice_TypeDefinedRequest()
         {
         }
         
-        public UpdateInvoice_TypeDefinedRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined InvTD)
+        public UpdateInvoice_TypeDefinedRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined InvTD)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13845,13 +13845,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Inv;
         
         public UpdateInvoiceHeaderRequest()
         {
         }
         
-        public UpdateInvoiceHeaderRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv)
+        public UpdateInvoiceHeaderRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Inv)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -13916,7 +13916,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetInvoicePaymentResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePaymentResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -13928,7 +13928,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoicePaymentResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetInvoicePaymentResult, string Status, string StatusDetail)
+        public GetInvoicePaymentResponse(TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePaymentResult, string Status, string StatusDetail)
         {
             this.GetInvoicePaymentResult = GetInvoicePaymentResult;
             this.Status = Status;
@@ -13949,13 +13949,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment InvoicePayment;
+        public TipsTrade.KashFlow.KashFlowAPI.Payment InvoicePayment;
         
         public InsertInvoicePaymentRequest()
         {
         }
         
-        public InsertInvoicePaymentRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment InvoicePayment)
+        public InsertInvoicePaymentRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Payment InvoicePayment)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -14352,7 +14352,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[] GetInvPayMethodsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetInvPayMethodsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -14364,7 +14364,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvPayMethodsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[] GetInvPayMethodsResult, string Status, string StatusDetail)
+        public GetInvPayMethodsResponse(TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetInvPayMethodsResult, string Status, string StatusDetail)
         {
             this.GetInvPayMethodsResult = GetInvPayMethodsResult;
             this.Status = Status;
@@ -14522,7 +14522,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceNotes[] GetInvoiceNotesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[] GetInvoiceNotesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -14534,7 +14534,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoiceNotesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceNotes[] GetInvoiceNotesResult, string Status, string StatusDetail)
+        public GetInvoiceNotesResponse(TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[] GetInvoiceNotesResult, string Status, string StatusDetail)
         {
             this.GetInvoiceNotesResult = GetInvoiceNotesResult;
             this.Status = Status;
@@ -14642,7 +14642,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRangeResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRangeResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -14654,7 +14654,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetInvoicePaymentsByDateRangeResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRangeResult, string Status, string StatusDetail)
+        public GetInvoicePaymentsByDateRangeResponse(TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRangeResult, string Status, string StatusDetail)
         {
             this.GetInvoicePaymentsByDateRangeResult = GetInvoicePaymentsByDateRangeResult;
             this.Status = Status;
@@ -14920,7 +14920,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefinedResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefinedResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -14932,7 +14932,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceipt_TypeDefinedResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefinedResult, string Status, string StatusDetail)
+        public GetReceipt_TypeDefinedResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefinedResult, string Status, string StatusDetail)
         {
             this.GetReceipt_TypeDefinedResult = GetReceipt_TypeDefinedResult;
             this.Status = Status;
@@ -14974,7 +14974,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetReceiptResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice GetReceiptResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -14986,7 +14986,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetReceiptResult, string Status, string StatusDetail)
+        public GetReceiptResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice GetReceiptResult, string Status, string StatusDetail)
         {
             this.GetReceiptResult = GetReceiptResult;
             this.Status = Status;
@@ -15028,7 +15028,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceipts_RecentResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceipts_RecentResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -15040,7 +15040,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceipts_RecentResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceipts_RecentResult, string Status, string StatusDetail)
+        public GetReceipts_RecentResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceipts_RecentResult, string Status, string StatusDetail)
         {
             this.GetReceipts_RecentResult = GetReceipts_RecentResult;
             this.Status = Status;
@@ -15078,7 +15078,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -15090,7 +15090,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsResult, string Status, string StatusDetail)
+        public GetReceiptsResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsResult, string Status, string StatusDetail)
         {
             this.GetReceiptsResult = GetReceiptsResult;
             this.Status = Status;
@@ -15140,7 +15140,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsWithPagingResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsWithPagingResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -15161,7 +15161,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptsWithPagingResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsWithPagingResult, string Status, string StatusDetail, int PageNumber, int TotalPages, int TotalRecords)
+        public GetReceiptsWithPagingResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsWithPagingResult, string Status, string StatusDetail, int PageNumber, int TotalPages, int TotalRecords)
         {
             this.GetReceiptsWithPagingResult = GetReceiptsWithPagingResult;
             this.Status = Status;
@@ -15206,7 +15206,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsForSupplierResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsForSupplierResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -15218,7 +15218,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptsForSupplierResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsForSupplierResult, string Status, string StatusDetail)
+        public GetReceiptsForSupplierResponse(TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsForSupplierResult, string Status, string StatusDetail)
         {
             this.GetReceiptsForSupplierResult = GetReceiptsForSupplierResult;
             this.Status = Status;
@@ -15239,13 +15239,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined Inv_TD;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined Inv_TD;
         
         public InsertReceipt_TypeDefinedRequest()
         {
         }
         
-        public InsertReceipt_TypeDefinedRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined Inv_TD)
+        public InsertReceipt_TypeDefinedRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined Inv_TD)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15293,13 +15293,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Inv;
         
         public InsertReceiptRequest()
         {
         }
         
-        public InsertReceiptRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Inv)
+        public InsertReceiptRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Inv)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15350,13 +15350,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public int ReceiptID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=3)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine;
+        public TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine;
         
         public InsertReceiptLineRequest()
         {
         }
         
-        public InsertReceiptLineRequest(string UserName, string Password, int ReceiptID, net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine)
+        public InsertReceiptLineRequest(string UserName, string Password, int ReceiptID, TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15408,13 +15408,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public int ReceiptNumber;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=3)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine;
+        public TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine;
         
         public InsertReceiptLineFromNumberRequest()
         {
         }
         
-        public InsertReceiptLineFromNumberRequest(string UserName, string Password, int ReceiptNumber, net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceLine InvLine)
+        public InsertReceiptLineFromNumberRequest(string UserName, string Password, int ReceiptNumber, TipsTrade.KashFlow.KashFlowAPI.InvoiceLine InvLine)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15521,13 +15521,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment ReceiptPayment;
+        public TipsTrade.KashFlow.KashFlowAPI.Payment ReceiptPayment;
         
         public InsertReceiptPaymentRequest()
         {
         }
         
-        public InsertReceiptPaymentRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment ReceiptPayment)
+        public InsertReceiptPaymentRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Payment ReceiptPayment)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15596,7 +15596,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetReceiptPaymentResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetReceiptPaymentResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -15608,7 +15608,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptPaymentResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetReceiptPaymentResult, string Status, string StatusDetail)
+        public GetReceiptPaymentResponse(TipsTrade.KashFlow.KashFlowAPI.Payment[] GetReceiptPaymentResult, string Status, string StatusDetail)
         {
             this.GetReceiptPaymentResult = GetReceiptPaymentResult;
             this.Status = Status;
@@ -15700,7 +15700,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[] GetRecPayMethodsResult;
+        public TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetRecPayMethodsResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -15712,7 +15712,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetRecPayMethodsResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[] GetRecPayMethodsResult, string Status, string StatusDetail)
+        public GetRecPayMethodsResponse(TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetRecPayMethodsResult, string Status, string StatusDetail)
         {
             this.GetRecPayMethodsResult = GetRecPayMethodsResult;
             this.Status = Status;
@@ -15733,13 +15733,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined Receipt_TD;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined Receipt_TD;
         
         public UpdateReceipt_TypeDefinedRequest()
         {
         }
         
-        public UpdateReceipt_TypeDefinedRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined Receipt_TD)
+        public UpdateReceipt_TypeDefinedRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined Receipt_TD)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15787,13 +15787,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Receipt;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Receipt;
         
         public UpdateReceiptRequest()
         {
         }
         
-        public UpdateReceiptRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Receipt)
+        public UpdateReceiptRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Receipt)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -15841,13 +15841,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Receipt;
+        public TipsTrade.KashFlow.KashFlowAPI.Invoice Receipt;
         
         public UpdateReceiptHeaderRequest()
         {
         }
         
-        public UpdateReceiptHeaderRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice Receipt)
+        public UpdateReceiptHeaderRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Invoice Receipt)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -16110,7 +16110,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptNotes[] GetReceiptNotesResult;
+        public TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[] GetReceiptNotesResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -16122,7 +16122,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetReceiptNotesResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptNotes[] GetReceiptNotesResult, string Status, string StatusDetail)
+        public GetReceiptNotesResponse(TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[] GetReceiptNotesResult, string Status, string StatusDetail)
         {
             this.GetReceiptNotesResult = GetReceiptNotesResult;
             this.Status = Status;
@@ -16218,7 +16218,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -16230,7 +16230,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomerResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerResult, string Status, string StatusDetail)
+        public GetCustomerResponse(TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerResult, string Status, string StatusDetail)
         {
             this.GetCustomerResult = GetCustomerResult;
             this.Status = Status;
@@ -16272,7 +16272,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerByIDResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByIDResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -16284,7 +16284,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomerByIDResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerByIDResult, string Status, string StatusDetail)
+        public GetCustomerByIDResponse(TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByIDResult, string Status, string StatusDetail)
         {
             this.GetCustomerByIDResult = GetCustomerByIDResult;
             this.Status = Status;
@@ -16326,7 +16326,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerByEmailResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByEmailResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -16338,7 +16338,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomerByEmailResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerByEmailResult, string Status, string StatusDetail)
+        public GetCustomerByEmailResponse(TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByEmailResult, string Status, string StatusDetail)
         {
             this.GetCustomerByEmailResult = GetCustomerByEmailResult;
             this.Status = Status;
@@ -16380,7 +16380,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersModifiedSinceResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersModifiedSinceResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -16392,7 +16392,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomersModifiedSinceResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersModifiedSinceResult, string Status, string StatusDetail)
+        public GetCustomersModifiedSinceResponse(TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersModifiedSinceResult, string Status, string StatusDetail)
         {
             this.GetCustomersModifiedSinceResult = GetCustomersModifiedSinceResult;
             this.Status = Status;
@@ -16430,7 +16430,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=0)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersResult;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=1)]
         public string Status;
@@ -16442,7 +16442,7 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public GetCustomersResponse(net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersResult, string Status, string StatusDetail)
+        public GetCustomersResponse(TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersResult, string Status, string StatusDetail)
         {
             this.GetCustomersResult = GetCustomersResult;
             this.Status = Status;
@@ -16463,13 +16463,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="KashFlow", Order=2)]
-        public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer custr;
+        public TipsTrade.KashFlow.KashFlowAPI.Customer custr;
         
         public InsertCustomerRequest()
         {
         }
         
-        public InsertCustomerRequest(string UserName, string Password, net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer custr)
+        public InsertCustomerRequest(string UserName, string Password, TipsTrade.KashFlow.KashFlowAPI.Customer custr)
         {
             this.UserName = UserName;
             this.Password = Password;
@@ -16505,13 +16505,13 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "0.5.0.0")]
-    public interface KashFlowAPISoapChannel : net.tipstrade.KashFlowApiClient.KashFlowAPI.KashFlowAPISoap, System.ServiceModel.IClientChannel
+    public interface KashFlowAPISoapChannel : TipsTrade.KashFlow.KashFlowAPI.KashFlowAPISoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "0.5.0.0")]
-    public partial class KashFlowAPISoapClient : System.ServiceModel.ClientBase<net.tipstrade.KashFlowApiClient.KashFlowAPI.KashFlowAPISoap>, net.tipstrade.KashFlowApiClient.KashFlowAPI.KashFlowAPISoap
+    public partial class KashFlowAPISoapClient : System.ServiceModel.ClientBase<TipsTrade.KashFlow.KashFlowAPI.KashFlowAPISoap>, TipsTrade.KashFlow.KashFlowAPI.KashFlowAPISoap
     {
         
     /// <summary>
@@ -16547,408 +16547,408 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
         {
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateCustomerResponse> UpdateCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateCustomerResponse> UpdateCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateCustomerRequest request)
         {
             return base.Channel.UpdateCustomerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SearchCustomerByCustTextResponse> SearchCustomerByCustTextAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SearchCustomerByCustTextRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SearchCustomerByCustTextResponse> SearchCustomerByCustTextAsync(TipsTrade.KashFlow.KashFlowAPI.SearchCustomerByCustTextRequest request)
         {
             return base.Channel.SearchCustomerByCustTextAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerVATNumberResponse> SetCustomerVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerVATNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetCustomerVATNumberResponse> SetCustomerVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.SetCustomerVATNumberRequest request)
         {
             return base.Channel.SetCustomerVATNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerCurrencyResponse> GetCustomerCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerCurrencyRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerCurrencyResponse> GetCustomerCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerCurrencyRequest request)
         {
             return base.Channel.GetCustomerCurrencyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerCurrencyResponse> SetCustomerCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetCustomerCurrencyRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetCustomerCurrencyResponse> SetCustomerCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.SetCustomerCurrencyRequest request)
         {
             return base.Channel.SetCustomerCurrencyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteCustomerResponse> DeleteCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteCustomerResponse> DeleteCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteCustomerRequest request)
         {
             return base.Channel.DeleteCustomerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerSourcesResponse> GetCustomerSourcesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerSourcesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerSourcesResponse> GetCustomerSourcesAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerSourcesRequest request)
         {
             return base.Channel.GetCustomerSourcesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersByPostcodeResponse> GetCustomersByPostcodeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersByPostcodeRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomersByPostcodeResponse> GetCustomersByPostcodeAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomersByPostcodeRequest request)
         {
             return base.Channel.GetCustomersByPostcodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerBalanceResponse> GetCustomerBalanceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerBalanceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerBalanceResponse> GetCustomerBalanceAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerBalanceRequest request)
         {
             return base.Channel.GetCustomerBalanceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerAdvancePaymentsResponse> GetCustomerAdvancePaymentsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerAdvancePaymentsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerAdvancePaymentsResponse> GetCustomerAdvancePaymentsAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerAdvancePaymentsRequest request)
         {
             return base.Channel.GetCustomerAdvancePaymentsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertOrUpdateProjectResponse> InsertOrUpdateProjectAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertOrUpdateProjectRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertOrUpdateProjectResponse> InsertOrUpdateProjectAsync(TipsTrade.KashFlow.KashFlowAPI.InsertOrUpdateProjectRequest request)
         {
             return base.Channel.InsertOrUpdateProjectAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjects_FullResponse> GetProjects_FullAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjects_FullRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjects_FullResponse> GetProjects_FullAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjects_FullRequest request)
         {
             return base.Channel.GetProjects_FullAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectsResponse> GetProjectsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectsResponse> GetProjectsAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectsRequest request)
         {
             return base.Channel.GetProjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByIdResponse> GetProjectByIdAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByIdRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectByIdResponse> GetProjectByIdAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectByIdRequest request)
         {
             return base.Channel.GetProjectByIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByRefResponse> GetProjectByRefAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByRefRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectByRefResponse> GetProjectByRefAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectByRefRequest request)
         {
             return base.Channel.GetProjectByRefAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByNameResponse> GetProjectByNameAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProjectByNameRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProjectByNameResponse> GetProjectByNameAsync(TipsTrade.KashFlow.KashFlowAPI.GetProjectByNameRequest request)
         {
             return base.Channel.GetProjectByNameAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertSupplierResponse> InsertSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertSupplierRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertSupplierResponse> InsertSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.InsertSupplierRequest request)
         {
             return base.Channel.InsertSupplierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierVATNumberResponse> GetSupplierVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierVATNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierVATNumberResponse> GetSupplierVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierVATNumberRequest request)
         {
             return base.Channel.GetSupplierVATNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierResponse> GetSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierResponse> GetSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierRequest request)
         {
             return base.Channel.GetSupplierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSuppliersResponse> GetSuppliersAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSuppliersRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSuppliersResponse> GetSuppliersAsync(TipsTrade.KashFlow.KashFlowAPI.GetSuppliersRequest request)
         {
             return base.Channel.GetSuppliersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateSupplierResponse> UpdateSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateSupplierRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateSupplierResponse> UpdateSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateSupplierRequest request)
         {
             return base.Channel.UpdateSupplierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierVATNumberResponse> SetSupplierVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierVATNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetSupplierVATNumberResponse> SetSupplierVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.SetSupplierVATNumberRequest request)
         {
             return base.Channel.SetSupplierVATNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierCurrencyResponse> GetSupplierCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierCurrencyRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierCurrencyResponse> GetSupplierCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierCurrencyRequest request)
         {
             return base.Channel.GetSupplierCurrencyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierCurrencyResponse> SetSupplierCurrencyAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SetSupplierCurrencyRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SetSupplierCurrencyResponse> SetSupplierCurrencyAsync(TipsTrade.KashFlow.KashFlowAPI.SetSupplierCurrencyRequest request)
         {
             return base.Channel.SetSupplierCurrencyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierByIDResponse> GetSupplierByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSupplierByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSupplierByIDResponse> GetSupplierByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetSupplierByIDRequest request)
         {
             return base.Channel.GetSupplierByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteSupplierResponse> DeleteSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteSupplierRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteSupplierResponse> DeleteSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteSupplierRequest request)
         {
             return base.Channel.DeleteSupplierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.CreateBankAccountResponse> CreateBankAccountAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.CreateBankAccountRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.CreateBankAccountResponse> CreateBankAccountAsync(TipsTrade.KashFlow.KashFlowAPI.CreateBankAccountRequest request)
         {
             return base.Channel.CreateBankAccountAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankBalanceResponse> GetBankBalanceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankBalanceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankBalanceResponse> GetBankBalanceAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankBalanceRequest request)
         {
             return base.Channel.GetBankBalanceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankAccountsResponse> GetBankAccountsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankAccountsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankAccountsResponse> GetBankAccountsAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankAccountsRequest request)
         {
             return base.Channel.GetBankAccountsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTxTypesResponse> GetBankTxTypesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTxTypesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankTxTypesResponse> GetBankTxTypesAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankTxTypesRequest request)
         {
             return base.Channel.GetBankTxTypesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTransactionsResponse> GetBankTransactionsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankTransactionsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankTransactionsResponse> GetBankTransactionsAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankTransactionsRequest request)
         {
             return base.Channel.GetBankTransactionsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertBankTransactionResponse> InsertBankTransactionAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertBankTransactionRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertBankTransactionResponse> InsertBankTransactionAsync(TipsTrade.KashFlow.KashFlowAPI.InsertBankTransactionRequest request)
         {
             return base.Channel.InsertBankTransactionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateBankTransactionResponse> UpdateBankTransactionAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateBankTransactionRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateBankTransactionResponse> UpdateBankTransactionAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateBankTransactionRequest request)
         {
             return base.Channel.UpdateBankTransactionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteBankTransactionResponse> DeleteBankTransactionAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteBankTransactionRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteBankTransactionResponse> DeleteBankTransactionAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteBankTransactionRequest request)
         {
             return base.Channel.DeleteBankTransactionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBalanceSheetResponse> GetBalanceSheetAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBalanceSheetRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBalanceSheetResponse> GetBalanceSheetAsync(TipsTrade.KashFlow.KashFlowAPI.GetBalanceSheetRequest request)
         {
             return base.Channel.GetBalanceSheetAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProfitAndLossResponse> GetProfitAndLossAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProfitAndLossRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProfitAndLossResponse> GetProfitAndLossAsync(TipsTrade.KashFlow.KashFlowAPI.GetProfitAndLossRequest request)
         {
             return base.Channel.GetProfitAndLossAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetMonthlyProfitAndLossResponse> GetMonthlyProfitAndLossAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetMonthlyProfitAndLossRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetMonthlyProfitAndLossResponse> GetMonthlyProfitAndLossAsync(TipsTrade.KashFlow.KashFlowAPI.GetMonthlyProfitAndLossRequest request)
         {
             return base.Channel.GetMonthlyProfitAndLossAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceResponse> GetTrialBalanceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceResponse> GetTrialBalanceAsync(TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceRequest request)
         {
             return base.Channel.GetTrialBalanceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceWithOpeningBalancesResponse> GetTrialBalanceWithOpeningBalancesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetTrialBalanceWithOpeningBalancesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceWithOpeningBalancesResponse> GetTrialBalanceWithOpeningBalancesAsync(TipsTrade.KashFlow.KashFlowAPI.GetTrialBalanceWithOpeningBalancesRequest request)
         {
             return base.Channel.GetTrialBalanceWithOpeningBalancesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATReportResponse> GetVATReportAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATReportRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetVATReportResponse> GetVATReportAsync(TipsTrade.KashFlow.KashFlowAPI.GetVATReportRequest request)
         {
             return base.Channel.GetVATReportAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetDigitaCSVFileResponse> GetDigitaCSVFileAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetDigitaCSVFileRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetDigitaCSVFileResponse> GetDigitaCSVFileAsync(TipsTrade.KashFlow.KashFlowAPI.GetDigitaCSVFileRequest request)
         {
             return base.Channel.GetDigitaCSVFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalLedgerResponse> GetNominalLedgerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalLedgerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetNominalLedgerResponse> GetNominalLedgerAsync(TipsTrade.KashFlow.KashFlowAPI.GetNominalLedgerRequest request)
         {
             return base.Channel.GetNominalLedgerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedDebtorsResponse> GetAgedDebtorsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedDebtorsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetAgedDebtorsResponse> GetAgedDebtorsAsync(TipsTrade.KashFlow.KashFlowAPI.GetAgedDebtorsRequest request)
         {
             return base.Channel.GetAgedDebtorsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedCreditorsResponse> GetAgedCreditorsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAgedCreditorsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetAgedCreditorsResponse> GetAgedCreditorsAsync(TipsTrade.KashFlow.KashFlowAPI.GetAgedCreditorsRequest request)
         {
             return base.Channel.GetAgedCreditorsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetIncomeByCustomerResponse> GetIncomeByCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetIncomeByCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetIncomeByCustomerResponse> GetIncomeByCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetIncomeByCustomerRequest request)
         {
             return base.Channel.GetIncomeByCustomerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertJournalResponse> InsertJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertJournalRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertJournalResponse> InsertJournalAsync(TipsTrade.KashFlow.KashFlowAPI.InsertJournalRequest request)
         {
             return base.Channel.InsertJournalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalResponse> UpdateJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateJournalResponse> UpdateJournalAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateJournalRequest request)
         {
             return base.Channel.UpdateJournalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalHeaderResponse> UpdateJournalHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateJournalHeaderRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateJournalHeaderResponse> UpdateJournalHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateJournalHeaderRequest request)
         {
             return base.Channel.UpdateJournalHeaderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalsResponse> GetJournalsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetJournalsResponse> GetJournalsAsync(TipsTrade.KashFlow.KashFlowAPI.GetJournalsRequest request)
         {
             return base.Channel.GetJournalsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalResponse> GetJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetJournalRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetJournalResponse> GetJournalAsync(TipsTrade.KashFlow.KashFlowAPI.GetJournalRequest request)
         {
             return base.Channel.GetJournalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalResponse> DeleteJournalAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteJournalResponse> DeleteJournalAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteJournalRequest request)
         {
             return base.Channel.DeleteJournalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalByIDResponse> DeleteJournalByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteJournalByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteJournalByIDResponse> DeleteJournalByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteJournalByIDRequest request)
         {
             return base.Channel.DeleteJournalByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.VCFToCustomerObjectsResponse> VCFToCustomerObjectsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.VCFToCustomerObjectsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.VCFToCustomerObjectsResponse> VCFToCustomerObjectsAsync(TipsTrade.KashFlow.KashFlowAPI.VCFToCustomerObjectsRequest request)
         {
             return base.Channel.VCFToCustomerObjectsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankOverviewResponse> GetBankOverviewAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetBankOverviewRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetBankOverviewResponse> GetBankOverviewAsync(TipsTrade.KashFlow.KashFlowAPI.GetBankOverviewRequest request)
         {
             return base.Channel.GetBankOverviewAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAccountOverviewResponse> GetAccountOverviewAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetAccountOverviewRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetAccountOverviewResponse> GetAccountOverviewAsync(TipsTrade.KashFlow.KashFlowAPI.GetAccountOverviewRequest request)
         {
             return base.Channel.GetAccountOverviewAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCurrenciesResponse> GetCurrenciesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCurrenciesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCurrenciesResponse> GetCurrenciesAsync(TipsTrade.KashFlow.KashFlowAPI.GetCurrenciesRequest request)
         {
             return base.Channel.GetCurrenciesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaultsResponse> GetUserAccountDefaultsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaultsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaultsResponse> GetUserAccountDefaultsAsync(TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaultsRequest request)
         {
             return base.Channel.GetUserAccountDefaultsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaults_TypeDefinedResponse> GetUserAccountDefaults_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetUserAccountDefaults_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaults_TypeDefinedResponse> GetUserAccountDefaults_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetUserAccountDefaults_TypeDefinedRequest request)
         {
             return base.Channel.GetUserAccountDefaults_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AttachFileToReceiptResponse> AttachFileToReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AttachFileToReceiptRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AttachFileToReceiptResponse> AttachFileToReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.AttachFileToReceiptRequest request)
         {
             return base.Channel.AttachFileToReceiptAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptAttachmentsResponse> GetReceiptAttachmentsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptAttachmentsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptAttachmentsResponse> GetReceiptAttachmentsAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptAttachmentsRequest request)
         {
             return base.Channel.GetReceiptAttachmentsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptAttachmentResponse> DeleteReceiptAttachmentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptAttachmentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptAttachmentResponse> DeleteReceiptAttachmentAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptAttachmentRequest request)
         {
             return base.Channel.DeleteReceiptAttachmentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AutoAuthIPResponse> AutoAuthIPAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AutoAuthIPRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AutoAuthIPResponse> AutoAuthIPAsync(TipsTrade.KashFlow.KashFlowAPI.AutoAuthIPRequest request)
         {
             return base.Channel.AutoAuthIPAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRemoteLoginURLResponse> GetRemoteLoginURLAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRemoteLoginURLRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetRemoteLoginURLResponse> GetRemoteLoginURLAsync(TipsTrade.KashFlow.KashFlowAPI.GetRemoteLoginURLRequest request)
         {
             return base.Channel.GetRemoteLoginURLAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.createAccountResponse> createAccountAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.createAccountRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.createAccountResponse> createAccountAsync(TipsTrade.KashFlow.KashFlowAPI.createAccountRequest request)
         {
             return base.Channel.createAccountAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.isUserVATRegisteredResponse> isUserVATRegisteredAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.isUserVATRegisteredRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.isUserVATRegisteredResponse> isUserVATRegisteredAsync(TipsTrade.KashFlow.KashFlowAPI.isUserVATRegisteredRequest request)
         {
             return base.Channel.isUserVATRegisteredAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsResponse> GetProductsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProductsResponse> GetProductsAsync(TipsTrade.KashFlow.KashFlowAPI.GetProductsRequest request)
         {
             return base.Channel.GetProductsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AddOrUpdateSubProductResponse> AddOrUpdateSubProductAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AddOrUpdateSubProductRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AddOrUpdateSubProductResponse> AddOrUpdateSubProductAsync(TipsTrade.KashFlow.KashFlowAPI.AddOrUpdateSubProductRequest request)
         {
             return base.Channel.AddOrUpdateSubProductAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductsResponse> GetSubProductsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSubProductsResponse> GetSubProductsAsync(TipsTrade.KashFlow.KashFlowAPI.GetSubProductsRequest request)
         {
             return base.Channel.GetSubProductsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByIDResponse> GetSubProductByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSubProductByIDResponse> GetSubProductByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetSubProductByIDRequest request)
         {
             return base.Channel.GetSubProductByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByCodeResponse> GetSubProductByCodeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetSubProductByCodeRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetSubProductByCodeResponse> GetSubProductByCodeAsync(TipsTrade.KashFlow.KashFlowAPI.GetSubProductByCodeRequest request)
         {
             return base.Channel.GetSubProductByCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsWithSubProductsResponse> GetProductsWithSubProductsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetProductsWithSubProductsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetProductsWithSubProductsResponse> GetProductsWithSubProductsAsync(TipsTrade.KashFlow.KashFlowAPI.GetProductsWithSubProductsRequest request)
         {
             return base.Channel.GetProductsWithSubProductsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesResponse> GetNominalCodesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesResponse> GetNominalCodesAsync(TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesRequest request)
         {
             return base.Channel.GetNominalCodesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertNominalCodeResponse> InsertNominalCodeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertNominalCodeRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertNominalCodeResponse> InsertNominalCodeAsync(TipsTrade.KashFlow.KashFlowAPI.InsertNominalCodeRequest request)
         {
             return base.Channel.InsertNominalCodeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesExtendedResponse> GetNominalCodesExtendedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetNominalCodesExtendedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesExtendedResponse> GetNominalCodesExtendedAsync(TipsTrade.KashFlow.KashFlowAPI.GetNominalCodesExtendedRequest request)
         {
             return base.Channel.GetNominalCodesExtendedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetKPIsResponse> GetKPIsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetKPIsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetKPIsResponse> GetKPIsAsync(TipsTrade.KashFlow.KashFlowAPI.GetKPIsRequest request)
         {
             return base.Channel.GetKPIsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATRatesResponse> GetVATRatesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetVATRatesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetVATRatesResponse> GetVATRatesAsync(TipsTrade.KashFlow.KashFlowAPI.GetVATRatesRequest request)
         {
             return base.Channel.GetVATRatesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCompanyDetailsResponse> GetCompanyDetailsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCompanyDetailsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCompanyDetailsResponse> GetCompanyDetailsAsync(TipsTrade.KashFlow.KashFlowAPI.GetCompanyDetailsRequest request)
         {
             return base.Channel.GetCompanyDetailsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.IsOneSaaSEnabledResponse> IsOneSaaSEnabledAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.IsOneSaaSEnabledRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.IsOneSaaSEnabledResponse> IsOneSaaSEnabledAsync(TipsTrade.KashFlow.KashFlowAPI.IsOneSaaSEnabledRequest request)
         {
             return base.Channel.IsOneSaaSEnabledAsync(request);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileResponse> net.tipstrade.KashFlowApiClient.KashFlowAPI.KashFlowAPISoap.SageFileAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileRequest request)
+        System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SageFileResponse> TipsTrade.KashFlow.KashFlowAPI.KashFlowAPISoap.SageFileAsync(TipsTrade.KashFlow.KashFlowAPI.SageFileRequest request)
         {
             return base.Channel.SageFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileResponse> SageFileAsync(byte[] buffer, string reference)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.SageFileResponse> SageFileAsync(byte[] buffer, string reference)
         {
-            net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileRequest inValue = new net.tipstrade.KashFlowApiClient.KashFlowAPI.SageFileRequest();
+            TipsTrade.KashFlow.KashFlowAPI.SageFileRequest inValue = new TipsTrade.KashFlow.KashFlowAPI.SageFileRequest();
             inValue.buffer = buffer;
             inValue.reference = reference;
-            return ((net.tipstrade.KashFlowApiClient.KashFlowAPI.KashFlowAPISoap)(this)).SageFileAsync(inValue);
+            return ((TipsTrade.KashFlow.KashFlowAPI.KashFlowAPISoap)(this)).SageFileAsync(inValue);
         }
         
         public System.Threading.Tasks.Task<string> SageFileImportAsync(int iSetID)
@@ -16956,422 +16956,422 @@ namespace net.tipstrade.KashFlowApiClient.KashFlowAPI
             return base.Channel.SageFileImportAsync(iSetID);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteResponse> InsertQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertQuoteResponse> InsertQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.InsertQuoteRequest request)
         {
             return base.Channel.InsertQuoteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteLineResponse> InsertQuoteLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertQuoteLineRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertQuoteLineResponse> InsertQuoteLineAsync(TipsTrade.KashFlow.KashFlowAPI.InsertQuoteLineRequest request)
         {
             return base.Channel.InsertQuoteLineAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByIDResponse> GetQuoteByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuoteByIDResponse> GetQuoteByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuoteByIDRequest request)
         {
             return base.Channel.GetQuoteByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByNumberResponse> GetQuoteByNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuoteByNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuoteByNumberResponse> GetQuoteByNumberAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuoteByNumberRequest request)
         {
             return base.Channel.GetQuoteByNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotes_RecentResponse> GetQuotes_RecentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotes_RecentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuotes_RecentResponse> GetQuotes_RecentAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuotes_RecentRequest request)
         {
             return base.Channel.GetQuotes_RecentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesResponse> GetQuotesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuotesResponse> GetQuotesAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuotesRequest request)
         {
             return base.Channel.GetQuotesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesForCustomerResponse> GetQuotesForCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetQuotesForCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetQuotesForCustomerResponse> GetQuotesForCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetQuotesForCustomerRequest request)
         {
             return base.Channel.GetQuotesForCustomerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.ConvertQuoteToInvoiceResponse> ConvertQuoteToInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.ConvertQuoteToInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.ConvertQuoteToInvoiceResponse> ConvertQuoteToInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.ConvertQuoteToInvoiceRequest request)
         {
             return base.Channel.ConvertQuoteToInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.applyCreditNoteToInvoiceResponse> applyCreditNoteToInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.applyCreditNoteToInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.applyCreditNoteToInvoiceResponse> applyCreditNoteToInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.applyCreditNoteToInvoiceRequest request)
         {
             return base.Channel.applyCreditNoteToInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.isStillQuoteResponse> isStillQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.isStillQuoteRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.isStillQuoteResponse> isStillQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.isStillQuoteRequest request)
         {
             return base.Channel.isStillQuoteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteResponse> UpdateQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteResponse> UpdateQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteRequest request)
         {
             return base.Channel.UpdateQuoteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteHeaderResponse> UpdateQuoteHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateQuoteHeaderRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteHeaderResponse> UpdateQuoteHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateQuoteHeaderRequest request)
         {
             return base.Channel.UpdateQuoteHeaderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteResponse> DeleteQuoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteResponse> DeleteQuoteAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteRequest request)
         {
             return base.Channel.DeleteQuoteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteByIDResponse> DeleteQuoteByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteByIDResponse> DeleteQuoteByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteByIDRequest request)
         {
             return base.Channel.DeleteQuoteByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineWithQuoteIDResponse> DeleteQuoteLineWithQuoteIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineWithQuoteIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineWithQuoteIDResponse> DeleteQuoteLineWithQuoteIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineWithQuoteIDRequest request)
         {
             return base.Channel.DeleteQuoteLineWithQuoteIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineResponse> DeleteQuoteLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteQuoteLineRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineResponse> DeleteQuoteLineAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteQuoteLineRequest request)
         {
             return base.Channel.DeleteQuoteLineAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceByIDResponse> GetInvoiceByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoiceByIDResponse> GetInvoiceByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoiceByIDRequest request)
         {
             return base.Channel.GetInvoiceByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceResponse> GetInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoiceResponse> GetInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoiceRequest request)
         {
             return base.Channel.GetInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoice_TypeDefinedResponse> GetInvoice_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoice_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoice_TypeDefinedResponse> GetInvoice_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoice_TypeDefinedRequest request)
         {
             return base.Channel.GetInvoice_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintInvoiceResponse> PrintInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.PrintInvoiceResponse> PrintInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.PrintInvoiceRequest request)
         {
             return base.Channel.PrintInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailInvoiceResponse> EmailInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.EmailInvoiceResponse> EmailInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.EmailInvoiceRequest request)
         {
             return base.Channel.EmailInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesByDateRangeResponse> GetInvoicesByDateRangeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesByDateRangeRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicesByDateRangeResponse> GetInvoicesByDateRangeAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicesByDateRangeRequest request)
         {
             return base.Channel.GetInvoicesByDateRangeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomerResponse> GetInvoicesForCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomerResponse> GetInvoicesForCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomerRequest request)
         {
             return base.Channel.GetInvoicesForCustomerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_UnpaidResponse> GetInvoices_UnpaidAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_UnpaidRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_UnpaidResponse> GetInvoices_UnpaidAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_UnpaidRequest request)
         {
             return base.Channel.GetInvoices_UnpaidAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedResponse> GetInvoices_Unpaid_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedResponse> GetInvoices_Unpaid_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Unpaid_TypeDefinedRequest request)
         {
             return base.Channel.GetInvoices_Unpaid_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_OverdueResponse> GetInvoices_OverdueAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_OverdueRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_OverdueResponse> GetInvoices_OverdueAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_OverdueRequest request)
         {
             return base.Channel.GetInvoices_OverdueAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Overdue_TypeDefinedResponse> GetInvoices_Overdue_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Overdue_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Overdue_TypeDefinedResponse> GetInvoices_Overdue_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Overdue_TypeDefinedRequest request)
         {
             return base.Channel.GetInvoices_Overdue_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_RecentResponse> GetInvoices_RecentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_RecentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_RecentResponse> GetInvoices_RecentAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_RecentRequest request)
         {
             return base.Channel.GetInvoices_RecentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Recent_TypeDefinedResponse> GetInvoices_Recent_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoices_Recent_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Recent_TypeDefinedResponse> GetInvoices_Recent_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoices_Recent_TypeDefinedRequest request)
         {
             return base.Channel.GetInvoices_Recent_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomer_typeDefinedResponse> GetInvoicesForCustomer_typeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicesForCustomer_typeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomer_typeDefinedResponse> GetInvoicesForCustomer_typeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicesForCustomer_typeDefinedRequest request)
         {
             return base.Channel.GetInvoicesForCustomer_typeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceResponse> InsertInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceResponse> InsertInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceRequest request)
         {
             return base.Channel.InsertInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoice_TypeDefinedResponse> InsertInvoice_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoice_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoice_TypeDefinedResponse> InsertInvoice_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoice_TypeDefinedRequest request)
         {
             return base.Channel.InsertInvoice_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineResponse> InsertInvoiceLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineResponse> InsertInvoiceLineAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineRequest request)
         {
             return base.Channel.InsertInvoiceLineAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberResponse> InsertInvoiceLineWithInvoiceNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberResponse> InsertInvoiceLineWithInvoiceNumberAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceLineWithInvoiceNumberRequest request)
         {
             return base.Channel.InsertInvoiceLineWithInvoiceNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceResponse> UpdateInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceResponse> UpdateInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceRequest request)
         {
             return base.Channel.UpdateInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoice_TypeDefinedResponse> UpdateInvoice_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoice_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateInvoice_TypeDefinedResponse> UpdateInvoice_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateInvoice_TypeDefinedRequest request)
         {
             return base.Channel.UpdateInvoice_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceHeaderResponse> UpdateInvoiceHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateInvoiceHeaderRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceHeaderResponse> UpdateInvoiceHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateInvoiceHeaderRequest request)
         {
             return base.Channel.UpdateInvoiceHeaderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentResponse> GetInvoicePaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentResponse> GetInvoicePaymentAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentRequest request)
         {
             return base.Channel.GetInvoicePaymentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoicePaymentResponse> InsertInvoicePaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoicePaymentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoicePaymentResponse> InsertInvoicePaymentAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoicePaymentRequest request)
         {
             return base.Channel.InsertInvoicePaymentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoicePaymentResponse> DeleteInvoicePaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoicePaymentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoicePaymentResponse> DeleteInvoicePaymentAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoicePaymentRequest request)
         {
             return base.Channel.DeleteInvoicePaymentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToInvoiceResponse> AllocateAdvancePaymentToInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToInvoiceResponse> AllocateAdvancePaymentToInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToInvoiceRequest request)
         {
             return base.Channel.AllocateAdvancePaymentToInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceResponse> DeleteInvoiceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceResponse> DeleteInvoiceAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceRequest request)
         {
             return base.Channel.DeleteInvoiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceByIDResponse> DeleteInvoiceByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceByIDResponse> DeleteInvoiceByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceByIDRequest request)
         {
             return base.Channel.DeleteInvoiceByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDResponse> DeleteInvoiceLineWithInvoiceIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDResponse> DeleteInvoiceLineWithInvoiceIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineWithInvoiceIDRequest request)
         {
             return base.Channel.DeleteInvoiceLineWithInvoiceIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineResponse> DeleteInvoiceLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteInvoiceLineRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineResponse> DeleteInvoiceLineAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteInvoiceLineRequest request)
         {
             return base.Channel.DeleteInvoiceLineAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvPayMethodsResponse> GetInvPayMethodsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvPayMethodsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvPayMethodsResponse> GetInvPayMethodsAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvPayMethodsRequest request)
         {
             return base.Channel.GetInvPayMethodsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetPaypalLinkResponse> GetPaypalLinkAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetPaypalLinkRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetPaypalLinkResponse> GetPaypalLinkAsync(TipsTrade.KashFlow.KashFlowAPI.GetPaypalLinkRequest request)
         {
             return base.Channel.GetPaypalLinkAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceNoteResponse> InsertInvoiceNoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertInvoiceNoteRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceNoteResponse> InsertInvoiceNoteAsync(TipsTrade.KashFlow.KashFlowAPI.InsertInvoiceNoteRequest request)
         {
             return base.Channel.InsertInvoiceNoteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceNotesResponse> GetInvoiceNotesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoiceNotesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoiceNotesResponse> GetInvoiceNotesAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoiceNotesRequest request)
         {
             return base.Channel.GetInvoiceNotesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsCountforDateRangeResponse> GetInvoicePaymentsCountforDateRangeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsCountforDateRangeRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsCountforDateRangeResponse> GetInvoicePaymentsCountforDateRangeAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsCountforDateRangeRequest request)
         {
             return base.Channel.GetInvoicePaymentsCountforDateRangeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsByDateRangeResponse> GetInvoicePaymentsByDateRangeAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetInvoicePaymentsByDateRangeRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsByDateRangeResponse> GetInvoicePaymentsByDateRangeAsync(TipsTrade.KashFlow.KashFlowAPI.GetInvoicePaymentsByDateRangeRequest request)
         {
             return base.Channel.GetInvoicePaymentsByDateRangeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptResponse> DeleteReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptResponse> DeleteReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptRequest request)
         {
             return base.Channel.DeleteReceiptAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptByIDResponse> DeleteReceiptByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptByIDResponse> DeleteReceiptByIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptByIDRequest request)
         {
             return base.Channel.DeleteReceiptByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineResponse> DeleteReceiptLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineResponse> DeleteReceiptLineAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineRequest request)
         {
             return base.Channel.DeleteReceiptLineAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineWithReceiptIDResponse> DeleteReceiptLineWithReceiptIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptLineWithReceiptIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineWithReceiptIDResponse> DeleteReceiptLineWithReceiptIDAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptLineWithReceiptIDRequest request)
         {
             return base.Channel.DeleteReceiptLineWithReceiptIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipt_TypeDefinedResponse> GetReceipt_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipt_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceipt_TypeDefinedResponse> GetReceipt_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceipt_TypeDefinedRequest request)
         {
             return base.Channel.GetReceipt_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptResponse> GetReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptResponse> GetReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptRequest request)
         {
             return base.Channel.GetReceiptAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipts_RecentResponse> GetReceipts_RecentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceipts_RecentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceipts_RecentResponse> GetReceipts_RecentAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceipts_RecentRequest request)
         {
             return base.Channel.GetReceipts_RecentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsResponse> GetReceiptsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptsResponse> GetReceiptsAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptsRequest request)
         {
             return base.Channel.GetReceiptsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsWithPagingResponse> GetReceiptsWithPagingAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsWithPagingRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptsWithPagingResponse> GetReceiptsWithPagingAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptsWithPagingRequest request)
         {
             return base.Channel.GetReceiptsWithPagingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsForSupplierResponse> GetReceiptsForSupplierAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptsForSupplierRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptsForSupplierResponse> GetReceiptsForSupplierAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptsForSupplierRequest request)
         {
             return base.Channel.GetReceiptsForSupplierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceipt_TypeDefinedResponse> InsertReceipt_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceipt_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceipt_TypeDefinedResponse> InsertReceipt_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceipt_TypeDefinedRequest request)
         {
             return base.Channel.InsertReceipt_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptResponse> InsertReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptResponse> InsertReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptRequest request)
         {
             return base.Channel.InsertReceiptAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineResponse> InsertReceiptLineAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineResponse> InsertReceiptLineAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineRequest request)
         {
             return base.Channel.InsertReceiptLineAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineFromNumberResponse> InsertReceiptLineFromNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptLineFromNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineFromNumberResponse> InsertReceiptLineFromNumberAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptLineFromNumberRequest request)
         {
             return base.Channel.InsertReceiptLineFromNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToReceiptResponse> AllocateAdvancePaymentToReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.AllocateAdvancePaymentToReceiptRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToReceiptResponse> AllocateAdvancePaymentToReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.AllocateAdvancePaymentToReceiptRequest request)
         {
             return base.Channel.AllocateAdvancePaymentToReceiptAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptPaymentResponse> InsertReceiptPaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptPaymentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptPaymentResponse> InsertReceiptPaymentAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptPaymentRequest request)
         {
             return base.Channel.InsertReceiptPaymentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptPaymentResponse> GetReceiptPaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptPaymentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptPaymentResponse> GetReceiptPaymentAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptPaymentRequest request)
         {
             return base.Channel.GetReceiptPaymentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptPaymentResponse> DeleteReceiptPaymentAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.DeleteReceiptPaymentRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptPaymentResponse> DeleteReceiptPaymentAsync(TipsTrade.KashFlow.KashFlowAPI.DeleteReceiptPaymentRequest request)
         {
             return base.Channel.DeleteReceiptPaymentAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRecPayMethodsResponse> GetRecPayMethodsAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetRecPayMethodsRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetRecPayMethodsResponse> GetRecPayMethodsAsync(TipsTrade.KashFlow.KashFlowAPI.GetRecPayMethodsRequest request)
         {
             return base.Channel.GetRecPayMethodsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceipt_TypeDefinedResponse> UpdateReceipt_TypeDefinedAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceipt_TypeDefinedRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateReceipt_TypeDefinedResponse> UpdateReceipt_TypeDefinedAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateReceipt_TypeDefinedRequest request)
         {
             return base.Channel.UpdateReceipt_TypeDefinedAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptResponse> UpdateReceiptAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptResponse> UpdateReceiptAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptRequest request)
         {
             return base.Channel.UpdateReceiptAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptHeaderResponse> UpdateReceiptHeaderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.UpdateReceiptHeaderRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptHeaderResponse> UpdateReceiptHeaderAsync(TipsTrade.KashFlow.KashFlowAPI.UpdateReceiptHeaderRequest request)
         {
             return base.Channel.UpdateReceiptHeaderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintPurchaseOrderResponse> PrintPurchaseOrderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.PrintPurchaseOrderRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.PrintPurchaseOrderResponse> PrintPurchaseOrderAsync(TipsTrade.KashFlow.KashFlowAPI.PrintPurchaseOrderRequest request)
         {
             return base.Channel.PrintPurchaseOrderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailPurchaseOrderResponse> EmailPurchaseOrderAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.EmailPurchaseOrderRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.EmailPurchaseOrderResponse> EmailPurchaseOrderAsync(TipsTrade.KashFlow.KashFlowAPI.EmailPurchaseOrderRequest request)
         {
             return base.Channel.EmailPurchaseOrderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptNoteResponse> InsertReceiptNoteAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertReceiptNoteRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertReceiptNoteResponse> InsertReceiptNoteAsync(TipsTrade.KashFlow.KashFlowAPI.InsertReceiptNoteRequest request)
         {
             return base.Channel.InsertReceiptNoteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptNotesResponse> GetReceiptNotesAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetReceiptNotesRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetReceiptNotesResponse> GetReceiptNotesAsync(TipsTrade.KashFlow.KashFlowAPI.GetReceiptNotesRequest request)
         {
             return base.Channel.GetReceiptNotesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerVATNumberResponse> GetCustomerVATNumberAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerVATNumberRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerVATNumberResponse> GetCustomerVATNumberAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerVATNumberRequest request)
         {
             return base.Channel.GetCustomerVATNumberAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerResponse> GetCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerResponse> GetCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerRequest request)
         {
             return base.Channel.GetCustomerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByIDResponse> GetCustomerByIDAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByIDRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerByIDResponse> GetCustomerByIDAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerByIDRequest request)
         {
             return base.Channel.GetCustomerByIDAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByEmailResponse> GetCustomerByEmailAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomerByEmailRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomerByEmailResponse> GetCustomerByEmailAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomerByEmailRequest request)
         {
             return base.Channel.GetCustomerByEmailAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersModifiedSinceResponse> GetCustomersModifiedSinceAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersModifiedSinceRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomersModifiedSinceResponse> GetCustomersModifiedSinceAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomersModifiedSinceRequest request)
         {
             return base.Channel.GetCustomersModifiedSinceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersResponse> GetCustomersAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.GetCustomersRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.GetCustomersResponse> GetCustomersAsync(TipsTrade.KashFlow.KashFlowAPI.GetCustomersRequest request)
         {
             return base.Channel.GetCustomersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertCustomerResponse> InsertCustomerAsync(net.tipstrade.KashFlowApiClient.KashFlowAPI.InsertCustomerRequest request)
+        public System.Threading.Tasks.Task<TipsTrade.KashFlow.KashFlowAPI.InsertCustomerResponse> InsertCustomerAsync(TipsTrade.KashFlow.KashFlowAPI.InsertCustomerRequest request)
         {
             return base.Channel.InsertCustomerAsync(request);
         }

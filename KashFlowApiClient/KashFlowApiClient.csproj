@@ -8,7 +8,7 @@
     <ProjectGuid>{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>net.tipstrade.KashFlowApiClient</RootNamespace>
+    <RootNamespace>TipsTrade.KashFlow</RootNamespace>
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>2.0.0.2-beta</Version>

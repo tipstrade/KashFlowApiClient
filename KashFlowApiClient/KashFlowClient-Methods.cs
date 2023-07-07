@@ -1,8 +1,8 @@
-﻿using net.tipstrade.KashFlowApiClient.KashFlowAPI;
+﻿using TipsTrade.KashFlow.KashFlowAPI;
 using System;
 using System.Threading.Tasks;
 
-namespace net.tipstrade.KashFlowApiClient {
+namespace TipsTrade.KashFlow {
   public partial class KashFlowClient {
     #region Automatically generated methods
 #pragma warning disable IDE0018, IDE1006
@@ -128,13 +128,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/convertquotetoinvoice/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice ConvertQuoteToInvoice(ConvertQuoteToInvoiceRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice ConvertQuoteToInvoice(ConvertQuoteToInvoiceRequest request) {
       return Task.Run(async () => await ConvertQuoteToInvoiceAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/convertquotetoinvoice/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice> ConvertQuoteToInvoiceAsync(ConvertQuoteToInvoiceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> ConvertQuoteToInvoiceAsync(ConvertQuoteToInvoiceRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -626,13 +626,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getaccountoverview/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.AccountOverview GetAccountOverview(GetAccountOverviewRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.AccountOverview GetAccountOverview(GetAccountOverviewRequest request) {
       return Task.Run(async () => await GetAccountOverviewAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getaccountoverview/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AccountOverview> GetAccountOverviewAsync(GetAccountOverviewRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.AccountOverview> GetAccountOverviewAsync(GetAccountOverviewRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -646,13 +646,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getagedcreditors/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditors(GetAgedCreditorsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditors(GetAgedCreditorsRequest request) {
       return Task.Run(async () => await GetAgedCreditorsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getagedcreditors/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedCreditorsAsync(GetAgedCreditorsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedCreditorsAsync(GetAgedCreditorsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -666,13 +666,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getageddebtors/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtors(GetAgedDebtorsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtors(GetAgedDebtorsRequest request) {
       return Task.Run(async () => await GetAgedDebtorsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getageddebtors/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedDebtorsAsync(GetAgedDebtorsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedDebtorsAsync(GetAgedDebtorsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -686,13 +686,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbalancesheet/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BalanceSheet GetBalanceSheet(GetBalanceSheetRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BalanceSheet GetBalanceSheet(GetBalanceSheetRequest request) {
       return Task.Run(async () => await GetBalanceSheetAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbalancesheet/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BalanceSheet> GetBalanceSheetAsync(GetBalanceSheetRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BalanceSheet> GetBalanceSheetAsync(GetBalanceSheetRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -706,13 +706,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankaccounts/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankAccount[] GetBankAccounts(GetBankAccountsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BankAccount[] GetBankAccounts(GetBankAccountsRequest request) {
       return Task.Run(async () => await GetBankAccountsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankaccounts/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BankAccount[]> GetBankAccountsAsync(GetBankAccountsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankAccount[]> GetBankAccountsAsync(GetBankAccountsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -746,13 +746,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankoverview/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankOverview[] GetBankOverview(GetBankOverviewRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BankOverview[] GetBankOverview(GetBankOverviewRequest request) {
       return Task.Run(async () => await GetBankOverviewAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankoverview/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BankOverview[]> GetBankOverviewAsync(GetBankOverviewRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankOverview[]> GetBankOverviewAsync(GetBankOverviewRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -766,13 +766,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktransactions/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[] GetBankTransactions(GetBankTransactionsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetBankTransactions(GetBankTransactionsRequest request) {
       return Task.Run(async () => await GetBankTransactionsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktransactions/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[]> GetBankTransactionsAsync(GetBankTransactionsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTransaction[]> GetBankTransactionsAsync(GetBankTransactionsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -786,13 +786,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktxtypes/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTXType[] GetBankTxTypes(GetBankTxTypesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BankTXType[] GetBankTxTypes(GetBankTxTypesRequest request) {
       return Task.Run(async () => await GetBankTxTypesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktxtypes/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTXType[]> GetBankTxTypesAsync(GetBankTxTypesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTXType[]> GetBankTxTypesAsync(GetBankTxTypesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -806,13 +806,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcompanydetails/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.CompanyDetails GetCompanyDetails(GetCompanyDetailsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.CompanyDetails GetCompanyDetails(GetCompanyDetailsRequest request) {
       return Task.Run(async () => await GetCompanyDetailsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcompanydetails/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.CompanyDetails> GetCompanyDetailsAsync(GetCompanyDetailsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.CompanyDetails> GetCompanyDetailsAsync(GetCompanyDetailsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -826,13 +826,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcurrencies/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Currencies[] GetCurrencies(GetCurrenciesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Currencies[] GetCurrencies(GetCurrenciesRequest request) {
       return Task.Run(async () => await GetCurrenciesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcurrencies/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Currencies[]> GetCurrenciesAsync(GetCurrenciesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Currencies[]> GetCurrenciesAsync(GetCurrenciesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -846,13 +846,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomeradvancepayments/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[] GetCustomerAdvancePayments(GetCustomerAdvancePaymentsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetCustomerAdvancePayments(GetCustomerAdvancePaymentsRequest request) {
       return Task.Run(async () => await GetCustomerAdvancePaymentsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomeradvancepayments/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BankTransaction[]> GetCustomerAdvancePaymentsAsync(GetCustomerAdvancePaymentsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTransaction[]> GetCustomerAdvancePaymentsAsync(GetCustomerAdvancePaymentsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -866,13 +866,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomer/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomer(GetCustomerRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomer(GetCustomerRequest request) {
       return Task.Run(async () => await GetCustomerAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomer/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer> GetCustomerAsync(GetCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerAsync(GetCustomerRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -886,13 +886,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbalance/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.CustomerBalance GetCustomerBalance(GetCustomerBalanceRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.CustomerBalance GetCustomerBalance(GetCustomerBalanceRequest request) {
       return Task.Run(async () => await GetCustomerBalanceAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbalance/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.CustomerBalance> GetCustomerBalanceAsync(GetCustomerBalanceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.CustomerBalance> GetCustomerBalanceAsync(GetCustomerBalanceRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -906,13 +906,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyemail/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerByEmail(GetCustomerByEmailRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByEmail(GetCustomerByEmailRequest request) {
       return Task.Run(async () => await GetCustomerByEmailAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyemail/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer> GetCustomerByEmailAsync(GetCustomerByEmailRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerByEmailAsync(GetCustomerByEmailRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -926,13 +926,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer GetCustomerByID(GetCustomerByIDRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByID(GetCustomerByIDRequest request) {
       return Task.Run(async () => await GetCustomerByIDAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer> GetCustomerByIDAsync(GetCustomerByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerByIDAsync(GetCustomerByIDRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -966,13 +966,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomers/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomers(GetCustomersRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomers(GetCustomersRequest request) {
       return Task.Run(async () => await GetCustomersAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomers/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[]> GetCustomersAsync(GetCustomersRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersAsync(GetCustomersRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -986,13 +986,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersbypostcode/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersByPostcode(GetCustomersByPostcodeRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersByPostcode(GetCustomersByPostcodeRequest request) {
       return Task.Run(async () => await GetCustomersByPostcodeAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersbypostcode/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[]> GetCustomersByPostcodeAsync(GetCustomersByPostcodeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersByPostcodeAsync(GetCustomersByPostcodeRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1006,13 +1006,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersmodifiedsince/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] GetCustomersModifiedSince(GetCustomersModifiedSinceRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersModifiedSince(GetCustomersModifiedSinceRequest request) {
       return Task.Run(async () => await GetCustomersModifiedSinceAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersmodifiedsince/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[]> GetCustomersModifiedSinceAsync(GetCustomersModifiedSinceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersModifiedSinceAsync(GetCustomersModifiedSinceRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1026,13 +1026,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersources/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetCustomerSources(GetCustomerSourcesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetCustomerSources(GetCustomerSourcesRequest request) {
       return Task.Run(async () => await GetCustomerSourcesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersources/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[]> GetCustomerSourcesAsync(GetCustomerSourcesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetCustomerSourcesAsync(GetCustomerSourcesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1086,13 +1086,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getincomebycustomer/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetIncomeByCustomer(GetIncomeByCustomerRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetIncomeByCustomer(GetIncomeByCustomerRequest request) {
       return Task.Run(async () => await GetIncomeByCustomerAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getincomebycustomer/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[]> GetIncomeByCustomerAsync(GetIncomeByCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetIncomeByCustomerAsync(GetIncomeByCustomerRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1106,13 +1106,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicetypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefined(GetInvoice_TypeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefined(GetInvoice_TypeDefinedRequest request) {
       return Task.Run(async () => await GetInvoice_TypeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicetypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined> GetInvoice_TypeDefinedAsync(GetInvoice_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined> GetInvoice_TypeDefinedAsync(GetInvoice_TypeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1126,13 +1126,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoice/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetInvoice(GetInvoiceRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoice(GetInvoiceRequest request) {
       return Task.Run(async () => await GetInvoiceAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoice/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice> GetInvoiceAsync(GetInvoiceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetInvoiceAsync(GetInvoiceRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1146,13 +1146,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicebyid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetInvoiceByID(GetInvoiceByIDRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoiceByID(GetInvoiceByIDRequest request) {
       return Task.Run(async () => await GetInvoiceByIDAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicebyid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice> GetInvoiceByIDAsync(GetInvoiceByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetInvoiceByIDAsync(GetInvoiceByIDRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1166,13 +1166,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicenotes/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceNotes[] GetInvoiceNotes(GetInvoiceNotesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[] GetInvoiceNotes(GetInvoiceNotesRequest request) {
       return Task.Run(async () => await GetInvoiceNotesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicenotes/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.InvoiceNotes[]> GetInvoiceNotesAsync(GetInvoiceNotesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[]> GetInvoiceNotesAsync(GetInvoiceNotesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1186,13 +1186,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepayment/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetInvoicePayment(GetInvoicePaymentRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePayment(GetInvoicePaymentRequest request) {
       return Task.Run(async () => await GetInvoicePaymentAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepayment/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[]> GetInvoicePaymentAsync(GetInvoicePaymentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetInvoicePaymentAsync(GetInvoicePaymentRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1206,13 +1206,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepaymentsbydaterange/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRange(GetInvoicePaymentsByDateRangeRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRange(GetInvoicePaymentsByDateRangeRequest request) {
       return Task.Run(async () => await GetInvoicePaymentsByDateRangeAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepaymentsbydaterange/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[]> GetInvoicePaymentsByDateRangeAsync(GetInvoicePaymentsByDateRangeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetInvoicePaymentsByDateRangeAsync(GetInvoicePaymentsByDateRangeRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1246,13 +1246,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverduetypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefined(GetInvoices_Overdue_TypeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefined(GetInvoices_Overdue_TypeDefinedRequest request) {
       return Task.Run(async () => await GetInvoices_Overdue_TypeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverduetypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Overdue_TypeDefinedAsync(GetInvoices_Overdue_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Overdue_TypeDefinedAsync(GetInvoices_Overdue_TypeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1266,13 +1266,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverdue/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_Overdue(GetInvoices_OverdueRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_Overdue(GetInvoices_OverdueRequest request) {
       return Task.Run(async () => await GetInvoices_OverdueAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverdue/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetInvoices_OverdueAsync(GetInvoices_OverdueRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_OverdueAsync(GetInvoices_OverdueRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1286,13 +1286,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecenttypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefined(GetInvoices_Recent_TypeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefined(GetInvoices_Recent_TypeDefinedRequest request) {
       return Task.Run(async () => await GetInvoices_Recent_TypeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecenttypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Recent_TypeDefinedAsync(GetInvoices_Recent_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Recent_TypeDefinedAsync(GetInvoices_Recent_TypeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1306,13 +1306,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecent/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_Recent(GetInvoices_RecentRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_Recent(GetInvoices_RecentRequest request) {
       return Task.Run(async () => await GetInvoices_RecentAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecent/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetInvoices_RecentAsync(GetInvoices_RecentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_RecentAsync(GetInvoices_RecentRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1326,13 +1326,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaidtypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefined(GetInvoices_Unpaid_TypeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefined(GetInvoices_Unpaid_TypeDefinedRequest request) {
       return Task.Run(async () => await GetInvoices_Unpaid_TypeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaidtypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Unpaid_TypeDefinedAsync(GetInvoices_Unpaid_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Unpaid_TypeDefinedAsync(GetInvoices_Unpaid_TypeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1346,13 +1346,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoices_Unpaid(GetInvoices_UnpaidRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_Unpaid(GetInvoices_UnpaidRequest request) {
       return Task.Run(async () => await GetInvoices_UnpaidAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetInvoices_UnpaidAsync(GetInvoices_UnpaidRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_UnpaidAsync(GetInvoices_UnpaidRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1366,13 +1366,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesbydaterange/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoicesByDateRange(GetInvoicesByDateRangeRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesByDateRange(GetInvoicesByDateRangeRequest request) {
       return Task.Run(async () => await GetInvoicesByDateRangeAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesbydaterange/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetInvoicesByDateRangeAsync(GetInvoicesByDateRangeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoicesByDateRangeAsync(GetInvoicesByDateRangeRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1386,13 +1386,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomertypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefined(GetInvoicesForCustomer_typeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefined(GetInvoicesForCustomer_typeDefinedRequest request) {
       return Task.Run(async () => await GetInvoicesForCustomer_typeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomertypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined[]> GetInvoicesForCustomer_typeDefinedAsync(GetInvoicesForCustomer_typeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoicesForCustomer_typeDefinedAsync(GetInvoicesForCustomer_typeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1406,13 +1406,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomer/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetInvoicesForCustomer(GetInvoicesForCustomerRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesForCustomer(GetInvoicesForCustomerRequest request) {
       return Task.Run(async () => await GetInvoicesForCustomerAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomer/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetInvoicesForCustomerAsync(GetInvoicesForCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoicesForCustomerAsync(GetInvoicesForCustomerRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1426,13 +1426,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvpaymethods/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[] GetInvPayMethods(GetInvPayMethodsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetInvPayMethods(GetInvPayMethodsRequest request) {
       return Task.Run(async () => await GetInvPayMethodsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvpaymethods/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[]> GetInvPayMethodsAsync(GetInvPayMethodsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[]> GetInvPayMethodsAsync(GetInvPayMethodsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1446,13 +1446,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getjournal/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry GetJournal(GetJournalRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.JournalEntry GetJournal(GetJournalRequest request) {
       return Task.Run(async () => await GetJournalAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getjournal/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry> GetJournalAsync(GetJournalRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.JournalEntry> GetJournalAsync(GetJournalRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1466,13 +1466,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getjournals/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry[] GetJournals(GetJournalsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.JournalEntry[] GetJournals(GetJournalsRequest request) {
       return Task.Run(async () => await GetJournalsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getjournals/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.JournalEntry[]> GetJournalsAsync(GetJournalsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.JournalEntry[]> GetJournalsAsync(GetJournalsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1486,13 +1486,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getkpis/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetKPIs(GetKPIsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetKPIs(GetKPIsRequest request) {
       return Task.Run(async () => await GetKPIsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getkpis/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[]> GetKPIsAsync(GetKPIsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetKPIsAsync(GetKPIsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1506,13 +1506,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getmonthlyprofitandloss/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLoss(GetMonthlyProfitAndLossRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLoss(GetMonthlyProfitAndLossRequest request) {
       return Task.Run(async () => await GetMonthlyProfitAndLossAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getmonthlyprofitandloss/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.MonthlyPL[]> GetMonthlyProfitAndLossAsync(GetMonthlyProfitAndLossRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[]> GetMonthlyProfitAndLossAsync(GetMonthlyProfitAndLossRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1526,13 +1526,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodes/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[] GetNominalCodes(GetNominalCodesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetNominalCodes(GetNominalCodesRequest request) {
       return Task.Run(async () => await GetNominalCodesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodes/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[]> GetNominalCodesAsync(GetNominalCodesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCode[]> GetNominalCodesAsync(GetNominalCodesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1546,13 +1546,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodesextended/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtended(GetNominalCodesExtendedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtended(GetNominalCodesExtendedRequest request) {
       return Task.Run(async () => await GetNominalCodesExtendedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodesextended/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeExtended[]> GetNominalCodesExtendedAsync(GetNominalCodesExtendedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[]> GetNominalCodesExtendedAsync(GetNominalCodesExtendedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1566,13 +1566,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalledger/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.TransactionInformation[] GetNominalLedger(GetNominalLedgerRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[] GetNominalLedger(GetNominalLedgerRequest request) {
       return Task.Run(async () => await GetNominalLedgerAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalledger/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.TransactionInformation[]> GetNominalLedgerAsync(GetNominalLedgerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[]> GetNominalLedgerAsync(GetNominalLedgerRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1606,13 +1606,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getproducts/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Product[] GetProducts(GetProductsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Product[] GetProducts(GetProductsRequest request) {
       return Task.Run(async () => await GetProductsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getproducts/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Product[]> GetProductsAsync(GetProductsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Product[]> GetProductsAsync(GetProductsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1626,13 +1626,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getproductswithsubproducts/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.ProductsFull[] GetProductsWithSubProducts(GetProductsWithSubProductsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.ProductsFull[] GetProductsWithSubProducts(GetProductsWithSubProductsRequest request) {
       return Task.Run(async () => await GetProductsWithSubProductsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getproductswithsubproducts/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.ProductsFull[]> GetProductsWithSubProductsAsync(GetProductsWithSubProductsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ProductsFull[]> GetProductsWithSubProductsAsync(GetProductsWithSubProductsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1646,13 +1646,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprofitandloss/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.ProfitAndLoss GetProfitAndLoss(GetProfitAndLossRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss GetProfitAndLoss(GetProfitAndLossRequest request) {
       return Task.Run(async () => await GetProfitAndLossAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprofitandloss/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.ProfitAndLoss> GetProfitAndLossAsync(GetProfitAndLossRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss> GetProfitAndLossAsync(GetProfitAndLossRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1666,13 +1666,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectById(GetProjectByIdRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectById(GetProjectByIdRequest request) {
       return Task.Run(async () => await GetProjectByIdAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Project> GetProjectByIdAsync(GetProjectByIdRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByIdAsync(GetProjectByIdRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1686,13 +1686,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyname/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByName(GetProjectByNameRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByName(GetProjectByNameRequest request) {
       return Task.Run(async () => await GetProjectByNameAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyname/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Project> GetProjectByNameAsync(GetProjectByNameRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByNameAsync(GetProjectByNameRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1706,13 +1706,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyref/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project GetProjectByRef(GetProjectByRefRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByRef(GetProjectByRefRequest request) {
       return Task.Run(async () => await GetProjectByRefAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyref/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Project> GetProjectByRefAsync(GetProjectByRefRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByRefAsync(GetProjectByRefRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1726,13 +1726,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectsfull/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Project[] GetProjects_Full(GetProjects_FullRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Project[] GetProjects_Full(GetProjects_FullRequest request) {
       return Task.Run(async () => await GetProjects_FullAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectsfull/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Project[]> GetProjects_FullAsync(GetProjects_FullRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project[]> GetProjects_FullAsync(GetProjects_FullRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1746,13 +1746,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojects/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetProjects(GetProjectsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetProjects(GetProjectsRequest request) {
       return Task.Run(async () => await GetProjectsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojects/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[]> GetProjectsAsync(GetProjectsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetProjectsAsync(GetProjectsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1766,13 +1766,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebyid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetQuoteByID(GetQuoteByIDRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByID(GetQuoteByIDRequest request) {
       return Task.Run(async () => await GetQuoteByIDAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebyid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice> GetQuoteByIDAsync(GetQuoteByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetQuoteByIDAsync(GetQuoteByIDRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1786,13 +1786,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebynumber/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetQuoteByNumber(GetQuoteByNumberRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByNumber(GetQuoteByNumberRequest request) {
       return Task.Run(async () => await GetQuoteByNumberAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebynumber/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice> GetQuoteByNumberAsync(GetQuoteByNumberRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetQuoteByNumberAsync(GetQuoteByNumberRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1806,13 +1806,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesrecent/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotes_Recent(GetQuotes_RecentRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotes_Recent(GetQuotes_RecentRequest request) {
       return Task.Run(async () => await GetQuotes_RecentAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesrecent/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetQuotes_RecentAsync(GetQuotes_RecentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotes_RecentAsync(GetQuotes_RecentRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1826,13 +1826,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotes/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotes(GetQuotesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotes(GetQuotesRequest request) {
       return Task.Run(async () => await GetQuotesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotes/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetQuotesAsync(GetQuotesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotesAsync(GetQuotesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1846,13 +1846,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesforcustomer/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetQuotesForCustomer(GetQuotesForCustomerRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotesForCustomer(GetQuotesForCustomerRequest request) {
       return Task.Run(async () => await GetQuotesForCustomerAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesforcustomer/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetQuotesForCustomerAsync(GetQuotesForCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotesForCustomerAsync(GetQuotesForCustomerRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1866,13 +1866,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipttypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefined(GetReceipt_TypeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefined(GetReceipt_TypeDefinedRequest request) {
       return Task.Run(async () => await GetReceipt_TypeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipttypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice_TypeDefined> GetReceipt_TypeDefinedAsync(GetReceipt_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined> GetReceipt_TypeDefinedAsync(GetReceipt_TypeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1886,13 +1886,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipt/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice GetReceipt(GetReceiptRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetReceipt(GetReceiptRequest request) {
       return Task.Run(async () => await GetReceiptAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipt/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice> GetReceiptAsync(GetReceiptRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetReceiptAsync(GetReceiptRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1906,13 +1906,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptattachments/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachments(GetReceiptAttachmentsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachments(GetReceiptAttachmentsRequest request) {
       return Task.Run(async () => await GetReceiptAttachmentsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptattachments/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptAttachment[]> GetReceiptAttachmentsAsync(GetReceiptAttachmentsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[]> GetReceiptAttachmentsAsync(GetReceiptAttachmentsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1926,13 +1926,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptnotes/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptNotes[] GetReceiptNotes(GetReceiptNotesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[] GetReceiptNotes(GetReceiptNotesRequest request) {
       return Task.Run(async () => await GetReceiptNotesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptnotes/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.ReceiptNotes[]> GetReceiptNotesAsync(GetReceiptNotesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[]> GetReceiptNotesAsync(GetReceiptNotesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1946,13 +1946,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptpayment/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[] GetReceiptPayment(GetReceiptPaymentRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetReceiptPayment(GetReceiptPaymentRequest request) {
       return Task.Run(async () => await GetReceiptPaymentAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptpayment/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Payment[]> GetReceiptPaymentAsync(GetReceiptPaymentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetReceiptPaymentAsync(GetReceiptPaymentRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1966,13 +1966,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsrecent/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceipts_Recent(GetReceipts_RecentRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceipts_Recent(GetReceipts_RecentRequest request) {
       return Task.Run(async () => await GetReceipts_RecentAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsrecent/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetReceipts_RecentAsync(GetReceipts_RecentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceipts_RecentAsync(GetReceipts_RecentRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -1986,13 +1986,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipts/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceipts(GetReceiptsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceipts(GetReceiptsRequest request) {
       return Task.Run(async () => await GetReceiptsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipts/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetReceiptsAsync(GetReceiptsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceiptsAsync(GetReceiptsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2006,13 +2006,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsforsupplier/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[] GetReceiptsForSupplier(GetReceiptsForSupplierRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsForSupplier(GetReceiptsForSupplierRequest request) {
       return Task.Run(async () => await GetReceiptsForSupplierAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsforsupplier/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Invoice[]> GetReceiptsForSupplierAsync(GetReceiptsForSupplierRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceiptsForSupplierAsync(GetReceiptsForSupplierRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2050,13 +2050,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getrecpaymethods/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[] GetRecPayMethods(GetRecPayMethodsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetRecPayMethods(GetRecPayMethodsRequest request) {
       return Task.Run(async () => await GetRecPayMethodsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getrecpaymethods/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.PaymentMethod[]> GetRecPayMethodsAsync(GetRecPayMethodsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[]> GetRecPayMethodsAsync(GetRecPayMethodsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2090,13 +2090,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbycode/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct GetSubProductByCode(GetSubProductByCodeRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByCode(GetSubProductByCodeRequest request) {
       return Task.Run(async () => await GetSubProductByCodeAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbycode/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct> GetSubProductByCodeAsync(GetSubProductByCodeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct> GetSubProductByCodeAsync(GetSubProductByCodeRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2110,13 +2110,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbyid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct GetSubProductByID(GetSubProductByIDRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByID(GetSubProductByIDRequest request) {
       return Task.Run(async () => await GetSubProductByIDAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbyid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct> GetSubProductByIDAsync(GetSubProductByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct> GetSubProductByIDAsync(GetSubProductByIDRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2130,13 +2130,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproducts/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct[] GetSubProducts(GetSubProductsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.SubProduct[] GetSubProducts(GetSubProductsRequest request) {
       return Task.Run(async () => await GetSubProductsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproducts/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.SubProduct[]> GetSubProductsAsync(GetSubProductsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct[]> GetSubProductsAsync(GetSubProductsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2150,13 +2150,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplier/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier GetSupplier(GetSupplierRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplier(GetSupplierRequest request) {
       return Task.Run(async () => await GetSupplierAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplier/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier> GetSupplierAsync(GetSupplierRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier> GetSupplierAsync(GetSupplierRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2170,13 +2170,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplierbyid/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier GetSupplierByID(GetSupplierByIDRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplierByID(GetSupplierByIDRequest request) {
       return Task.Run(async () => await GetSupplierByIDAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplierbyid/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier> GetSupplierByIDAsync(GetSupplierByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier> GetSupplierByIDAsync(GetSupplierByIDRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2210,13 +2210,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliers/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier[] GetSuppliers(GetSuppliersRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Supplier[] GetSuppliers(GetSuppliersRequest request) {
       return Task.Run(async () => await GetSuppliersAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliers/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Supplier[]> GetSuppliersAsync(GetSuppliersRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier[]> GetSuppliersAsync(GetSuppliersRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2250,13 +2250,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalance/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[] GetTrialBalance(GetTrialBalanceRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetTrialBalance(GetTrialBalanceRequest request) {
       return Task.Run(async () => await GetTrialBalanceAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalance/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCode[]> GetTrialBalanceAsync(GetTrialBalanceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCode[]> GetTrialBalanceAsync(GetTrialBalanceRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2270,13 +2270,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalancewithopeningbalances/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalances(GetTrialBalanceWithOpeningBalancesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalances(GetTrialBalanceWithOpeningBalancesRequest request) {
       return Task.Run(async () => await GetTrialBalanceWithOpeningBalancesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalancewithopeningbalances/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.NominalCodeBalance[]> GetTrialBalanceWithOpeningBalancesAsync(GetTrialBalanceWithOpeningBalancesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[]> GetTrialBalanceWithOpeningBalancesAsync(GetTrialBalanceWithOpeningBalancesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2290,13 +2290,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaultstypedefined/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefined(GetUserAccountDefaults_TypeDefinedRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefined(GetUserAccountDefaults_TypeDefinedRequest request) {
       return Task.Run(async () => await GetUserAccountDefaults_TypeDefinedAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaultstypedefined/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults_TypeDefined> GetUserAccountDefaults_TypeDefinedAsync(GetUserAccountDefaults_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined> GetUserAccountDefaults_TypeDefinedAsync(GetUserAccountDefaults_TypeDefinedRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2310,13 +2310,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaults/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults GetUserAccountDefaults(GetUserAccountDefaultsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults GetUserAccountDefaults(GetUserAccountDefaultsRequest request) {
       return Task.Run(async () => await GetUserAccountDefaultsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaults/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.UserAccountDefaults> GetUserAccountDefaultsAsync(GetUserAccountDefaultsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults> GetUserAccountDefaultsAsync(GetUserAccountDefaultsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2330,13 +2330,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getvatrates/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[] GetVATRates(GetVATRatesRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetVATRates(GetVATRatesRequest request) {
       return Task.Run(async () => await GetVATRatesAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getvatrates/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.BasicDataset[]> GetVATRatesAsync(GetVATRatesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetVATRatesAsync(GetVATRatesRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2350,13 +2350,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getvatreport/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.VATReport GetVATReport(GetVATReportRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.VATReport GetVATReport(GetVATReportRequest request) {
       return Task.Run(async () => await GetVATReportAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/getvatreport/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.VATReport> GetVATReportAsync(GetVATReportRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.VATReport> GetVATReportAsync(GetVATReportRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -2897,13 +2897,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/searchcustomerbycusttext/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer SearchCustomerByCustText(SearchCustomerByCustTextRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer SearchCustomerByCustText(SearchCustomerByCustTextRequest request) {
       return Task.Run(async () => await SearchCustomerByCustTextAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/searchcustomerbycusttext/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer> SearchCustomerByCustTextAsync(SearchCustomerByCustTextRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> SearchCustomerByCustTextAsync(SearchCustomerByCustTextRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
@@ -3253,13 +3253,13 @@ namespace net.tipstrade.KashFlowApiClient {
 
 #if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/vcftocustomerobjects/ </summary>
-    public net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[] VCFToCustomerObjects(VCFToCustomerObjectsRequest request) {
+    public TipsTrade.KashFlow.KashFlowAPI.Customer[] VCFToCustomerObjects(VCFToCustomerObjectsRequest request) {
       return Task.Run(async () => await VCFToCustomerObjectsAsync(request)).Result;
     }
 #endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/vcftocustomerobjects/ </summary>
-    public async Task<net.tipstrade.KashFlowApiClient.KashFlowAPI.Customer[]> VCFToCustomerObjectsAsync(VCFToCustomerObjectsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> VCFToCustomerObjectsAsync(VCFToCustomerObjectsRequest request) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
