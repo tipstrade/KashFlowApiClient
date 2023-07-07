@@ -68,6 +68,20 @@ namespace TipsTrade.KashFlow {
         }
       };
     }
+
+    /// <summary>Gets all the outstanding recipts.</summary>
+    public static async Task<IEnumerable<Invoice>> GetReceiptsOutstandingAsync(this KashFlowClient client) {
+      // Kashflow considers overpaid and unpaid as different
+      var tasks = await Task.WhenAll(
+        client.GetReceiptsAsync(ReceiptFilterType.Unpaid).ToArrayAsync().AsTask(),
+        client.GetReceiptsAsync(ReceiptFilterType.Overpaid).ToArrayAsync().AsTask()
+        );
+
+      return tasks
+        .SelectMany(x => x)
+        .DistinctBy(x => x.InvoiceDBID)
+        ;
+    }
   }
 }
 #endif
