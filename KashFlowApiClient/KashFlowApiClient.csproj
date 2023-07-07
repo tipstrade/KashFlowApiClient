@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net45;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard1.3;net461;netcoreapp2.0;net6.0</TargetFrameworks>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}</ProjectGuid>
