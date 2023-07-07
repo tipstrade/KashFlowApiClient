@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KashFlowApiClient", "KashFlowApiClient.csproj", "{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KashFlowApiClient", "KashFlowApiClient\KashFlowApiClient.csproj", "{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{FD4F0527-D2EF-4424-8402-4C788FD2B762}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FD4F0527-D2EF-4424-8402-4C788FD2B762}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
