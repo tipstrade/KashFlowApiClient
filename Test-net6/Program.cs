@@ -12,6 +12,11 @@ namespace Test_net6 {
 
       var api = new KashFlowClient(config["UserName"], config["Password"]);
 
+      var cancellationToken = new CancellationTokenSource();
+      cancellationToken.CancelAfter(5000);
+
+      var reciptsTask = await api.GetReceiptsAsync(ReceiptFilterType.All, 100, cancellationToken.Token).ToArrayAsync();
+
       //var firstN = await api.GetReceiptsAsync(ReceiptFilterType.All)
       //  .Where(x => x.Lines.Count() > 1)
       //  .Take(250)
