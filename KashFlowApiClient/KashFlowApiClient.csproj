@@ -11,6 +11,7 @@
     <RootNamespace>TipsTrade.KashFlow</RootNamespace>
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Version>2.0.0.2-beta</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
     <Description>A .Net wrapper for the KashFlow SOAP API.</Description>
@@ -67,7 +68,7 @@ v.1.0.0.0
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
-	  <PackageReference Include="System.Linq.Async" Version="6.0.0.0" />
+	  <PackageReference Include="System.Linq.Async" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
