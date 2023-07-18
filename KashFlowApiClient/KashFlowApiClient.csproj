@@ -12,10 +12,13 @@
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>3.0.0</Version>
+    <Version>3.1.0-beta</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
-    <Description>A .Net wrapper for the KashFlow SOAP API.</Description>
-    <PackageReleaseNotes>v.3.0.0
+    <Description>A .Net wrapper for the KashFlow SOAP and Rest APIs.</Description>
+    <PackageReleaseNotes>v.3.1.0-beta
+* Add support for the Rest API (V2)
+
+v.3.0.0
 * Add .Net Core 6.0+ and IAsyncEnumerable support
 * Breaking Changes: Update namespace to TipsTrade.KashFlowApi
 
