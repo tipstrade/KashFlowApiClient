@@ -147,8 +147,6 @@ namespace TipsTrade.KashFlow.v2 {
 
       HttpRequestMessage httpRequest = request;
 
-      Console.WriteLine(httpRequest.RequestUri);
-
       var response = await Client.SendAsync(httpRequest, cancellationToken);
 
       if (!response.IsSuccessStatusCode) {
