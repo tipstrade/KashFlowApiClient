@@ -11,11 +11,7 @@ namespace TipsTrade.KashFlow {
   /// A wrapper around the KashFlowAPISoapClient, that provides caching of credentials, as well
   /// as throwing exceptions rather than returning errors in output parameters.
   /// </summary>
-  public partial class KashFlowClient
-#if NET45
-:    Component
-#endif
-    {
+  public partial class KashFlowClient {
     #region Constants
     /// <summary>
     /// Default message size is 20MB.
