@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using System.Text.Json;
 using TipsTrade.KashFlow;
 using TipsTrade.KashFlow.KashFlowAPI;
 using TipsTrade.KashFlow.v2;
@@ -16,6 +17,10 @@ namespace Test_net6 {
       var settings = config.GetSection("KashFlow").Get<KashFlowSettings>();
       var v1 = new KashFlowClient(settings.V1.UserName, settings.V1.Password);
       var v2 = new KashFlowRestClient(settings.V2.Username, settings.V2.Password, settings.V2.MemorableWord);
+
+      await v2.ArchiveCustomers("OMCACCRIN001");
+
+      var s = JsonSerializer.Serialize(settings);
 
       var allInvoices = await v2.GetInvoicesAsync(new PurchaseRequest { })
         .SelectAwait(async (x) => await v2.GetInvoiceAsync(x.Number))

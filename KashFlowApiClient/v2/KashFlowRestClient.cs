@@ -116,12 +116,15 @@ namespace TipsTrade.KashFlow.v2 {
     private async Task<T> ExecuteObjectRequestAsync<T>(RequestArgs request, CancellationToken cancellationToken = default) {
       using var response = await ExecuteRequestAsync(request, cancellationToken);
 
+      if (response.StatusCode == System.Net.HttpStatusCode.NoContent) {
+        return default;
+      }
+
       var json = await response.Content.ReadAsStringAsync();
 
       try {
         return JsonSerializer.Deserialize<T>(json) ?? throw new InvalidOperationException("The API returned a null JSON string.");
       } catch {
-        Console.WriteLine(json);
         throw;
       }
 
@@ -164,6 +167,32 @@ namespace TipsTrade.KashFlow.v2 {
     #endregion
 
     #region API methods
+    /// <summary>Archvies the specified list of customers.</summary>
+    public Task ArchiveCustomers(params string[] codes) => ArchiveCustomers(codes.AsEnumerable());
+
+    /// <summary>Archvies the specified list of customers.</summary>
+    public async Task ArchiveCustomers(IEnumerable<string> codes) {
+      var req = new RequestArgs<IEnumerable<string>>("internal", "customers", "archive") {
+        Method = HttpMethod.Put,
+        Payload = codes
+      };
+
+      await ExecuteObjectRequestAsync(req);
+    }
+
+    /// <summary>Archvies the specified list of suppliers.</summary>
+    public Task ArchiveSuppliers(params string[] codes) => ArchiveSuppliers(codes.AsEnumerable());
+
+    /// <summary>Archvies the specified list of suppliers.</summary>
+    public async Task ArchiveSuppliers(IEnumerable<string> codes) {
+      var req = new RequestArgs<IEnumerable<string>>("internal", "suppliers", "archive") {
+        Method = HttpMethod.Put,
+        Payload = codes
+      };
+
+      await ExecuteObjectRequestAsync(req);
+    }
+
     /// <summary>Gets the specified bulk payment.</summary>
     private Task<BulkPayment> GetBulkPaymentAsync(string type, int number) {
       return ExecuteObjectRequestAsync<BulkPayment>(new RequestArgs(type, "bulk", "payments", $"{number}"));
