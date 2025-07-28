@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net461;netcoreapp2.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>net8</TargetFrameworks>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}</ProjectGuid>
@@ -12,10 +12,13 @@
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>3.1.1-beta</Version>
+    <Version>4.0.0-beta</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
     <Description>A .Net wrapper for the KashFlow SOAP and Rest APIs.</Description>
-    <PackageReleaseNotes>v.3.1.1-beta
+    <PackageReleaseNotes>4.0.0-beta
+* Target net8
+
+v.3.1.1-beta
 * Add support for the Rest API (V2)
 
 v.3.0.0
@@ -64,7 +67,10 @@ v.1.0.0.0
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.ServiceModel.Http" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.7" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.3" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.1.2" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">

@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System;
 using System.Threading.Tasks;
@@ -125,4 +124,3 @@ namespace TipsTrade.KashFlow {
   }
   #endregion
 }
-#endif
