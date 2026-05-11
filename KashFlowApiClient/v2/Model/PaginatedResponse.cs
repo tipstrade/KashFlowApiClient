@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace TipsTrade.KashFlow.v2.Model {
   public class PaginatedResponse<T> {
@@ -15,4 +14,3 @@ namespace TipsTrade.KashFlow.v2.Model {
     public int TotalRecords { get; set; }
   }
 }
-#endif

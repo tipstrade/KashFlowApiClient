@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using TipsTrade.KashFlow.v2.Model.Covnerters;
@@ -42,4 +41,3 @@ namespace TipsTrade.KashFlow.v2.Model {
     public string Permalink { get; set; }
   }
 }
-#endif

@@ -1,4 +1,3 @@
-﻿#if NET6_0_OR_GREATER
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
@@ -72,4 +71,3 @@ namespace TipsTrade.KashFlow.v2.Model {
     public string? Suppliercode { get; set; }
   }
 }
-#endif

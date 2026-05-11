@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text.Json.Serialization;
@@ -37,4 +36,3 @@ namespace TipsTrade.KashFlow.v2.Model {
     }
   }
 }
-#endif

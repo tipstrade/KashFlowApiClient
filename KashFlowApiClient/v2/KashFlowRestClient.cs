@@ -1,10 +1,10 @@
-﻿#if NET6_0_OR_GREATER
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
@@ -194,27 +194,27 @@ namespace TipsTrade.KashFlow.v2 {
     }
 
     /// <summary>Gets the specified bulk payment.</summary>
-    private Task<BulkPayment> GetBulkPaymentAsync(string type, int number) {
-      return ExecuteObjectRequestAsync<BulkPayment>(new RequestArgs(type, "bulk", "payments", $"{number}"));
+    private Task<BulkPayment> GetBulkPaymentAsync(string type, int number, CancellationToken cancellationToken = default) {
+      return ExecuteObjectRequestAsync<BulkPayment>(new RequestArgs(type, "bulk", "payments", $"{number}"), cancellationToken);
     }
 
     /// <summary>Gets the specified invoice <see cref="BulkPayment"/>.</summary>
-    public Task<BulkPayment> GetInvoiceBulkPayment(int number) => GetBulkPaymentAsync("invoices", number);
+    public Task<BulkPayment> GetInvoiceBulkPayment(int number, CancellationToken cancellationToken = default) => GetBulkPaymentAsync("invoices", number, cancellationToken);
 
     /// <summary>Gets the specified <see cref="Invoice"/>.</summary>
-    public Task<Invoice> GetInvoiceAsync(int number) {
-      return ExecuteObjectRequestAsync<Invoice>(new RequestArgs("invoices", $"{number}"));
+    public Task<Invoice> GetInvoiceAsync(int number, CancellationToken cancellationToken = default) {
+      return ExecuteObjectRequestAsync<Invoice>(new RequestArgs("invoices", $"{number}"), cancellationToken);
     }
 
     /// <summary>Gets the collection of <see cref="Invoice"/> objects.</summary>
-    public async IAsyncEnumerable<Invoice> GetInvoicesAsync(PurchaseRequest request) {
+    public async IAsyncEnumerable<Invoice> GetInvoicesAsync(PurchaseRequest request, [EnumeratorCancellation] CancellationToken cancellationToken = default) {
       var query = request.ToDictionary();
       var page = request.Page;
 
       do {
         var response = await ExecuteObjectRequestAsync<PaginatedResponse<Invoice>>(new RequestArgs("invoices") {
           Query = query
-        });
+        }, cancellationToken);
 
         foreach (var item in response.Data) {
           yield return item;
@@ -229,22 +229,22 @@ namespace TipsTrade.KashFlow.v2 {
     }
 
     /// <summary>Gets the specified purchase <see cref="BulkPayment"/>.</summary>
-    public Task<BulkPayment> GetPurchaseBulkPayment(int number) => GetBulkPaymentAsync("purchases", number);
+    public Task<BulkPayment> GetPurchaseBulkPayment(int number, CancellationToken cancellationToken = default) => GetBulkPaymentAsync("purchases", number, cancellationToken);
 
     /// <summary>Gets the specified <see cref="Purchase"/>.</summary>
-    public Task<Purchase> GetPurchaseAsync(int number) {
-      return ExecuteObjectRequestAsync<Purchase>(new RequestArgs("purchases", $"{number}"));
+    public Task<Purchase> GetPurchaseAsync(int number, CancellationToken cancellationToken = default) {
+      return ExecuteObjectRequestAsync<Purchase>(new RequestArgs("purchases", $"{number}"), cancellationToken);
     }
 
     /// <summary>Gets the collection of <see cref="Purchase"/> objects.</summary>
-    public async IAsyncEnumerable<Purchase> GetPurchasesAsync(PurchaseRequest request) {
+    public async IAsyncEnumerable<Purchase> GetPurchasesAsync(PurchaseRequest request, [EnumeratorCancellation] CancellationToken cancellationToken = default) {
       var query = request.ToDictionary();
       var page = request.Page;
 
       do {
         var response = await ExecuteObjectRequestAsync<PaginatedResponse<Purchase>>(new RequestArgs("purchases") {
           Query = query
-        });
+        }, cancellationToken);
 
         foreach (var item in response.Data) {
           yield return item;
@@ -333,4 +333,3 @@ namespace TipsTrade.KashFlow.v2 {
     #endregion
   }
 }
-#endif

@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace TipsTrade.KashFlow.v2.Model {
   internal class Login1Request {
@@ -42,4 +41,3 @@ namespace TipsTrade.KashFlow.v2.Model {
     public bool HasTemporaryPassword { get; set; }
   }
 }
-#endif

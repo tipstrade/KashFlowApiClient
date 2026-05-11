@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-namespace TipsTrade.KashFlow.v2.Model {
+﻿namespace TipsTrade.KashFlow.v2.Model {
   public class Currency {
     public string Code { get; set; }
     public bool DisplaySymbolOnRight { get; set; }
@@ -8,4 +7,3 @@ namespace TipsTrade.KashFlow.v2.Model {
     public string Symbol { get; set; }
   }
 }
-#endif
