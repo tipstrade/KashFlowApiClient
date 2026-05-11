@@ -40,7 +40,7 @@ namespace Test_net6 {
         .Where(x => x != 0)
         ;
 
-      var builkPayments = await Task.WhenAll(
+      var bulkPayments = await Task.WhenAll(
         bulkPaymentIds.Select(x => v2.GetInvoiceBulkPayment(x))
         );
 
