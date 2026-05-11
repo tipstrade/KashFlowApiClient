@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading;
@@ -120,15 +119,9 @@ namespace TipsTrade.KashFlow.v2 {
         return default;
       }
 
-      var json = await response.Content.ReadAsStringAsync();
+      var json = await response.Content.ReadAsStringAsync(cancellationToken);
 
-      try {
-        return JsonSerializer.Deserialize<T>(json) ?? throw new InvalidOperationException("The API returned a null JSON string.");
-      } catch {
-        throw;
-      }
-
-      return await response.Content.ReadFromJsonAsync<T>() ?? throw new InvalidOperationException("The API returned a null JSON string.");
+      return JsonSerializer.Deserialize<T>(json) ?? throw new InvalidOperationException("The API returned a null JSON string.");
     }
 
     private async Task<Stream> ExecuteStreamRequestAsync(RequestArgs request, CancellationToken cancellationToken = default) {

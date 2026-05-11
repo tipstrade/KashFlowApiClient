@@ -14,6 +14,9 @@ namespace TipsTrade.KashFlow {
 
     private KashFlowSettings Settings { get; }
 
+    private readonly SemaphoreSlim _v1Semaphore = new(1, 1);
+    private readonly SemaphoreSlim _v2Semaphore = new(1, 1);
+
     /// <summary>Creates an instance of the <see cref="KashFlowService"/> class.</summary>
     public KashFlowService(IOptions<KashFlowSettings> options) {
       Settings = options.Value;
@@ -25,10 +28,13 @@ namespace TipsTrade.KashFlow {
         throw new InvalidOperationException("No settings are available.");
       }
 
-      var client = V1;
+      await _v1Semaphore.WaitAsync(cancellationToken);
+      try {
+        if (V1 != null) {
+          return V1;
+        }
 
-      if (client == null) {
-        client = new KashFlowClient(Settings.V1.UserName, Settings.V1.Password) {
+        var client = new KashFlowClient(Settings.V1.UserName, Settings.V1.Password) {
           Timeout = new TimeSpan(0, Settings.Timeout, 0)
         };
 
@@ -40,26 +46,35 @@ namespace TipsTrade.KashFlow {
         }
 
         V1 = client;
-      }
 
-      return client;
+        return V1;
+      } finally {
+        _v1Semaphore.Release();
+      }
     }
 
     /// <summary>Gets V2 of the KashFlow API client.</summary>
-    public Task<KashFlowRestClient> GetClientV2Async() {
+    public async Task<KashFlowRestClient> GetClientV2Async(CancellationToken cancellationToken = default) {
       if (Settings.V2 == null) {
         throw new InvalidOperationException("No settings are available.");
       }
 
-      var client = V2;
+      await _v2Semaphore.WaitAsync(cancellationToken);
+      try {
+        if (V2 != null) {
+          return V2;
+        }
 
-      if (client == null) {
-        client = new KashFlowRestClient(Settings.V2.Username, Settings.V2.Password, Settings.V2.MemorableWord) {
+        var client = new KashFlowRestClient(Settings.V2.Username, Settings.V2.Password, Settings.V2.MemorableWord) {
           Timeout = new TimeSpan(0, Settings.Timeout, 0)
         };
-      }
 
-      return Task.FromResult(client);
+        V2 = client;
+
+        return V2;
+      } finally {
+        _v2Semaphore.Release();
+      }
     }
 
     #region Inner classes
@@ -122,6 +137,6 @@ namespace TipsTrade.KashFlow {
     public static IServiceCollection ConfigureKashFlow(this IServiceCollection services, Action<KashFlowService.KashFlowSettings> setupAction) {
       return services.Configure(setupAction);
     }
+    #endregion
   }
-  #endregion
 }
