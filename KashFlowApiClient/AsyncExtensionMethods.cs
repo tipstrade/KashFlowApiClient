@@ -1,5 +1,4 @@
-﻿#if NET6_0_OR_GREATER
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -17,8 +16,7 @@ namespace TipsTrade.KashFlow {
       CancellationToken cancellationToken = default
       ) {
       return await client.GetInvoicePaymentsAsync(start, end, cancellationToken)
-        .Where(predicate).ToArrayAsync(cancellationToken)
-        ;
+        .Where(predicate).ToArrayAsync(cancellationToken);
     }
 
     /// <summary>Finds the recipts for the specified filter.</summary>
@@ -28,8 +26,7 @@ namespace TipsTrade.KashFlow {
       CancellationToken cancellationToken = default
       ) {
       return await client.GetReceiptsAsync(filter, cancellationToken: cancellationToken)
-        .Where(predicate).ToArrayAsync(cancellationToken)
-        ;
+        .Where(predicate).ToArrayAsync(cancellationToken);
     }
 
     /// <summary>Finds the first receipt for the specified filter.</summary>
@@ -39,15 +36,14 @@ namespace TipsTrade.KashFlow {
       CancellationToken cancellationToken = default
       ) {
       return await client.GetReceiptsAsync(filter, cancellationToken: cancellationToken)
-        .FirstOrDefaultAsync(predicate, cancellationToken)
-        ;
+        .FirstOrDefaultAsync(predicate, cancellationToken);
     }
 
     /// <summary>Gets a collection of the invoice payments.</summary>
     public static async IAsyncEnumerable<Payment> GetInvoicePaymentsAsync(
       this KashFlowClient client,
       DateTime? start = null, DateTime? end = null,
-        [EnumeratorCancellation] CancellationToken cancellationToken = default
+      [EnumeratorCancellation] CancellationToken cancellationToken = default
       ) {
       var pagingRequest = new GetInvoicePaymentsByDateRangeRequest {
         EndDate = end ?? DateTime.MaxValue,
@@ -56,15 +52,13 @@ namespace TipsTrade.KashFlow {
       };
 
       while (true) {
-        cancellationToken.ThrowIfCancellationRequested();
-
-        var results = await client.GetInvoicePaymentsByDateRangeAsync(pagingRequest);
+        var results = await client.GetInvoicePaymentsByDateRangeAsync(pagingRequest, cancellationToken);
 
         foreach (var item in results) {
           yield return item;
         }
 
-        if (!results.Any()) {
+        if (results.Length == 0) {
           break;
         }
 
@@ -85,9 +79,7 @@ namespace TipsTrade.KashFlow {
       };
 
       while (true) {
-        cancellationToken.ThrowIfCancellationRequested();
-
-        var result = await client.GetReceiptsWithPagingAsync(pagingRequest);
+        var result = await client.GetReceiptsWithPagingAsync(pagingRequest, cancellationToken);
 
         foreach (var item in result.Result) {
           yield return item;
@@ -98,7 +90,7 @@ namespace TipsTrade.KashFlow {
         if (pagingRequest.Page > result.TotalPages) {
           break;
         }
-      };
+      }
     }
 
     /// <summary>Gets all the outstanding recipts.</summary>
@@ -119,4 +111,3 @@ namespace TipsTrade.KashFlow {
     }
   }
 }
-#endif

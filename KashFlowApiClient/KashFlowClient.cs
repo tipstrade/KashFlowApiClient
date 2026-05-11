@@ -102,6 +102,7 @@ namespace TipsTrade.KashFlow {
       var sb = new StringBuilder();
       sb.Append(@"using TipsTrade.KashFlow.KashFlowAPI;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TipsTrade.KashFlow {
@@ -131,24 +132,10 @@ namespace TipsTrade.KashFlow {
         var asyncResponseName = responseType == null ? "Task" : $"Task<{responseType}>";
         var syncResponseName = responseType == null ? "void" : $"{responseType}";
 
-        // Provide sync methods for the Net45 build
-        sb.AppendLine("#if NET45");
-        sb.AppendFormat("///<summary>See https://www.kashflow.com/developers/soap-api/{0}/ </summary>\n",
-          m.Name.Replace("_", "").Replace("Async", "").ToLower());
-        sb.AppendLine($"public {syncResponseName} {m.Name.Replace("Async", "")}({requestParam.ParameterType.Name} request) {{");
-        if (responseType == null) {
-          sb.AppendLine($"Task.Run(async () => await {m.Name}(request)).Wait();");
-        } else {
-          sb.AppendLine($"return Task.Run(async () => await {m.Name}(request)).Result;");
-        }
-        sb.AppendLine("}");
-        sb.AppendLine("#endif");
-        sb.AppendLine();
-
         // The Async Method
         sb.AppendFormat("///<summary>See https://www.kashflow.com/developers/soap-api/{0}/ </summary>\n",
           m.Name.Replace("_", "").Replace("Async", "").ToLower());
-        sb.AppendLine($"public async {asyncResponseName} {m.Name}({requestParam.ParameterType.Name} request) {{");
+        sb.AppendLine($"public async {asyncResponseName} {m.Name}({requestParam.ParameterType.Name} request, CancellationToken cancellationToken = default) {{");
 
         if (responseObjectFields.Count() != 0) {
           sb.AppendLine("int i = null;");
@@ -169,7 +156,7 @@ namespace TipsTrade.KashFlow {
         }
 
         // Make the actual request
-        sb.AppendLine($"var resp = await Client.{m.Name}(request);");
+        sb.AppendLine($"var resp = await Client.{m.Name}(request).WaitAsync(cancellationToken);");
         sb.AppendLine();
 
         // Check for any errors

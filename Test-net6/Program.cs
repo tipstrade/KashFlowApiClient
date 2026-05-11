@@ -9,6 +9,9 @@ using static TipsTrade.KashFlow.KashFlowService;
 namespace Test_net6 {
   internal class Program {
     static async Task Main(string[] args) {
+      var codeMethods = KashFlowClient.GenerateMethodCode();
+
+
       var config = new ConfigurationBuilder()
         .AddUserSecrets<Program>()
         .Build()

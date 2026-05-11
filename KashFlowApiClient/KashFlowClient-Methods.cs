@@ -1,24 +1,18 @@
 ﻿using TipsTrade.KashFlow.KashFlowAPI;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TipsTrade.KashFlow {
   public partial class KashFlowClient {
     #region Automatically generated methods
 #pragma warning disable IDE0018, IDE1006
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/addorupdatesubproduct/ </summary>
-    public System.Int32 AddOrUpdateSubProduct(AddOrUpdateSubProductRequest request) {
-      return Task.Run(async () => await AddOrUpdateSubProductAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/addorupdatesubproduct/ </summary>
-    public async Task<System.Int32> AddOrUpdateSubProductAsync(AddOrUpdateSubProductRequest request) {
+    public async Task<System.Int32> AddOrUpdateSubProductAsync(AddOrUpdateSubProductRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.AddOrUpdateSubProductAsync(request);
+      var resp = await Client.AddOrUpdateSubProductAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -26,19 +20,12 @@ namespace TipsTrade.KashFlow {
       return resp.AddOrUpdateSubProductResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/allocateadvancepaymenttoinvoice/ </summary>
-    public System.Int32 AllocateAdvancePaymentToInvoice(AllocateAdvancePaymentToInvoiceRequest request) {
-      return Task.Run(async () => await AllocateAdvancePaymentToInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/allocateadvancepaymenttoinvoice/ </summary>
-    public async Task<System.Int32> AllocateAdvancePaymentToInvoiceAsync(AllocateAdvancePaymentToInvoiceRequest request) {
+    public async Task<System.Int32> AllocateAdvancePaymentToInvoiceAsync(AllocateAdvancePaymentToInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.AllocateAdvancePaymentToInvoiceAsync(request);
+      var resp = await Client.AllocateAdvancePaymentToInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -46,19 +33,12 @@ namespace TipsTrade.KashFlow {
       return resp.AllocateAdvancePaymentToInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/allocateadvancepaymenttoreceipt/ </summary>
-    public System.Int32 AllocateAdvancePaymentToReceipt(AllocateAdvancePaymentToReceiptRequest request) {
-      return Task.Run(async () => await AllocateAdvancePaymentToReceiptAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/allocateadvancepaymenttoreceipt/ </summary>
-    public async Task<System.Int32> AllocateAdvancePaymentToReceiptAsync(AllocateAdvancePaymentToReceiptRequest request) {
+    public async Task<System.Int32> AllocateAdvancePaymentToReceiptAsync(AllocateAdvancePaymentToReceiptRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.AllocateAdvancePaymentToReceiptAsync(request);
+      var resp = await Client.AllocateAdvancePaymentToReceiptAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -66,19 +46,12 @@ namespace TipsTrade.KashFlow {
       return resp.AllocateAdvancePaymentToReceiptResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/applycreditnotetoinvoice/ </summary>
-    public System.Boolean applyCreditNoteToInvoice(applyCreditNoteToInvoiceRequest request) {
-      return Task.Run(async () => await applyCreditNoteToInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/applycreditnotetoinvoice/ </summary>
-    public async Task<System.Boolean> applyCreditNoteToInvoiceAsync(applyCreditNoteToInvoiceRequest request) {
+    public async Task<System.Boolean> applyCreditNoteToInvoiceAsync(applyCreditNoteToInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.applyCreditNoteToInvoiceAsync(request);
+      var resp = await Client.applyCreditNoteToInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -86,19 +59,12 @@ namespace TipsTrade.KashFlow {
       return resp.applyCreditNoteToInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/attachfiletoreceipt/ </summary>
-    public System.Int32 AttachFileToReceipt(AttachFileToReceiptRequest request) {
-      return Task.Run(async () => await AttachFileToReceiptAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/attachfiletoreceipt/ </summary>
-    public async Task<System.Int32> AttachFileToReceiptAsync(AttachFileToReceiptRequest request) {
+    public async Task<System.Int32> AttachFileToReceiptAsync(AttachFileToReceiptRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.AttachFileToReceiptAsync(request);
+      var resp = await Client.AttachFileToReceiptAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -106,19 +72,12 @@ namespace TipsTrade.KashFlow {
       return resp.AttachFileToReceiptResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/autoauthip/ </summary>
-    public System.Int32 AutoAuthIP(AutoAuthIPRequest request) {
-      return Task.Run(async () => await AutoAuthIPAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/autoauthip/ </summary>
-    public async Task<System.Int32> AutoAuthIPAsync(AutoAuthIPRequest request) {
+    public async Task<System.Int32> AutoAuthIPAsync(AutoAuthIPRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.AutoAuthIPAsync(request);
+      var resp = await Client.AutoAuthIPAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -126,19 +85,12 @@ namespace TipsTrade.KashFlow {
       return resp.AutoAuthIPResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/convertquotetoinvoice/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice ConvertQuoteToInvoice(ConvertQuoteToInvoiceRequest request) {
-      return Task.Run(async () => await ConvertQuoteToInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/convertquotetoinvoice/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> ConvertQuoteToInvoiceAsync(ConvertQuoteToInvoiceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> ConvertQuoteToInvoiceAsync(ConvertQuoteToInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.ConvertQuoteToInvoiceAsync(request);
+      var resp = await Client.ConvertQuoteToInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -146,19 +98,12 @@ namespace TipsTrade.KashFlow {
       return resp.ConvertQuoteToInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/createaccount/ </summary>
-    public System.Int32 createAccount(createAccountRequest request) {
-      return Task.Run(async () => await createAccountAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/createaccount/ </summary>
-    public async Task<System.Int32> createAccountAsync(createAccountRequest request) {
+    public async Task<System.Int32> createAccountAsync(createAccountRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.Username)) request.Username = Username;
       if (string.IsNullOrEmpty(request.password)) request.password = Password;
 
-      var resp = await Client.createAccountAsync(request);
+      var resp = await Client.createAccountAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -166,19 +111,12 @@ namespace TipsTrade.KashFlow {
       return resp.createAccountResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/createbankaccount/ </summary>
-    public System.Int32 CreateBankAccount(CreateBankAccountRequest request) {
-      return Task.Run(async () => await CreateBankAccountAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/createbankaccount/ </summary>
-    public async Task<System.Int32> CreateBankAccountAsync(CreateBankAccountRequest request) {
+    public async Task<System.Int32> CreateBankAccountAsync(CreateBankAccountRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.CreateBankAccountAsync(request);
+      var resp = await Client.CreateBankAccountAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -186,19 +124,12 @@ namespace TipsTrade.KashFlow {
       return resp.CreateBankAccountResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletebanktransaction/ </summary>
-    public System.Int32 DeleteBankTransaction(DeleteBankTransactionRequest request) {
-      return Task.Run(async () => await DeleteBankTransactionAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletebanktransaction/ </summary>
-    public async Task<System.Int32> DeleteBankTransactionAsync(DeleteBankTransactionRequest request) {
+    public async Task<System.Int32> DeleteBankTransactionAsync(DeleteBankTransactionRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteBankTransactionAsync(request);
+      var resp = await Client.DeleteBankTransactionAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -206,19 +137,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteBankTransactionResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletecustomer/ </summary>
-    public System.Int32 DeleteCustomer(DeleteCustomerRequest request) {
-      return Task.Run(async () => await DeleteCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletecustomer/ </summary>
-    public async Task<System.Int32> DeleteCustomerAsync(DeleteCustomerRequest request) {
+    public async Task<System.Int32> DeleteCustomerAsync(DeleteCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteCustomerAsync(request);
+      var resp = await Client.DeleteCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -226,19 +150,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoice/ </summary>
-    public System.Int32 DeleteInvoice(DeleteInvoiceRequest request) {
-      return Task.Run(async () => await DeleteInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoice/ </summary>
-    public async Task<System.Int32> DeleteInvoiceAsync(DeleteInvoiceRequest request) {
+    public async Task<System.Int32> DeleteInvoiceAsync(DeleteInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteInvoiceAsync(request);
+      var resp = await Client.DeleteInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -246,19 +163,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoicebyid/ </summary>
-    public System.Int32 DeleteInvoiceByID(DeleteInvoiceByIDRequest request) {
-      return Task.Run(async () => await DeleteInvoiceByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoicebyid/ </summary>
-    public async Task<System.Int32> DeleteInvoiceByIDAsync(DeleteInvoiceByIDRequest request) {
+    public async Task<System.Int32> DeleteInvoiceByIDAsync(DeleteInvoiceByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteInvoiceByIDAsync(request);
+      var resp = await Client.DeleteInvoiceByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -266,19 +176,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteInvoiceByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoiceline/ </summary>
-    public System.Int32 DeleteInvoiceLine(DeleteInvoiceLineRequest request) {
-      return Task.Run(async () => await DeleteInvoiceLineAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoiceline/ </summary>
-    public async Task<System.Int32> DeleteInvoiceLineAsync(DeleteInvoiceLineRequest request) {
+    public async Task<System.Int32> DeleteInvoiceLineAsync(DeleteInvoiceLineRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteInvoiceLineAsync(request);
+      var resp = await Client.DeleteInvoiceLineAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -286,19 +189,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteInvoiceLineResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoicelinewithinvoiceid/ </summary>
-    public System.Int32 DeleteInvoiceLineWithInvoiceID(DeleteInvoiceLineWithInvoiceIDRequest request) {
-      return Task.Run(async () => await DeleteInvoiceLineWithInvoiceIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoicelinewithinvoiceid/ </summary>
-    public async Task<System.Int32> DeleteInvoiceLineWithInvoiceIDAsync(DeleteInvoiceLineWithInvoiceIDRequest request) {
+    public async Task<System.Int32> DeleteInvoiceLineWithInvoiceIDAsync(DeleteInvoiceLineWithInvoiceIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteInvoiceLineWithInvoiceIDAsync(request);
+      var resp = await Client.DeleteInvoiceLineWithInvoiceIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -306,38 +202,24 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteInvoiceLineWithInvoiceIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoicepayment/ </summary>
-    public void DeleteInvoicePayment(DeleteInvoicePaymentRequest request) {
-      Task.Run(async () => await DeleteInvoicePaymentAsync(request)).Wait();
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deleteinvoicepayment/ </summary>
-    public async Task DeleteInvoicePaymentAsync(DeleteInvoicePaymentRequest request) {
+    public async Task DeleteInvoicePaymentAsync(DeleteInvoicePaymentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteInvoicePaymentAsync(request);
+      var resp = await Client.DeleteInvoicePaymentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletejournal/ </summary>
-    public System.Int32 DeleteJournal(DeleteJournalRequest request) {
-      return Task.Run(async () => await DeleteJournalAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletejournal/ </summary>
-    public async Task<System.Int32> DeleteJournalAsync(DeleteJournalRequest request) {
+    public async Task<System.Int32> DeleteJournalAsync(DeleteJournalRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteJournalAsync(request);
+      var resp = await Client.DeleteJournalAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -345,19 +227,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteJournalResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletejournalbyid/ </summary>
-    public System.Int32 DeleteJournalByID(DeleteJournalByIDRequest request) {
-      return Task.Run(async () => await DeleteJournalByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletejournalbyid/ </summary>
-    public async Task<System.Int32> DeleteJournalByIDAsync(DeleteJournalByIDRequest request) {
+    public async Task<System.Int32> DeleteJournalByIDAsync(DeleteJournalByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteJournalByIDAsync(request);
+      var resp = await Client.DeleteJournalByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -365,19 +240,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteJournalByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletequote/ </summary>
-    public System.Int32 DeleteQuote(DeleteQuoteRequest request) {
-      return Task.Run(async () => await DeleteQuoteAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletequote/ </summary>
-    public async Task<System.Int32> DeleteQuoteAsync(DeleteQuoteRequest request) {
+    public async Task<System.Int32> DeleteQuoteAsync(DeleteQuoteRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteQuoteAsync(request);
+      var resp = await Client.DeleteQuoteAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -385,19 +253,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteQuoteResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletequotebyid/ </summary>
-    public System.Int32 DeleteQuoteByID(DeleteQuoteByIDRequest request) {
-      return Task.Run(async () => await DeleteQuoteByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletequotebyid/ </summary>
-    public async Task<System.Int32> DeleteQuoteByIDAsync(DeleteQuoteByIDRequest request) {
+    public async Task<System.Int32> DeleteQuoteByIDAsync(DeleteQuoteByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteQuoteByIDAsync(request);
+      var resp = await Client.DeleteQuoteByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -405,19 +266,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteQuoteByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletequoteline/ </summary>
-    public System.Int32 DeleteQuoteLine(DeleteQuoteLineRequest request) {
-      return Task.Run(async () => await DeleteQuoteLineAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletequoteline/ </summary>
-    public async Task<System.Int32> DeleteQuoteLineAsync(DeleteQuoteLineRequest request) {
+    public async Task<System.Int32> DeleteQuoteLineAsync(DeleteQuoteLineRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteQuoteLineAsync(request);
+      var resp = await Client.DeleteQuoteLineAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -425,19 +279,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteQuoteLineResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletequotelinewithquoteid/ </summary>
-    public System.Int32 DeleteQuoteLineWithQuoteID(DeleteQuoteLineWithQuoteIDRequest request) {
-      return Task.Run(async () => await DeleteQuoteLineWithQuoteIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletequotelinewithquoteid/ </summary>
-    public async Task<System.Int32> DeleteQuoteLineWithQuoteIDAsync(DeleteQuoteLineWithQuoteIDRequest request) {
+    public async Task<System.Int32> DeleteQuoteLineWithQuoteIDAsync(DeleteQuoteLineWithQuoteIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteQuoteLineWithQuoteIDAsync(request);
+      var resp = await Client.DeleteQuoteLineWithQuoteIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -445,19 +292,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteQuoteLineWithQuoteIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceipt/ </summary>
-    public System.Int32 DeleteReceipt(DeleteReceiptRequest request) {
-      return Task.Run(async () => await DeleteReceiptAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceipt/ </summary>
-    public async Task<System.Int32> DeleteReceiptAsync(DeleteReceiptRequest request) {
+    public async Task<System.Int32> DeleteReceiptAsync(DeleteReceiptRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteReceiptAsync(request);
+      var resp = await Client.DeleteReceiptAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -465,19 +305,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteReceiptResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptattachment/ </summary>
-    public System.Int32 DeleteReceiptAttachment(DeleteReceiptAttachmentRequest request) {
-      return Task.Run(async () => await DeleteReceiptAttachmentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptattachment/ </summary>
-    public async Task<System.Int32> DeleteReceiptAttachmentAsync(DeleteReceiptAttachmentRequest request) {
+    public async Task<System.Int32> DeleteReceiptAttachmentAsync(DeleteReceiptAttachmentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteReceiptAttachmentAsync(request);
+      var resp = await Client.DeleteReceiptAttachmentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -485,19 +318,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteReceiptAttachmentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptbyid/ </summary>
-    public System.Int32 DeleteReceiptByID(DeleteReceiptByIDRequest request) {
-      return Task.Run(async () => await DeleteReceiptByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptbyid/ </summary>
-    public async Task<System.Int32> DeleteReceiptByIDAsync(DeleteReceiptByIDRequest request) {
+    public async Task<System.Int32> DeleteReceiptByIDAsync(DeleteReceiptByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteReceiptByIDAsync(request);
+      var resp = await Client.DeleteReceiptByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -505,19 +331,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteReceiptByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptline/ </summary>
-    public System.Int32 DeleteReceiptLine(DeleteReceiptLineRequest request) {
-      return Task.Run(async () => await DeleteReceiptLineAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptline/ </summary>
-    public async Task<System.Int32> DeleteReceiptLineAsync(DeleteReceiptLineRequest request) {
+    public async Task<System.Int32> DeleteReceiptLineAsync(DeleteReceiptLineRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteReceiptLineAsync(request);
+      var resp = await Client.DeleteReceiptLineAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -525,19 +344,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteReceiptLineResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptlinewithreceiptid/ </summary>
-    public System.Int32 DeleteReceiptLineWithReceiptID(DeleteReceiptLineWithReceiptIDRequest request) {
-      return Task.Run(async () => await DeleteReceiptLineWithReceiptIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptlinewithreceiptid/ </summary>
-    public async Task<System.Int32> DeleteReceiptLineWithReceiptIDAsync(DeleteReceiptLineWithReceiptIDRequest request) {
+    public async Task<System.Int32> DeleteReceiptLineWithReceiptIDAsync(DeleteReceiptLineWithReceiptIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteReceiptLineWithReceiptIDAsync(request);
+      var resp = await Client.DeleteReceiptLineWithReceiptIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -545,19 +357,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteReceiptLineWithReceiptIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptpayment/ </summary>
-    public System.Int32 DeleteReceiptPayment(DeleteReceiptPaymentRequest request) {
-      return Task.Run(async () => await DeleteReceiptPaymentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletereceiptpayment/ </summary>
-    public async Task<System.Int32> DeleteReceiptPaymentAsync(DeleteReceiptPaymentRequest request) {
+    public async Task<System.Int32> DeleteReceiptPaymentAsync(DeleteReceiptPaymentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteReceiptPaymentAsync(request);
+      var resp = await Client.DeleteReceiptPaymentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -565,19 +370,12 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteReceiptPaymentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/deletesupplier/ </summary>
-    public System.Int32 DeleteSupplier(DeleteSupplierRequest request) {
-      return Task.Run(async () => await DeleteSupplierAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/deletesupplier/ </summary>
-    public async Task<System.Int32> DeleteSupplierAsync(DeleteSupplierRequest request) {
+    public async Task<System.Int32> DeleteSupplierAsync(DeleteSupplierRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.DeleteSupplierAsync(request);
+      var resp = await Client.DeleteSupplierAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -585,38 +383,24 @@ namespace TipsTrade.KashFlow {
       return resp.DeleteSupplierResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/emailinvoice/ </summary>
-    public void EmailInvoice(EmailInvoiceRequest request) {
-      Task.Run(async () => await EmailInvoiceAsync(request)).Wait();
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/emailinvoice/ </summary>
-    public async Task EmailInvoiceAsync(EmailInvoiceRequest request) {
+    public async Task EmailInvoiceAsync(EmailInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.EmailInvoiceAsync(request);
+      var resp = await Client.EmailInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/emailpurchaseorder/ </summary>
-    public System.String EmailPurchaseOrder(EmailPurchaseOrderRequest request) {
-      return Task.Run(async () => await EmailPurchaseOrderAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/emailpurchaseorder/ </summary>
-    public async Task<System.String> EmailPurchaseOrderAsync(EmailPurchaseOrderRequest request) {
+    public async Task<System.String> EmailPurchaseOrderAsync(EmailPurchaseOrderRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.EmailPurchaseOrderAsync(request);
+      var resp = await Client.EmailPurchaseOrderAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -624,19 +408,12 @@ namespace TipsTrade.KashFlow {
       return resp.EmailPurchaseOrderResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getaccountoverview/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.AccountOverview GetAccountOverview(GetAccountOverviewRequest request) {
-      return Task.Run(async () => await GetAccountOverviewAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getaccountoverview/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.AccountOverview> GetAccountOverviewAsync(GetAccountOverviewRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.AccountOverview> GetAccountOverviewAsync(GetAccountOverviewRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetAccountOverviewAsync(request);
+      var resp = await Client.GetAccountOverviewAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -644,19 +421,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetAccountOverviewResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getagedcreditors/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedCreditors(GetAgedCreditorsRequest request) {
-      return Task.Run(async () => await GetAgedCreditorsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getagedcreditors/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedCreditorsAsync(GetAgedCreditorsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedCreditorsAsync(GetAgedCreditorsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetAgedCreditorsAsync(request);
+      var resp = await Client.GetAgedCreditorsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -664,19 +434,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetAgedCreditorsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getageddebtors/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[] GetAgedDebtors(GetAgedDebtorsRequest request) {
-      return Task.Run(async () => await GetAgedDebtorsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getageddebtors/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedDebtorsAsync(GetAgedDebtorsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.AgedDebtorsCreditors[]> GetAgedDebtorsAsync(GetAgedDebtorsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetAgedDebtorsAsync(request);
+      var resp = await Client.GetAgedDebtorsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -684,19 +447,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetAgedDebtorsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbalancesheet/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BalanceSheet GetBalanceSheet(GetBalanceSheetRequest request) {
-      return Task.Run(async () => await GetBalanceSheetAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getbalancesheet/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BalanceSheet> GetBalanceSheetAsync(GetBalanceSheetRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BalanceSheet> GetBalanceSheetAsync(GetBalanceSheetRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetBalanceSheetAsync(request);
+      var resp = await Client.GetBalanceSheetAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -704,19 +460,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetBalanceSheetResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankaccounts/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BankAccount[] GetBankAccounts(GetBankAccountsRequest request) {
-      return Task.Run(async () => await GetBankAccountsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getbankaccounts/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankAccount[]> GetBankAccountsAsync(GetBankAccountsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankAccount[]> GetBankAccountsAsync(GetBankAccountsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetBankAccountsAsync(request);
+      var resp = await Client.GetBankAccountsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -724,19 +473,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetBankAccountsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankbalance/ </summary>
-    public System.Decimal GetBankBalance(GetBankBalanceRequest request) {
-      return Task.Run(async () => await GetBankBalanceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getbankbalance/ </summary>
-    public async Task<System.Decimal> GetBankBalanceAsync(GetBankBalanceRequest request) {
+    public async Task<System.Decimal> GetBankBalanceAsync(GetBankBalanceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetBankBalanceAsync(request);
+      var resp = await Client.GetBankBalanceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -744,19 +486,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetBankBalanceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbankoverview/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BankOverview[] GetBankOverview(GetBankOverviewRequest request) {
-      return Task.Run(async () => await GetBankOverviewAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getbankoverview/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankOverview[]> GetBankOverviewAsync(GetBankOverviewRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankOverview[]> GetBankOverviewAsync(GetBankOverviewRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetBankOverviewAsync(request);
+      var resp = await Client.GetBankOverviewAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -764,19 +499,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetBankOverviewResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktransactions/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetBankTransactions(GetBankTransactionsRequest request) {
-      return Task.Run(async () => await GetBankTransactionsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktransactions/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTransaction[]> GetBankTransactionsAsync(GetBankTransactionsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTransaction[]> GetBankTransactionsAsync(GetBankTransactionsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetBankTransactionsAsync(request);
+      var resp = await Client.GetBankTransactionsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -784,19 +512,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetBankTransactionsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktxtypes/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BankTXType[] GetBankTxTypes(GetBankTxTypesRequest request) {
-      return Task.Run(async () => await GetBankTxTypesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getbanktxtypes/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTXType[]> GetBankTxTypesAsync(GetBankTxTypesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTXType[]> GetBankTxTypesAsync(GetBankTxTypesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetBankTxTypesAsync(request);
+      var resp = await Client.GetBankTxTypesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -804,19 +525,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetBankTxTypesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcompanydetails/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.CompanyDetails GetCompanyDetails(GetCompanyDetailsRequest request) {
-      return Task.Run(async () => await GetCompanyDetailsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcompanydetails/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.CompanyDetails> GetCompanyDetailsAsync(GetCompanyDetailsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.CompanyDetails> GetCompanyDetailsAsync(GetCompanyDetailsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCompanyDetailsAsync(request);
+      var resp = await Client.GetCompanyDetailsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -824,19 +538,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCompanyDetailsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcurrencies/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Currencies[] GetCurrencies(GetCurrenciesRequest request) {
-      return Task.Run(async () => await GetCurrenciesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcurrencies/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Currencies[]> GetCurrenciesAsync(GetCurrenciesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Currencies[]> GetCurrenciesAsync(GetCurrenciesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCurrenciesAsync(request);
+      var resp = await Client.GetCurrenciesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -844,19 +551,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCurrenciesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomeradvancepayments/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BankTransaction[] GetCustomerAdvancePayments(GetCustomerAdvancePaymentsRequest request) {
-      return Task.Run(async () => await GetCustomerAdvancePaymentsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomeradvancepayments/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTransaction[]> GetCustomerAdvancePaymentsAsync(GetCustomerAdvancePaymentsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BankTransaction[]> GetCustomerAdvancePaymentsAsync(GetCustomerAdvancePaymentsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerAdvancePaymentsAsync(request);
+      var resp = await Client.GetCustomerAdvancePaymentsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -864,19 +564,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerAdvancePaymentsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomer/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomer(GetCustomerRequest request) {
-      return Task.Run(async () => await GetCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomer/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerAsync(GetCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerAsync(GetCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerAsync(request);
+      var resp = await Client.GetCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -884,19 +577,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbalance/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.CustomerBalance GetCustomerBalance(GetCustomerBalanceRequest request) {
-      return Task.Run(async () => await GetCustomerBalanceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbalance/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.CustomerBalance> GetCustomerBalanceAsync(GetCustomerBalanceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.CustomerBalance> GetCustomerBalanceAsync(GetCustomerBalanceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerBalanceAsync(request);
+      var resp = await Client.GetCustomerBalanceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -904,19 +590,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerBalanceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyemail/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByEmail(GetCustomerByEmailRequest request) {
-      return Task.Run(async () => await GetCustomerByEmailAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyemail/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerByEmailAsync(GetCustomerByEmailRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerByEmailAsync(GetCustomerByEmailRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerByEmailAsync(request);
+      var resp = await Client.GetCustomerByEmailAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -924,19 +603,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerByEmailResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer GetCustomerByID(GetCustomerByIDRequest request) {
-      return Task.Run(async () => await GetCustomerByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomerbyid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerByIDAsync(GetCustomerByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> GetCustomerByIDAsync(GetCustomerByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerByIDAsync(request);
+      var resp = await Client.GetCustomerByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -944,19 +616,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomercurrency/ </summary>
-    public System.String GetCustomerCurrency(GetCustomerCurrencyRequest request) {
-      return Task.Run(async () => await GetCustomerCurrencyAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomercurrency/ </summary>
-    public async Task<System.String> GetCustomerCurrencyAsync(GetCustomerCurrencyRequest request) {
+    public async Task<System.String> GetCustomerCurrencyAsync(GetCustomerCurrencyRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerCurrencyAsync(request);
+      var resp = await Client.GetCustomerCurrencyAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -964,19 +629,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerCurrencyResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomers/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomers(GetCustomersRequest request) {
-      return Task.Run(async () => await GetCustomersAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomers/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersAsync(GetCustomersRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersAsync(GetCustomersRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomersAsync(request);
+      var resp = await Client.GetCustomersAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -984,19 +642,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomersResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersbypostcode/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersByPostcode(GetCustomersByPostcodeRequest request) {
-      return Task.Run(async () => await GetCustomersByPostcodeAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersbypostcode/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersByPostcodeAsync(GetCustomersByPostcodeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersByPostcodeAsync(GetCustomersByPostcodeRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomersByPostcodeAsync(request);
+      var resp = await Client.GetCustomersByPostcodeAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1004,19 +655,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomersByPostcodeResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersmodifiedsince/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer[] GetCustomersModifiedSince(GetCustomersModifiedSinceRequest request) {
-      return Task.Run(async () => await GetCustomersModifiedSinceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersmodifiedsince/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersModifiedSinceAsync(GetCustomersModifiedSinceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> GetCustomersModifiedSinceAsync(GetCustomersModifiedSinceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomersModifiedSinceAsync(request);
+      var resp = await Client.GetCustomersModifiedSinceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1024,19 +668,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomersModifiedSinceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersources/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetCustomerSources(GetCustomerSourcesRequest request) {
-      return Task.Run(async () => await GetCustomerSourcesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomersources/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetCustomerSourcesAsync(GetCustomerSourcesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetCustomerSourcesAsync(GetCustomerSourcesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerSourcesAsync(request);
+      var resp = await Client.GetCustomerSourcesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1044,19 +681,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerSourcesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomervatnumber/ </summary>
-    public System.String GetCustomerVATNumber(GetCustomerVATNumberRequest request) {
-      return Task.Run(async () => await GetCustomerVATNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getcustomervatnumber/ </summary>
-    public async Task<System.String> GetCustomerVATNumberAsync(GetCustomerVATNumberRequest request) {
+    public async Task<System.String> GetCustomerVATNumberAsync(GetCustomerVATNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetCustomerVATNumberAsync(request);
+      var resp = await Client.GetCustomerVATNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1064,19 +694,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetCustomerVATNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getdigitacsvfile/ </summary>
-    public System.String GetDigitaCSVFile(GetDigitaCSVFileRequest request) {
-      return Task.Run(async () => await GetDigitaCSVFileAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getdigitacsvfile/ </summary>
-    public async Task<System.String> GetDigitaCSVFileAsync(GetDigitaCSVFileRequest request) {
+    public async Task<System.String> GetDigitaCSVFileAsync(GetDigitaCSVFileRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetDigitaCSVFileAsync(request);
+      var resp = await Client.GetDigitaCSVFileAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1084,19 +707,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetDigitaCSVFileResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getincomebycustomer/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetIncomeByCustomer(GetIncomeByCustomerRequest request) {
-      return Task.Run(async () => await GetIncomeByCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getincomebycustomer/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetIncomeByCustomerAsync(GetIncomeByCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetIncomeByCustomerAsync(GetIncomeByCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetIncomeByCustomerAsync(request);
+      var resp = await Client.GetIncomeByCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1104,19 +720,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetIncomeByCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicetypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetInvoice_TypeDefined(GetInvoice_TypeDefinedRequest request) {
-      return Task.Run(async () => await GetInvoice_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicetypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined> GetInvoice_TypeDefinedAsync(GetInvoice_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined> GetInvoice_TypeDefinedAsync(GetInvoice_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoice_TypeDefinedAsync(request);
+      var resp = await Client.GetInvoice_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1124,19 +733,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoice_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoice/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoice(GetInvoiceRequest request) {
-      return Task.Run(async () => await GetInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoice/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetInvoiceAsync(GetInvoiceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetInvoiceAsync(GetInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoiceAsync(request);
+      var resp = await Client.GetInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1144,19 +746,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicebyid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetInvoiceByID(GetInvoiceByIDRequest request) {
-      return Task.Run(async () => await GetInvoiceByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicebyid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetInvoiceByIDAsync(GetInvoiceByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetInvoiceByIDAsync(GetInvoiceByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoiceByIDAsync(request);
+      var resp = await Client.GetInvoiceByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1164,19 +759,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoiceByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicenotes/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[] GetInvoiceNotes(GetInvoiceNotesRequest request) {
-      return Task.Run(async () => await GetInvoiceNotesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicenotes/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[]> GetInvoiceNotesAsync(GetInvoiceNotesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.InvoiceNotes[]> GetInvoiceNotesAsync(GetInvoiceNotesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoiceNotesAsync(request);
+      var resp = await Client.GetInvoiceNotesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1184,19 +772,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoiceNotesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepayment/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePayment(GetInvoicePaymentRequest request) {
-      return Task.Run(async () => await GetInvoicePaymentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepayment/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetInvoicePaymentAsync(GetInvoicePaymentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetInvoicePaymentAsync(GetInvoicePaymentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoicePaymentAsync(request);
+      var resp = await Client.GetInvoicePaymentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1204,19 +785,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoicePaymentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepaymentsbydaterange/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetInvoicePaymentsByDateRange(GetInvoicePaymentsByDateRangeRequest request) {
-      return Task.Run(async () => await GetInvoicePaymentsByDateRangeAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepaymentsbydaterange/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetInvoicePaymentsByDateRangeAsync(GetInvoicePaymentsByDateRangeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetInvoicePaymentsByDateRangeAsync(GetInvoicePaymentsByDateRangeRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoicePaymentsByDateRangeAsync(request);
+      var resp = await Client.GetInvoicePaymentsByDateRangeAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1224,19 +798,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoicePaymentsByDateRangeResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepaymentscountfordaterange/ </summary>
-    public System.Int32 GetInvoicePaymentsCountforDateRange(GetInvoicePaymentsCountforDateRangeRequest request) {
-      return Task.Run(async () => await GetInvoicePaymentsCountforDateRangeAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicepaymentscountfordaterange/ </summary>
-    public async Task<System.Int32> GetInvoicePaymentsCountforDateRangeAsync(GetInvoicePaymentsCountforDateRangeRequest request) {
+    public async Task<System.Int32> GetInvoicePaymentsCountforDateRangeAsync(GetInvoicePaymentsCountforDateRangeRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoicePaymentsCountforDateRangeAsync(request);
+      var resp = await Client.GetInvoicePaymentsCountforDateRangeAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1244,19 +811,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoicePaymentsCountforDateRangeResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverduetypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Overdue_TypeDefined(GetInvoices_Overdue_TypeDefinedRequest request) {
-      return Task.Run(async () => await GetInvoices_Overdue_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverduetypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Overdue_TypeDefinedAsync(GetInvoices_Overdue_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Overdue_TypeDefinedAsync(GetInvoices_Overdue_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoices_Overdue_TypeDefinedAsync(request);
+      var resp = await Client.GetInvoices_Overdue_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1264,19 +824,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoices_Overdue_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverdue/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_Overdue(GetInvoices_OverdueRequest request) {
-      return Task.Run(async () => await GetInvoices_OverdueAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesoverdue/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_OverdueAsync(GetInvoices_OverdueRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_OverdueAsync(GetInvoices_OverdueRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoices_OverdueAsync(request);
+      var resp = await Client.GetInvoices_OverdueAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1284,19 +837,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoices_OverdueResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecenttypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Recent_TypeDefined(GetInvoices_Recent_TypeDefinedRequest request) {
-      return Task.Run(async () => await GetInvoices_Recent_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecenttypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Recent_TypeDefinedAsync(GetInvoices_Recent_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Recent_TypeDefinedAsync(GetInvoices_Recent_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoices_Recent_TypeDefinedAsync(request);
+      var resp = await Client.GetInvoices_Recent_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1304,19 +850,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoices_Recent_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecent/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_Recent(GetInvoices_RecentRequest request) {
-      return Task.Run(async () => await GetInvoices_RecentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesrecent/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_RecentAsync(GetInvoices_RecentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_RecentAsync(GetInvoices_RecentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoices_RecentAsync(request);
+      var resp = await Client.GetInvoices_RecentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1324,19 +863,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoices_RecentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaidtypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoices_Unpaid_TypeDefined(GetInvoices_Unpaid_TypeDefinedRequest request) {
-      return Task.Run(async () => await GetInvoices_Unpaid_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaidtypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Unpaid_TypeDefinedAsync(GetInvoices_Unpaid_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoices_Unpaid_TypeDefinedAsync(GetInvoices_Unpaid_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoices_Unpaid_TypeDefinedAsync(request);
+      var resp = await Client.GetInvoices_Unpaid_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1344,19 +876,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoices_Unpaid_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoices_Unpaid(GetInvoices_UnpaidRequest request) {
-      return Task.Run(async () => await GetInvoices_UnpaidAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesunpaid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_UnpaidAsync(GetInvoices_UnpaidRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoices_UnpaidAsync(GetInvoices_UnpaidRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoices_UnpaidAsync(request);
+      var resp = await Client.GetInvoices_UnpaidAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1364,19 +889,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoices_UnpaidResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesbydaterange/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesByDateRange(GetInvoicesByDateRangeRequest request) {
-      return Task.Run(async () => await GetInvoicesByDateRangeAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesbydaterange/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoicesByDateRangeAsync(GetInvoicesByDateRangeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoicesByDateRangeAsync(GetInvoicesByDateRangeRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoicesByDateRangeAsync(request);
+      var resp = await Client.GetInvoicesByDateRangeAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1384,19 +902,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoicesByDateRangeResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomertypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[] GetInvoicesForCustomer_typeDefined(GetInvoicesForCustomer_typeDefinedRequest request) {
-      return Task.Run(async () => await GetInvoicesForCustomer_typeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomertypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoicesForCustomer_typeDefinedAsync(GetInvoicesForCustomer_typeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined[]> GetInvoicesForCustomer_typeDefinedAsync(GetInvoicesForCustomer_typeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoicesForCustomer_typeDefinedAsync(request);
+      var resp = await Client.GetInvoicesForCustomer_typeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1404,19 +915,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoicesForCustomer_typeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomer/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetInvoicesForCustomer(GetInvoicesForCustomerRequest request) {
-      return Task.Run(async () => await GetInvoicesForCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvoicesforcustomer/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoicesForCustomerAsync(GetInvoicesForCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetInvoicesForCustomerAsync(GetInvoicesForCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvoicesForCustomerAsync(request);
+      var resp = await Client.GetInvoicesForCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1424,19 +928,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvoicesForCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getinvpaymethods/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetInvPayMethods(GetInvPayMethodsRequest request) {
-      return Task.Run(async () => await GetInvPayMethodsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getinvpaymethods/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[]> GetInvPayMethodsAsync(GetInvPayMethodsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[]> GetInvPayMethodsAsync(GetInvPayMethodsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetInvPayMethodsAsync(request);
+      var resp = await Client.GetInvPayMethodsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1444,19 +941,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetInvPayMethodsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getjournal/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.JournalEntry GetJournal(GetJournalRequest request) {
-      return Task.Run(async () => await GetJournalAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getjournal/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.JournalEntry> GetJournalAsync(GetJournalRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.JournalEntry> GetJournalAsync(GetJournalRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetJournalAsync(request);
+      var resp = await Client.GetJournalAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1464,19 +954,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetJournalResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getjournals/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.JournalEntry[] GetJournals(GetJournalsRequest request) {
-      return Task.Run(async () => await GetJournalsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getjournals/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.JournalEntry[]> GetJournalsAsync(GetJournalsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.JournalEntry[]> GetJournalsAsync(GetJournalsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetJournalsAsync(request);
+      var resp = await Client.GetJournalsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1484,19 +967,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetJournalsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getkpis/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetKPIs(GetKPIsRequest request) {
-      return Task.Run(async () => await GetKPIsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getkpis/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetKPIsAsync(GetKPIsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetKPIsAsync(GetKPIsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetKPIsAsync(request);
+      var resp = await Client.GetKPIsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1504,19 +980,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetKPIsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getmonthlyprofitandloss/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[] GetMonthlyProfitAndLoss(GetMonthlyProfitAndLossRequest request) {
-      return Task.Run(async () => await GetMonthlyProfitAndLossAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getmonthlyprofitandloss/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[]> GetMonthlyProfitAndLossAsync(GetMonthlyProfitAndLossRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.MonthlyPL[]> GetMonthlyProfitAndLossAsync(GetMonthlyProfitAndLossRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetMonthlyProfitAndLossAsync(request);
+      var resp = await Client.GetMonthlyProfitAndLossAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1524,19 +993,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetMonthlyProfitAndLossResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodes/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetNominalCodes(GetNominalCodesRequest request) {
-      return Task.Run(async () => await GetNominalCodesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodes/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCode[]> GetNominalCodesAsync(GetNominalCodesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCode[]> GetNominalCodesAsync(GetNominalCodesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetNominalCodesAsync(request);
+      var resp = await Client.GetNominalCodesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1544,19 +1006,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetNominalCodesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodesextended/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[] GetNominalCodesExtended(GetNominalCodesExtendedRequest request) {
-      return Task.Run(async () => await GetNominalCodesExtendedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalcodesextended/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[]> GetNominalCodesExtendedAsync(GetNominalCodesExtendedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCodeExtended[]> GetNominalCodesExtendedAsync(GetNominalCodesExtendedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetNominalCodesExtendedAsync(request);
+      var resp = await Client.GetNominalCodesExtendedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1564,19 +1019,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetNominalCodesExtendedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalledger/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[] GetNominalLedger(GetNominalLedgerRequest request) {
-      return Task.Run(async () => await GetNominalLedgerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getnominalledger/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[]> GetNominalLedgerAsync(GetNominalLedgerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.TransactionInformation[]> GetNominalLedgerAsync(GetNominalLedgerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetNominalLedgerAsync(request);
+      var resp = await Client.GetNominalLedgerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1584,19 +1032,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetNominalLedgerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getpaypallink/ </summary>
-    public System.String GetPaypalLink(GetPaypalLinkRequest request) {
-      return Task.Run(async () => await GetPaypalLinkAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getpaypallink/ </summary>
-    public async Task<System.String> GetPaypalLinkAsync(GetPaypalLinkRequest request) {
+    public async Task<System.String> GetPaypalLinkAsync(GetPaypalLinkRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetPaypalLinkAsync(request);
+      var resp = await Client.GetPaypalLinkAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1604,19 +1045,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetPaypalLinkResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getproducts/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Product[] GetProducts(GetProductsRequest request) {
-      return Task.Run(async () => await GetProductsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getproducts/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Product[]> GetProductsAsync(GetProductsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Product[]> GetProductsAsync(GetProductsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProductsAsync(request);
+      var resp = await Client.GetProductsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1624,19 +1058,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProductsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getproductswithsubproducts/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.ProductsFull[] GetProductsWithSubProducts(GetProductsWithSubProductsRequest request) {
-      return Task.Run(async () => await GetProductsWithSubProductsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getproductswithsubproducts/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.ProductsFull[]> GetProductsWithSubProductsAsync(GetProductsWithSubProductsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ProductsFull[]> GetProductsWithSubProductsAsync(GetProductsWithSubProductsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProductsWithSubProductsAsync(request);
+      var resp = await Client.GetProductsWithSubProductsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1644,19 +1071,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProductsWithSubProductsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprofitandloss/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss GetProfitAndLoss(GetProfitAndLossRequest request) {
-      return Task.Run(async () => await GetProfitAndLossAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getprofitandloss/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss> GetProfitAndLossAsync(GetProfitAndLossRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ProfitAndLoss> GetProfitAndLossAsync(GetProfitAndLossRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProfitAndLossAsync(request);
+      var resp = await Client.GetProfitAndLossAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1664,19 +1084,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProfitAndLossResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectById(GetProjectByIdRequest request) {
-      return Task.Run(async () => await GetProjectByIdAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByIdAsync(GetProjectByIdRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByIdAsync(GetProjectByIdRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProjectByIdAsync(request);
+      var resp = await Client.GetProjectByIdAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1684,19 +1097,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProjectByIdResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyname/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByName(GetProjectByNameRequest request) {
-      return Task.Run(async () => await GetProjectByNameAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyname/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByNameAsync(GetProjectByNameRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByNameAsync(GetProjectByNameRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProjectByNameAsync(request);
+      var resp = await Client.GetProjectByNameAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1704,19 +1110,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProjectByNameResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyref/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Project GetProjectByRef(GetProjectByRefRequest request) {
-      return Task.Run(async () => await GetProjectByRefAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectbyref/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByRefAsync(GetProjectByRefRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project> GetProjectByRefAsync(GetProjectByRefRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProjectByRefAsync(request);
+      var resp = await Client.GetProjectByRefAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1724,19 +1123,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProjectByRefResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectsfull/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Project[] GetProjects_Full(GetProjects_FullRequest request) {
-      return Task.Run(async () => await GetProjects_FullAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getprojectsfull/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project[]> GetProjects_FullAsync(GetProjects_FullRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Project[]> GetProjects_FullAsync(GetProjects_FullRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProjects_FullAsync(request);
+      var resp = await Client.GetProjects_FullAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1744,19 +1136,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProjects_FullResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getprojects/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetProjects(GetProjectsRequest request) {
-      return Task.Run(async () => await GetProjectsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getprojects/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetProjectsAsync(GetProjectsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetProjectsAsync(GetProjectsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetProjectsAsync(request);
+      var resp = await Client.GetProjectsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1764,19 +1149,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetProjectsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebyid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByID(GetQuoteByIDRequest request) {
-      return Task.Run(async () => await GetQuoteByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebyid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetQuoteByIDAsync(GetQuoteByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetQuoteByIDAsync(GetQuoteByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetQuoteByIDAsync(request);
+      var resp = await Client.GetQuoteByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1784,19 +1162,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetQuoteByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebynumber/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetQuoteByNumber(GetQuoteByNumberRequest request) {
-      return Task.Run(async () => await GetQuoteByNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getquotebynumber/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetQuoteByNumberAsync(GetQuoteByNumberRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetQuoteByNumberAsync(GetQuoteByNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetQuoteByNumberAsync(request);
+      var resp = await Client.GetQuoteByNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1804,19 +1175,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetQuoteByNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesrecent/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotes_Recent(GetQuotes_RecentRequest request) {
-      return Task.Run(async () => await GetQuotes_RecentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesrecent/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotes_RecentAsync(GetQuotes_RecentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotes_RecentAsync(GetQuotes_RecentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetQuotes_RecentAsync(request);
+      var resp = await Client.GetQuotes_RecentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1824,19 +1188,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetQuotes_RecentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotes/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotes(GetQuotesRequest request) {
-      return Task.Run(async () => await GetQuotesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getquotes/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotesAsync(GetQuotesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotesAsync(GetQuotesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetQuotesAsync(request);
+      var resp = await Client.GetQuotesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1844,19 +1201,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetQuotesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesforcustomer/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetQuotesForCustomer(GetQuotesForCustomerRequest request) {
-      return Task.Run(async () => await GetQuotesForCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getquotesforcustomer/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotesForCustomerAsync(GetQuotesForCustomerRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetQuotesForCustomerAsync(GetQuotesForCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetQuotesForCustomerAsync(request);
+      var resp = await Client.GetQuotesForCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1864,19 +1214,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetQuotesForCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipttypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined GetReceipt_TypeDefined(GetReceipt_TypeDefinedRequest request) {
-      return Task.Run(async () => await GetReceipt_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipttypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined> GetReceipt_TypeDefinedAsync(GetReceipt_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice_TypeDefined> GetReceipt_TypeDefinedAsync(GetReceipt_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceipt_TypeDefinedAsync(request);
+      var resp = await Client.GetReceipt_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1884,19 +1227,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceipt_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipt/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice GetReceipt(GetReceiptRequest request) {
-      return Task.Run(async () => await GetReceiptAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipt/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetReceiptAsync(GetReceiptRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice> GetReceiptAsync(GetReceiptRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptAsync(request);
+      var resp = await Client.GetReceiptAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1904,19 +1240,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceiptResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptattachments/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[] GetReceiptAttachments(GetReceiptAttachmentsRequest request) {
-      return Task.Run(async () => await GetReceiptAttachmentsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptattachments/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[]> GetReceiptAttachmentsAsync(GetReceiptAttachmentsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ReceiptAttachment[]> GetReceiptAttachmentsAsync(GetReceiptAttachmentsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptAttachmentsAsync(request);
+      var resp = await Client.GetReceiptAttachmentsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1924,19 +1253,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceiptAttachmentsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptnotes/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[] GetReceiptNotes(GetReceiptNotesRequest request) {
-      return Task.Run(async () => await GetReceiptNotesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptnotes/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[]> GetReceiptNotesAsync(GetReceiptNotesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.ReceiptNotes[]> GetReceiptNotesAsync(GetReceiptNotesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptNotesAsync(request);
+      var resp = await Client.GetReceiptNotesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1944,19 +1266,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceiptNotesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptpayment/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Payment[] GetReceiptPayment(GetReceiptPaymentRequest request) {
-      return Task.Run(async () => await GetReceiptPaymentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptpayment/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetReceiptPaymentAsync(GetReceiptPaymentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Payment[]> GetReceiptPaymentAsync(GetReceiptPaymentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptPaymentAsync(request);
+      var resp = await Client.GetReceiptPaymentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1964,19 +1279,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceiptPaymentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsrecent/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceipts_Recent(GetReceipts_RecentRequest request) {
-      return Task.Run(async () => await GetReceipts_RecentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsrecent/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceipts_RecentAsync(GetReceipts_RecentRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceipts_RecentAsync(GetReceipts_RecentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceipts_RecentAsync(request);
+      var resp = await Client.GetReceipts_RecentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -1984,19 +1292,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceipts_RecentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipts/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceipts(GetReceiptsRequest request) {
-      return Task.Run(async () => await GetReceiptsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceipts/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceiptsAsync(GetReceiptsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceiptsAsync(GetReceiptsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptsAsync(request);
+      var resp = await Client.GetReceiptsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2004,19 +1305,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceiptsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsforsupplier/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Invoice[] GetReceiptsForSupplier(GetReceiptsForSupplierRequest request) {
-      return Task.Run(async () => await GetReceiptsForSupplierAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptsforsupplier/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceiptsForSupplierAsync(GetReceiptsForSupplierRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Invoice[]> GetReceiptsForSupplierAsync(GetReceiptsForSupplierRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptsForSupplierAsync(request);
+      var resp = await Client.GetReceiptsForSupplierAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2024,22 +1318,16 @@ namespace TipsTrade.KashFlow {
       return resp.GetReceiptsForSupplierResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptswithpaging/ </summary>
-    public PagingResult< Invoice[]> GetReceiptsWithPaging(GetReceiptsWithPagingRequest request) {
-      return Task.Run(async () => await GetReceiptsWithPagingAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getreceiptswithpaging/ </summary>
-    public async Task<PagingResult<Invoice[]>> GetReceiptsWithPagingAsync(GetReceiptsWithPagingRequest request) {
+    public async Task<PagingResult<TipsTrade.KashFlow.KashFlowAPI.Invoice[]>> GetReceiptsWithPagingAsync(GetReceiptsWithPagingRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetReceiptsWithPagingAsync(request);
+      var resp = await Client.GetReceiptsWithPagingAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
+
 
       return new PagingResult<Invoice[]>() {
         TotalPages = resp.TotalPages,
@@ -2048,19 +1336,12 @@ namespace TipsTrade.KashFlow {
       };
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getrecpaymethods/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[] GetRecPayMethods(GetRecPayMethodsRequest request) {
-      return Task.Run(async () => await GetRecPayMethodsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getrecpaymethods/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[]> GetRecPayMethodsAsync(GetRecPayMethodsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.PaymentMethod[]> GetRecPayMethodsAsync(GetRecPayMethodsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetRecPayMethodsAsync(request);
+      var resp = await Client.GetRecPayMethodsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2068,19 +1349,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetRecPayMethodsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getremoteloginurl/ </summary>
-    public System.String GetRemoteLoginURL(GetRemoteLoginURLRequest request) {
-      return Task.Run(async () => await GetRemoteLoginURLAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getremoteloginurl/ </summary>
-    public async Task<System.String> GetRemoteLoginURLAsync(GetRemoteLoginURLRequest request) {
+    public async Task<System.String> GetRemoteLoginURLAsync(GetRemoteLoginURLRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetRemoteLoginURLAsync(request);
+      var resp = await Client.GetRemoteLoginURLAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2088,19 +1362,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetRemoteLoginURLResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbycode/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByCode(GetSubProductByCodeRequest request) {
-      return Task.Run(async () => await GetSubProductByCodeAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbycode/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct> GetSubProductByCodeAsync(GetSubProductByCodeRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct> GetSubProductByCodeAsync(GetSubProductByCodeRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSubProductByCodeAsync(request);
+      var resp = await Client.GetSubProductByCodeAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2108,19 +1375,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSubProductByCodeResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbyid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.SubProduct GetSubProductByID(GetSubProductByIDRequest request) {
-      return Task.Run(async () => await GetSubProductByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproductbyid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct> GetSubProductByIDAsync(GetSubProductByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct> GetSubProductByIDAsync(GetSubProductByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSubProductByIDAsync(request);
+      var resp = await Client.GetSubProductByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2128,19 +1388,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSubProductByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproducts/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.SubProduct[] GetSubProducts(GetSubProductsRequest request) {
-      return Task.Run(async () => await GetSubProductsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsubproducts/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct[]> GetSubProductsAsync(GetSubProductsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.SubProduct[]> GetSubProductsAsync(GetSubProductsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSubProductsAsync(request);
+      var resp = await Client.GetSubProductsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2148,19 +1401,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSubProductsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplier/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplier(GetSupplierRequest request) {
-      return Task.Run(async () => await GetSupplierAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplier/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier> GetSupplierAsync(GetSupplierRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier> GetSupplierAsync(GetSupplierRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSupplierAsync(request);
+      var resp = await Client.GetSupplierAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2168,19 +1414,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSupplierResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplierbyid/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Supplier GetSupplierByID(GetSupplierByIDRequest request) {
-      return Task.Run(async () => await GetSupplierByIDAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsupplierbyid/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier> GetSupplierByIDAsync(GetSupplierByIDRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier> GetSupplierByIDAsync(GetSupplierByIDRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSupplierByIDAsync(request);
+      var resp = await Client.GetSupplierByIDAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2188,19 +1427,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSupplierByIDResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliercurrency/ </summary>
-    public System.String GetSupplierCurrency(GetSupplierCurrencyRequest request) {
-      return Task.Run(async () => await GetSupplierCurrencyAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliercurrency/ </summary>
-    public async Task<System.String> GetSupplierCurrencyAsync(GetSupplierCurrencyRequest request) {
+    public async Task<System.String> GetSupplierCurrencyAsync(GetSupplierCurrencyRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSupplierCurrencyAsync(request);
+      var resp = await Client.GetSupplierCurrencyAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2208,19 +1440,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSupplierCurrencyResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliers/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Supplier[] GetSuppliers(GetSuppliersRequest request) {
-      return Task.Run(async () => await GetSuppliersAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliers/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier[]> GetSuppliersAsync(GetSuppliersRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Supplier[]> GetSuppliersAsync(GetSuppliersRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSuppliersAsync(request);
+      var resp = await Client.GetSuppliersAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2228,19 +1453,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSuppliersResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliervatnumber/ </summary>
-    public System.String GetSupplierVATNumber(GetSupplierVATNumberRequest request) {
-      return Task.Run(async () => await GetSupplierVATNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getsuppliervatnumber/ </summary>
-    public async Task<System.String> GetSupplierVATNumberAsync(GetSupplierVATNumberRequest request) {
+    public async Task<System.String> GetSupplierVATNumberAsync(GetSupplierVATNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetSupplierVATNumberAsync(request);
+      var resp = await Client.GetSupplierVATNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2248,19 +1466,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetSupplierVATNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalance/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.NominalCode[] GetTrialBalance(GetTrialBalanceRequest request) {
-      return Task.Run(async () => await GetTrialBalanceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalance/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCode[]> GetTrialBalanceAsync(GetTrialBalanceRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCode[]> GetTrialBalanceAsync(GetTrialBalanceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetTrialBalanceAsync(request);
+      var resp = await Client.GetTrialBalanceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2268,19 +1479,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetTrialBalanceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalancewithopeningbalances/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[] GetTrialBalanceWithOpeningBalances(GetTrialBalanceWithOpeningBalancesRequest request) {
-      return Task.Run(async () => await GetTrialBalanceWithOpeningBalancesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/gettrialbalancewithopeningbalances/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[]> GetTrialBalanceWithOpeningBalancesAsync(GetTrialBalanceWithOpeningBalancesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.NominalCodeBalance[]> GetTrialBalanceWithOpeningBalancesAsync(GetTrialBalanceWithOpeningBalancesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetTrialBalanceWithOpeningBalancesAsync(request);
+      var resp = await Client.GetTrialBalanceWithOpeningBalancesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2288,19 +1492,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetTrialBalanceWithOpeningBalancesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaultstypedefined/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined GetUserAccountDefaults_TypeDefined(GetUserAccountDefaults_TypeDefinedRequest request) {
-      return Task.Run(async () => await GetUserAccountDefaults_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaultstypedefined/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined> GetUserAccountDefaults_TypeDefinedAsync(GetUserAccountDefaults_TypeDefinedRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults_TypeDefined> GetUserAccountDefaults_TypeDefinedAsync(GetUserAccountDefaults_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetUserAccountDefaults_TypeDefinedAsync(request);
+      var resp = await Client.GetUserAccountDefaults_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2308,19 +1505,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetUserAccountDefaults_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaults/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults GetUserAccountDefaults(GetUserAccountDefaultsRequest request) {
-      return Task.Run(async () => await GetUserAccountDefaultsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getuseraccountdefaults/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults> GetUserAccountDefaultsAsync(GetUserAccountDefaultsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.UserAccountDefaults> GetUserAccountDefaultsAsync(GetUserAccountDefaultsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetUserAccountDefaultsAsync(request);
+      var resp = await Client.GetUserAccountDefaultsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2328,19 +1518,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetUserAccountDefaultsResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getvatrates/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.BasicDataset[] GetVATRates(GetVATRatesRequest request) {
-      return Task.Run(async () => await GetVATRatesAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getvatrates/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetVATRatesAsync(GetVATRatesRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.BasicDataset[]> GetVATRatesAsync(GetVATRatesRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetVATRatesAsync(request);
+      var resp = await Client.GetVATRatesAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2348,19 +1531,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetVATRatesResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/getvatreport/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.VATReport GetVATReport(GetVATReportRequest request) {
-      return Task.Run(async () => await GetVATReportAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/getvatreport/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.VATReport> GetVATReportAsync(GetVATReportRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.VATReport> GetVATReportAsync(GetVATReportRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.GetVATReportAsync(request);
+      var resp = await Client.GetVATReportAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2368,19 +1544,12 @@ namespace TipsTrade.KashFlow {
       return resp.GetVATReportResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertbanktransaction/ </summary>
-    public System.Int32 InsertBankTransaction(InsertBankTransactionRequest request) {
-      return Task.Run(async () => await InsertBankTransactionAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertbanktransaction/ </summary>
-    public async Task<System.Int32> InsertBankTransactionAsync(InsertBankTransactionRequest request) {
+    public async Task<System.Int32> InsertBankTransactionAsync(InsertBankTransactionRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertBankTransactionAsync(request);
+      var resp = await Client.InsertBankTransactionAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2388,19 +1557,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertBankTransactionResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertcustomer/ </summary>
-    public System.Int32 InsertCustomer(InsertCustomerRequest request) {
-      return Task.Run(async () => await InsertCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertcustomer/ </summary>
-    public async Task<System.Int32> InsertCustomerAsync(InsertCustomerRequest request) {
+    public async Task<System.Int32> InsertCustomerAsync(InsertCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertCustomerAsync(request);
+      var resp = await Client.InsertCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2408,19 +1570,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicetypedefined/ </summary>
-    public System.Int32 InsertInvoice_TypeDefined(InsertInvoice_TypeDefinedRequest request) {
-      return Task.Run(async () => await InsertInvoice_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicetypedefined/ </summary>
-    public async Task<System.Int32> InsertInvoice_TypeDefinedAsync(InsertInvoice_TypeDefinedRequest request) {
+    public async Task<System.Int32> InsertInvoice_TypeDefinedAsync(InsertInvoice_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertInvoice_TypeDefinedAsync(request);
+      var resp = await Client.InsertInvoice_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2428,19 +1583,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertInvoice_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoice/ </summary>
-    public System.Int32 InsertInvoice(InsertInvoiceRequest request) {
-      return Task.Run(async () => await InsertInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoice/ </summary>
-    public async Task<System.Int32> InsertInvoiceAsync(InsertInvoiceRequest request) {
+    public async Task<System.Int32> InsertInvoiceAsync(InsertInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertInvoiceAsync(request);
+      var resp = await Client.InsertInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2448,19 +1596,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoiceline/ </summary>
-    public System.Int32 InsertInvoiceLine(InsertInvoiceLineRequest request) {
-      return Task.Run(async () => await InsertInvoiceLineAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoiceline/ </summary>
-    public async Task<System.Int32> InsertInvoiceLineAsync(InsertInvoiceLineRequest request) {
+    public async Task<System.Int32> InsertInvoiceLineAsync(InsertInvoiceLineRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertInvoiceLineAsync(request);
+      var resp = await Client.InsertInvoiceLineAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2468,19 +1609,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertInvoiceLineResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicelinewithinvoicenumber/ </summary>
-    public System.Int32 InsertInvoiceLineWithInvoiceNumber(InsertInvoiceLineWithInvoiceNumberRequest request) {
-      return Task.Run(async () => await InsertInvoiceLineWithInvoiceNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicelinewithinvoicenumber/ </summary>
-    public async Task<System.Int32> InsertInvoiceLineWithInvoiceNumberAsync(InsertInvoiceLineWithInvoiceNumberRequest request) {
+    public async Task<System.Int32> InsertInvoiceLineWithInvoiceNumberAsync(InsertInvoiceLineWithInvoiceNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertInvoiceLineWithInvoiceNumberAsync(request);
+      var resp = await Client.InsertInvoiceLineWithInvoiceNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2488,19 +1622,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertInvoiceLineWithInvoiceNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicenote/ </summary>
-    public System.Boolean InsertInvoiceNote(InsertInvoiceNoteRequest request) {
-      return Task.Run(async () => await InsertInvoiceNoteAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicenote/ </summary>
-    public async Task<System.Boolean> InsertInvoiceNoteAsync(InsertInvoiceNoteRequest request) {
+    public async Task<System.Boolean> InsertInvoiceNoteAsync(InsertInvoiceNoteRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertInvoiceNoteAsync(request);
+      var resp = await Client.InsertInvoiceNoteAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2508,19 +1635,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertInvoiceNoteResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicepayment/ </summary>
-    public System.Int32 InsertInvoicePayment(InsertInvoicePaymentRequest request) {
-      return Task.Run(async () => await InsertInvoicePaymentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertinvoicepayment/ </summary>
-    public async Task<System.Int32> InsertInvoicePaymentAsync(InsertInvoicePaymentRequest request) {
+    public async Task<System.Int32> InsertInvoicePaymentAsync(InsertInvoicePaymentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertInvoicePaymentAsync(request);
+      var resp = await Client.InsertInvoicePaymentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2528,19 +1648,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertInvoicePaymentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertjournal/ </summary>
-    public System.Int32 InsertJournal(InsertJournalRequest request) {
-      return Task.Run(async () => await InsertJournalAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertjournal/ </summary>
-    public async Task<System.Int32> InsertJournalAsync(InsertJournalRequest request) {
+    public async Task<System.Int32> InsertJournalAsync(InsertJournalRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertJournalAsync(request);
+      var resp = await Client.InsertJournalAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2548,19 +1661,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertJournalResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertnominalcode/ </summary>
-    public System.Int32 InsertNominalCode(InsertNominalCodeRequest request) {
-      return Task.Run(async () => await InsertNominalCodeAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertnominalcode/ </summary>
-    public async Task<System.Int32> InsertNominalCodeAsync(InsertNominalCodeRequest request) {
+    public async Task<System.Int32> InsertNominalCodeAsync(InsertNominalCodeRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertNominalCodeAsync(request);
+      var resp = await Client.InsertNominalCodeAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2568,19 +1674,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertNominalCodeResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertorupdateproject/ </summary>
-    public System.Int32 InsertOrUpdateProject(InsertOrUpdateProjectRequest request) {
-      return Task.Run(async () => await InsertOrUpdateProjectAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertorupdateproject/ </summary>
-    public async Task<System.Int32> InsertOrUpdateProjectAsync(InsertOrUpdateProjectRequest request) {
+    public async Task<System.Int32> InsertOrUpdateProjectAsync(InsertOrUpdateProjectRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertOrUpdateProjectAsync(request);
+      var resp = await Client.InsertOrUpdateProjectAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2588,19 +1687,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertOrUpdateProjectResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertquote/ </summary>
-    public System.Int32 InsertQuote(InsertQuoteRequest request) {
-      return Task.Run(async () => await InsertQuoteAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertquote/ </summary>
-    public async Task<System.Int32> InsertQuoteAsync(InsertQuoteRequest request) {
+    public async Task<System.Int32> InsertQuoteAsync(InsertQuoteRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertQuoteAsync(request);
+      var resp = await Client.InsertQuoteAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2608,19 +1700,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertQuoteResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertquoteline/ </summary>
-    public System.Int32 InsertQuoteLine(InsertQuoteLineRequest request) {
-      return Task.Run(async () => await InsertQuoteLineAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertquoteline/ </summary>
-    public async Task<System.Int32> InsertQuoteLineAsync(InsertQuoteLineRequest request) {
+    public async Task<System.Int32> InsertQuoteLineAsync(InsertQuoteLineRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertQuoteLineAsync(request);
+      var resp = await Client.InsertQuoteLineAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2628,19 +1713,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertQuoteLineResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceipttypedefined/ </summary>
-    public System.Int32 InsertReceipt_TypeDefined(InsertReceipt_TypeDefinedRequest request) {
-      return Task.Run(async () => await InsertReceipt_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceipttypedefined/ </summary>
-    public async Task<System.Int32> InsertReceipt_TypeDefinedAsync(InsertReceipt_TypeDefinedRequest request) {
+    public async Task<System.Int32> InsertReceipt_TypeDefinedAsync(InsertReceipt_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertReceipt_TypeDefinedAsync(request);
+      var resp = await Client.InsertReceipt_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2648,19 +1726,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertReceipt_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceipt/ </summary>
-    public System.Int32 InsertReceipt(InsertReceiptRequest request) {
-      return Task.Run(async () => await InsertReceiptAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceipt/ </summary>
-    public async Task<System.Int32> InsertReceiptAsync(InsertReceiptRequest request) {
+    public async Task<System.Int32> InsertReceiptAsync(InsertReceiptRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertReceiptAsync(request);
+      var resp = await Client.InsertReceiptAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2668,19 +1739,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertReceiptResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptline/ </summary>
-    public System.Int32 InsertReceiptLine(InsertReceiptLineRequest request) {
-      return Task.Run(async () => await InsertReceiptLineAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptline/ </summary>
-    public async Task<System.Int32> InsertReceiptLineAsync(InsertReceiptLineRequest request) {
+    public async Task<System.Int32> InsertReceiptLineAsync(InsertReceiptLineRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertReceiptLineAsync(request);
+      var resp = await Client.InsertReceiptLineAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2688,19 +1752,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertReceiptLineResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptlinefromnumber/ </summary>
-    public System.Int32 InsertReceiptLineFromNumber(InsertReceiptLineFromNumberRequest request) {
-      return Task.Run(async () => await InsertReceiptLineFromNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptlinefromnumber/ </summary>
-    public async Task<System.Int32> InsertReceiptLineFromNumberAsync(InsertReceiptLineFromNumberRequest request) {
+    public async Task<System.Int32> InsertReceiptLineFromNumberAsync(InsertReceiptLineFromNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertReceiptLineFromNumberAsync(request);
+      var resp = await Client.InsertReceiptLineFromNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2708,19 +1765,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertReceiptLineFromNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptnote/ </summary>
-    public System.Boolean InsertReceiptNote(InsertReceiptNoteRequest request) {
-      return Task.Run(async () => await InsertReceiptNoteAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptnote/ </summary>
-    public async Task<System.Boolean> InsertReceiptNoteAsync(InsertReceiptNoteRequest request) {
+    public async Task<System.Boolean> InsertReceiptNoteAsync(InsertReceiptNoteRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertReceiptNoteAsync(request);
+      var resp = await Client.InsertReceiptNoteAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2728,19 +1778,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertReceiptNoteResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptpayment/ </summary>
-    public System.Int32 InsertReceiptPayment(InsertReceiptPaymentRequest request) {
-      return Task.Run(async () => await InsertReceiptPaymentAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertreceiptpayment/ </summary>
-    public async Task<System.Int32> InsertReceiptPaymentAsync(InsertReceiptPaymentRequest request) {
+    public async Task<System.Int32> InsertReceiptPaymentAsync(InsertReceiptPaymentRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertReceiptPaymentAsync(request);
+      var resp = await Client.InsertReceiptPaymentAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2748,19 +1791,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertReceiptPaymentResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/insertsupplier/ </summary>
-    public System.Int32 InsertSupplier(InsertSupplierRequest request) {
-      return Task.Run(async () => await InsertSupplierAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/insertsupplier/ </summary>
-    public async Task<System.Int32> InsertSupplierAsync(InsertSupplierRequest request) {
+    public async Task<System.Int32> InsertSupplierAsync(InsertSupplierRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.InsertSupplierAsync(request);
+      var resp = await Client.InsertSupplierAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2768,19 +1804,12 @@ namespace TipsTrade.KashFlow {
       return resp.InsertSupplierResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/isonesaasenabled/ </summary>
-    public System.Boolean IsOneSaaSEnabled(IsOneSaaSEnabledRequest request) {
-      return Task.Run(async () => await IsOneSaaSEnabledAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/isonesaasenabled/ </summary>
-    public async Task<System.Boolean> IsOneSaaSEnabledAsync(IsOneSaaSEnabledRequest request) {
+    public async Task<System.Boolean> IsOneSaaSEnabledAsync(IsOneSaaSEnabledRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.IsOneSaaSEnabledAsync(request);
+      var resp = await Client.IsOneSaaSEnabledAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2788,19 +1817,12 @@ namespace TipsTrade.KashFlow {
       return resp.IsOneSaaSEnabledResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/isstillquote/ </summary>
-    public System.Boolean isStillQuote(isStillQuoteRequest request) {
-      return Task.Run(async () => await isStillQuoteAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/isstillquote/ </summary>
-    public async Task<System.Boolean> isStillQuoteAsync(isStillQuoteRequest request) {
+    public async Task<System.Boolean> isStillQuoteAsync(isStillQuoteRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.isStillQuoteAsync(request);
+      var resp = await Client.isStillQuoteAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2808,19 +1830,12 @@ namespace TipsTrade.KashFlow {
       return resp.isStillQuoteResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/isuservatregistered/ </summary>
-    public System.Boolean isUserVATRegistered(isUserVATRegisteredRequest request) {
-      return Task.Run(async () => await isUserVATRegisteredAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/isuservatregistered/ </summary>
-    public async Task<System.Boolean> isUserVATRegisteredAsync(isUserVATRegisteredRequest request) {
+    public async Task<System.Boolean> isUserVATRegisteredAsync(isUserVATRegisteredRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.isUserVATRegisteredAsync(request);
+      var resp = await Client.isUserVATRegisteredAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2828,19 +1843,12 @@ namespace TipsTrade.KashFlow {
       return resp.isUserVATRegisteredResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/printinvoice/ </summary>
-    public System.String PrintInvoice(PrintInvoiceRequest request) {
-      return Task.Run(async () => await PrintInvoiceAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/printinvoice/ </summary>
-    public async Task<System.String> PrintInvoiceAsync(PrintInvoiceRequest request) {
+    public async Task<System.String> PrintInvoiceAsync(PrintInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.PrintInvoiceAsync(request);
+      var resp = await Client.PrintInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2848,19 +1856,12 @@ namespace TipsTrade.KashFlow {
       return resp.PrintInvoiceResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/printpurchaseorder/ </summary>
-    public System.String PrintPurchaseOrder(PrintPurchaseOrderRequest request) {
-      return Task.Run(async () => await PrintPurchaseOrderAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/printpurchaseorder/ </summary>
-    public async Task<System.String> PrintPurchaseOrderAsync(PrintPurchaseOrderRequest request) {
+    public async Task<System.String> PrintPurchaseOrderAsync(PrintPurchaseOrderRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.PrintPurchaseOrderAsync(request);
+      var resp = await Client.PrintPurchaseOrderAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2868,46 +1869,25 @@ namespace TipsTrade.KashFlow {
       return resp.PrintPurchaseOrderResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/sagefile/ </summary>
-    public System.String SageFile(Byte[] request, string reference) {
-      return Task.Run(async () => await SageFileAsync(request, reference)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/sagefile/ </summary>
-    public async Task<System.String> SageFileAsync(Byte[] request, string reference) {
-      var resp = await Client.SageFileAsync(request, reference);
+    public async Task<System.String> SageFileAsync(Byte[] request, string reference, CancellationToken cancellationToken = default) {
+      var resp = await Client.SageFileAsync(request, reference).WaitAsync(cancellationToken);
 
       return resp.SageFileResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/sagefileimport/ </summary>
-    public void SageFileImport(Int32 request) {
-      Task.Run(async () => await SageFileImportAsync(request)).Wait();
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/sagefileimport/ </summary>
-    public async Task SageFileImportAsync(Int32 request) {
-      var resp = await Client.SageFileImportAsync(request);
+    public async Task SageFileImportAsync(Int32 request, CancellationToken cancellationToken = default) {
+      var resp = await Client.SageFileImportAsync(request).WaitAsync(cancellationToken);
 
     }
-
-#if NET45
-    ///<summary>See https://www.kashflow.com/developers/soap-api/searchcustomerbycusttext/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer SearchCustomerByCustText(SearchCustomerByCustTextRequest request) {
-      return Task.Run(async () => await SearchCustomerByCustTextAsync(request)).Result;
-    }
-#endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/searchcustomerbycusttext/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> SearchCustomerByCustTextAsync(SearchCustomerByCustTextRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer> SearchCustomerByCustTextAsync(SearchCustomerByCustTextRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.SearchCustomerByCustTextAsync(request);
+      var resp = await Client.SearchCustomerByCustTextAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2915,19 +1895,12 @@ namespace TipsTrade.KashFlow {
       return resp.SearchCustomerByCustTextResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/setcustomercurrency/ </summary>
-    public System.Int32 SetCustomerCurrency(SetCustomerCurrencyRequest request) {
-      return Task.Run(async () => await SetCustomerCurrencyAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/setcustomercurrency/ </summary>
-    public async Task<System.Int32> SetCustomerCurrencyAsync(SetCustomerCurrencyRequest request) {
+    public async Task<System.Int32> SetCustomerCurrencyAsync(SetCustomerCurrencyRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.SetCustomerCurrencyAsync(request);
+      var resp = await Client.SetCustomerCurrencyAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2935,19 +1908,12 @@ namespace TipsTrade.KashFlow {
       return resp.SetCustomerCurrencyResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/setcustomervatnumber/ </summary>
-    public System.Int32 SetCustomerVATNumber(SetCustomerVATNumberRequest request) {
-      return Task.Run(async () => await SetCustomerVATNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/setcustomervatnumber/ </summary>
-    public async Task<System.Int32> SetCustomerVATNumberAsync(SetCustomerVATNumberRequest request) {
+    public async Task<System.Int32> SetCustomerVATNumberAsync(SetCustomerVATNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.SetCustomerVATNumberAsync(request);
+      var resp = await Client.SetCustomerVATNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2955,19 +1921,12 @@ namespace TipsTrade.KashFlow {
       return resp.SetCustomerVATNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/setsuppliercurrency/ </summary>
-    public System.Int32 SetSupplierCurrency(SetSupplierCurrencyRequest request) {
-      return Task.Run(async () => await SetSupplierCurrencyAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/setsuppliercurrency/ </summary>
-    public async Task<System.Int32> SetSupplierCurrencyAsync(SetSupplierCurrencyRequest request) {
+    public async Task<System.Int32> SetSupplierCurrencyAsync(SetSupplierCurrencyRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.SetSupplierCurrencyAsync(request);
+      var resp = await Client.SetSupplierCurrencyAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2975,19 +1934,12 @@ namespace TipsTrade.KashFlow {
       return resp.SetSupplierCurrencyResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/setsuppliervatnumber/ </summary>
-    public System.Int32 SetSupplierVATNumber(SetSupplierVATNumberRequest request) {
-      return Task.Run(async () => await SetSupplierVATNumberAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/setsuppliervatnumber/ </summary>
-    public async Task<System.Int32> SetSupplierVATNumberAsync(SetSupplierVATNumberRequest request) {
+    public async Task<System.Int32> SetSupplierVATNumberAsync(SetSupplierVATNumberRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.SetSupplierVATNumberAsync(request);
+      var resp = await Client.SetSupplierVATNumberAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -2995,19 +1947,12 @@ namespace TipsTrade.KashFlow {
       return resp.SetSupplierVATNumberResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatebanktransaction/ </summary>
-    public System.Int32 UpdateBankTransaction(UpdateBankTransactionRequest request) {
-      return Task.Run(async () => await UpdateBankTransactionAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatebanktransaction/ </summary>
-    public async Task<System.Int32> UpdateBankTransactionAsync(UpdateBankTransactionRequest request) {
+    public async Task<System.Int32> UpdateBankTransactionAsync(UpdateBankTransactionRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateBankTransactionAsync(request);
+      var resp = await Client.UpdateBankTransactionAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3015,19 +1960,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateBankTransactionResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatecustomer/ </summary>
-    public System.String UpdateCustomer(UpdateCustomerRequest request) {
-      return Task.Run(async () => await UpdateCustomerAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatecustomer/ </summary>
-    public async Task<System.String> UpdateCustomerAsync(UpdateCustomerRequest request) {
+    public async Task<System.String> UpdateCustomerAsync(UpdateCustomerRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateCustomerAsync(request);
+      var resp = await Client.UpdateCustomerAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3035,76 +1973,48 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateCustomerResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updateinvoicetypedefined/ </summary>
-    public void UpdateInvoice_TypeDefined(UpdateInvoice_TypeDefinedRequest request) {
-      Task.Run(async () => await UpdateInvoice_TypeDefinedAsync(request)).Wait();
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updateinvoicetypedefined/ </summary>
-    public async Task UpdateInvoice_TypeDefinedAsync(UpdateInvoice_TypeDefinedRequest request) {
+    public async Task UpdateInvoice_TypeDefinedAsync(UpdateInvoice_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateInvoice_TypeDefinedAsync(request);
+      var resp = await Client.UpdateInvoice_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
     }
-
-#if NET45
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updateinvoice/ </summary>
-    public void UpdateInvoice(UpdateInvoiceRequest request) {
-      Task.Run(async () => await UpdateInvoiceAsync(request)).Wait();
-    }
-#endif
 
     ///<summary>See https://www.kashflow.com/developers/soap-api/updateinvoice/ </summary>
-    public async Task UpdateInvoiceAsync(UpdateInvoiceRequest request) {
+    public async Task UpdateInvoiceAsync(UpdateInvoiceRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateInvoiceAsync(request);
+      var resp = await Client.UpdateInvoiceAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updateinvoiceheader/ </summary>
-    public void UpdateInvoiceHeader(UpdateInvoiceHeaderRequest request) {
-      Task.Run(async () => await UpdateInvoiceHeaderAsync(request)).Wait();
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updateinvoiceheader/ </summary>
-    public async Task UpdateInvoiceHeaderAsync(UpdateInvoiceHeaderRequest request) {
+    public async Task UpdateInvoiceHeaderAsync(UpdateInvoiceHeaderRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateInvoiceHeaderAsync(request);
+      var resp = await Client.UpdateInvoiceHeaderAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatejournal/ </summary>
-    public System.Int32 UpdateJournal(UpdateJournalRequest request) {
-      return Task.Run(async () => await UpdateJournalAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatejournal/ </summary>
-    public async Task<System.Int32> UpdateJournalAsync(UpdateJournalRequest request) {
+    public async Task<System.Int32> UpdateJournalAsync(UpdateJournalRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateJournalAsync(request);
+      var resp = await Client.UpdateJournalAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3112,19 +2022,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateJournalResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatejournalheader/ </summary>
-    public System.Int32 UpdateJournalHeader(UpdateJournalHeaderRequest request) {
-      return Task.Run(async () => await UpdateJournalHeaderAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatejournalheader/ </summary>
-    public async Task<System.Int32> UpdateJournalHeaderAsync(UpdateJournalHeaderRequest request) {
+    public async Task<System.Int32> UpdateJournalHeaderAsync(UpdateJournalHeaderRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateJournalHeaderAsync(request);
+      var resp = await Client.UpdateJournalHeaderAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3132,19 +2035,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateJournalHeaderResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatequote/ </summary>
-    public System.Int32 UpdateQuote(UpdateQuoteRequest request) {
-      return Task.Run(async () => await UpdateQuoteAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatequote/ </summary>
-    public async Task<System.Int32> UpdateQuoteAsync(UpdateQuoteRequest request) {
+    public async Task<System.Int32> UpdateQuoteAsync(UpdateQuoteRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateQuoteAsync(request);
+      var resp = await Client.UpdateQuoteAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3152,19 +2048,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateQuoteResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatequoteheader/ </summary>
-    public System.Int32 UpdateQuoteHeader(UpdateQuoteHeaderRequest request) {
-      return Task.Run(async () => await UpdateQuoteHeaderAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatequoteheader/ </summary>
-    public async Task<System.Int32> UpdateQuoteHeaderAsync(UpdateQuoteHeaderRequest request) {
+    public async Task<System.Int32> UpdateQuoteHeaderAsync(UpdateQuoteHeaderRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateQuoteHeaderAsync(request);
+      var resp = await Client.UpdateQuoteHeaderAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3172,19 +2061,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateQuoteHeaderResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatereceipttypedefined/ </summary>
-    public System.Int32 UpdateReceipt_TypeDefined(UpdateReceipt_TypeDefinedRequest request) {
-      return Task.Run(async () => await UpdateReceipt_TypeDefinedAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatereceipttypedefined/ </summary>
-    public async Task<System.Int32> UpdateReceipt_TypeDefinedAsync(UpdateReceipt_TypeDefinedRequest request) {
+    public async Task<System.Int32> UpdateReceipt_TypeDefinedAsync(UpdateReceipt_TypeDefinedRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateReceipt_TypeDefinedAsync(request);
+      var resp = await Client.UpdateReceipt_TypeDefinedAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3192,19 +2074,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateReceipt_TypeDefinedResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatereceipt/ </summary>
-    public System.Int32 UpdateReceipt(UpdateReceiptRequest request) {
-      return Task.Run(async () => await UpdateReceiptAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatereceipt/ </summary>
-    public async Task<System.Int32> UpdateReceiptAsync(UpdateReceiptRequest request) {
+    public async Task<System.Int32> UpdateReceiptAsync(UpdateReceiptRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateReceiptAsync(request);
+      var resp = await Client.UpdateReceiptAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3212,19 +2087,12 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateReceiptResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatereceiptheader/ </summary>
-    public System.Int32 UpdateReceiptHeader(UpdateReceiptHeaderRequest request) {
-      return Task.Run(async () => await UpdateReceiptHeaderAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatereceiptheader/ </summary>
-    public async Task<System.Int32> UpdateReceiptHeaderAsync(UpdateReceiptHeaderRequest request) {
+    public async Task<System.Int32> UpdateReceiptHeaderAsync(UpdateReceiptHeaderRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateReceiptHeaderAsync(request);
+      var resp = await Client.UpdateReceiptHeaderAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
@@ -3232,38 +2100,24 @@ namespace TipsTrade.KashFlow {
       return resp.UpdateReceiptHeaderResult;
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/updatesupplier/ </summary>
-    public void UpdateSupplier(UpdateSupplierRequest request) {
-      Task.Run(async () => await UpdateSupplierAsync(request)).Wait();
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/updatesupplier/ </summary>
-    public async Task UpdateSupplierAsync(UpdateSupplierRequest request) {
+    public async Task UpdateSupplierAsync(UpdateSupplierRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.UpdateSupplierAsync(request);
+      var resp = await Client.UpdateSupplierAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
 
     }
 
-#if NET45
     ///<summary>See https://www.kashflow.com/developers/soap-api/vcftocustomerobjects/ </summary>
-    public TipsTrade.KashFlow.KashFlowAPI.Customer[] VCFToCustomerObjects(VCFToCustomerObjectsRequest request) {
-      return Task.Run(async () => await VCFToCustomerObjectsAsync(request)).Result;
-    }
-#endif
-
-    ///<summary>See https://www.kashflow.com/developers/soap-api/vcftocustomerobjects/ </summary>
-    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> VCFToCustomerObjectsAsync(VCFToCustomerObjectsRequest request) {
+    public async Task<TipsTrade.KashFlow.KashFlowAPI.Customer[]> VCFToCustomerObjectsAsync(VCFToCustomerObjectsRequest request, CancellationToken cancellationToken = default) {
       if (string.IsNullOrEmpty(request.UserName)) request.UserName = Username;
       if (string.IsNullOrEmpty(request.Password)) request.Password = Password;
 
-      var resp = await Client.VCFToCustomerObjectsAsync(request);
+      var resp = await Client.VCFToCustomerObjectsAsync(request).WaitAsync(cancellationToken);
 
       if (!string.IsNullOrEmpty(resp.StatusDetail))
         throw new KashFlowException(resp.StatusDetail) { Status = resp.Status };
