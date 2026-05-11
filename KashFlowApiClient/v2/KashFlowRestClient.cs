@@ -167,30 +167,32 @@ namespace TipsTrade.KashFlow.v2 {
     #endregion
 
     #region API methods
-    /// <summary>Archvies the specified list of customers.</summary>
+    /// <summary>Archives the specified list of customers.</summary>
+    [Obsolete("This method is deprecated. Use ArchiveCustomers(IEnumerable<string> codes, CancellationToken cancellationToken) that supports a CancellationToken instead.")]
     public Task ArchiveCustomers(params string[] codes) => ArchiveCustomers(codes.AsEnumerable());
 
-    /// <summary>Archvies the specified list of customers.</summary>
-    public async Task ArchiveCustomers(IEnumerable<string> codes) {
+    /// <summary>Archives the specified list of customers.</summary>
+    public Task ArchiveCustomers(IEnumerable<string> codes, CancellationToken cancellationToken = default) {
       var req = new RequestArgs<IEnumerable<string>>("internal", "customers", "archive") {
         Method = HttpMethod.Put,
         Payload = codes
       };
 
-      await ExecuteObjectRequestAsync(req);
+      return ExecuteObjectRequestAsync(req, cancellationToken);
     }
 
-    /// <summary>Archvies the specified list of suppliers.</summary>
+    /// <summary>Archives the specified list of suppliers.</summary>
+    [Obsolete("This method is deprecated. Use ArchiveSuppliers(IEnumerable<string> codes, CancellationToken cancellationToken) that supports a CancellationToken instead.")]
     public Task ArchiveSuppliers(params string[] codes) => ArchiveSuppliers(codes.AsEnumerable());
 
-    /// <summary>Archvies the specified list of suppliers.</summary>
-    public async Task ArchiveSuppliers(IEnumerable<string> codes) {
+    /// <summary>Archives the specified list of suppliers.</summary>
+    public Task ArchiveSuppliers(IEnumerable<string> codes, CancellationToken cancellationToken = default) {
       var req = new RequestArgs<IEnumerable<string>>("internal", "suppliers", "archive") {
         Method = HttpMethod.Put,
         Payload = codes
       };
 
-      await ExecuteObjectRequestAsync(req);
+      return ExecuteObjectRequestAsync(req, cancellationToken);
     }
 
     /// <summary>Gets the specified bulk payment.</summary>

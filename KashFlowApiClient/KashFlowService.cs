@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Threading.Tasks;
 using TipsTrade.KashFlow.v2;
+using System.Threading;
 
 namespace TipsTrade.KashFlow {
   /// <summary>The KashFlow service.</summary>
@@ -19,7 +20,7 @@ namespace TipsTrade.KashFlow {
     }
 
     /// <summary>Gets V1 of the KashFlow API client.</summary>
-    public async Task<KashFlowClient> GetClientV1Async() {
+    public async Task<KashFlowClient> GetClientV1Async(CancellationToken cancellationToken = default) {
       if (Settings.V1 == null) {
         throw new InvalidOperationException("No settings are available.");
       }
@@ -35,7 +36,7 @@ namespace TipsTrade.KashFlow {
           await client.AutoAuthIPAsync(new KashFlowAPI.AutoAuthIPRequest {
             appName = Settings.V1.AutoAuthName,
             AutoAuthKey = Settings.V1.AutoAuthKey,
-          });
+          }, cancellationToken);
         }
 
         V1 = client;
@@ -62,7 +63,7 @@ namespace TipsTrade.KashFlow {
     }
 
     #region Inner classes
-    /// <summary>Represents the settings for confiruring the <see cref="KashFlowService"/>.</summary>
+    /// <summary>Represents the settings for configuring the <see cref="KashFlowService"/>.</summary>
     public class KashFlowSettings {
       /// <summary>Represents the settings for configuring V1 client.</summary>
       public V1Credentials? V1 { get; set; }
