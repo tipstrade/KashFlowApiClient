@@ -6,7 +6,7 @@ using TipsTrade.KashFlow.v2;
 using TipsTrade.KashFlow.v2.Model;
 using static TipsTrade.KashFlow.KashFlowService;
 
-namespace Test_net6 {
+namespace Test {
   internal class Program {
     static async Task Main(string[] args) {
       var codeMethods = KashFlowClient.GenerateMethodCode();

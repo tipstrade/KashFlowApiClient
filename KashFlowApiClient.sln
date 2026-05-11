@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KashFlowApiClient", "KashFlowApiClient\KashFlowApiClient.csproj", "{A1E97F01-9DDC-4E1F-AB45-DC90C8A1D9EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test-net6", "Test-net6\Test-net6.csproj", "{46977A81-B99A-4B86-A223-2AE88BF9E3AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{46977A81-B99A-4B86-A223-2AE88BF9E3AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
