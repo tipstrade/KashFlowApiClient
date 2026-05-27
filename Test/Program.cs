@@ -25,12 +25,18 @@ namespace Test {
 
       var s = JsonSerializer.Serialize(settings);
 
-      var allInvoices = await v2.GetInvoicesAsync(new PurchaseRequest { })
-        .SelectAwait(async (x) => await v2.GetInvoiceAsync(x.Number))
-        .Where(x => x.PaymentLines?.Any() == true)
-        .Take(100)
-        .ToArrayAsync()
-        ;
+      var allInvoices = new List<TipsTrade.KashFlow.v2.Model.Invoice>();
+      await foreach (var item in v2.GetInvoicesAsync(new PurchaseRequest { })) {
+        var fetched = await v2.GetInvoiceAsync(item.Number);
+
+        if (fetched.PaymentLines?.Any() == true) {
+          allInvoices.Add(fetched);
+        }
+
+        if (allInvoices.Count >= 100) {
+          break;
+        }
+      }
 
       var bulkPaymentIds = allInvoices
         .Where(x => x.PaymentLines?.Any() == true)
