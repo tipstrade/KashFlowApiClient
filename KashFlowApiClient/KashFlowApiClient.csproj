@@ -12,41 +12,16 @@
     <AssemblyName>KashFlowApiClient</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>4.0.2.0</Version>
+    <Version>8.0.0</Version>
     <PackageProjectUrl>https://github.com/tipstrade/KashFlowApiClient</PackageProjectUrl>
-    <Description>A .Net wrapper for the KashFlow SOAP and Rest APIs.</Description>
-    <PackageReleaseNotes>4.0.2.0
-* Removed dependency for System.Linq.Async
-
-4.0.1.0
-* Add support for CancellationToken in all async methods.
-
-4.0.0-beta
-* Target net8
-
-v.3.1.1-beta
-* Add support for the Rest API (V2)
-
-v.3.0.0
-* Add .Net Core 6.0+ and IAsyncEnumerable support
-* Breaking Changes: Update namespace to TipsTrade.KashFlowApi
-
-v.2.0.0.2
-* Add .Net Core library
-
-v.2.0.0.1
-* Major update - All methods now only accept an object containing the parameters, as this is how the WSDL is now consumed.
-* Add .Net Standard library
-
-v.1.0.0.1
-* Allow the object to be used as a component
-* Add a Timeout property.
-
-v.1.0.0.0
-* Initial Release.
-</PackageReleaseNotes>
+    <Description>A .NET wrapper for the KashFlow SOAP and Rest APIs.</Description>
     <Authors>John Bayly</Authors>
     <Company>TipsTrade Ltd.</Company>
+    <Copyright>TipsTrade Ltd. 2016-2026</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/tipstrade/KashFlowApiClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -110,6 +85,14 @@ v.1.0.0.0
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services" />
